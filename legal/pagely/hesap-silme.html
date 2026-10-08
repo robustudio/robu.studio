@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pagely — Hesap ve veri silme</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; line-height: 1.6;
+    color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e8e8e8; background: #101d1c; } a { color: #2dd4bf; } }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 2em; }
+  .muted { color: #777; font-size: .9rem; }
+  a { color: #0d9488; }
+  hr { border: none; border-top: 1px solid #8883; margin: 3em 0; }
+  code { background: #8882; padding: 1px 5px; border-radius: 4px; }
+  mark { background: #fde68a; color: #7c2d12; padding: 2px 6px; border-radius: 4px; font-weight: 700; }
+  .lang { display: inline-block; margin-bottom: 1.5em; padding: 6px 14px; border: 1px solid #8884; border-radius: 999px; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<a class="lang" href="./delete-account.html">← English version</a>
+
+<h1>Pagely hesabını ve verilerini silme</h1>
+<p class="muted">Son güncelleme: 18 Ağustos 2026</p>
+
+<p>Bu sayfa, <strong>Pagely</strong> hesabını (Android paket adı <code>studio.robu.pagely</code>) ve onunla saklanan her şeyi nasıl sileceğini anlatır.</p>
+
+<h2>Uygulama içinden silme</h2>
+<ol>
+  <li>Pagely'yi aç ve <strong>Profil</strong> sekmesine git.</li>
+  <li><strong>Hesap</strong>'a dokun.</li>
+  <li><strong>Hesabımı sil</strong>'e dokun ve onayla.</li>
+</ol>
+<p>Hesap ve verileri anında kaldırılır. Bu işlem geri alınamaz.</p>
+
+<h2>Uygulamayı açamıyorsan</h2>
+<p>Hesabının kayıtlı olduğu adresten <a href="mailto:robu.studyo@gmail.com">robu.studyo@gmail.com</a> adresine <strong>"Hesabımı sil"</strong> konusuyla e-posta gönder. Talebin hesabın kendi e-posta adresinden geldiğini doğrulayıp sileriz. <strong>30 gün</strong> içinde, genellikle çok daha kısa sürede yanıt veririz.</p>
+
+<h2>Silinenler</h2>
+<p>Hesabını sildiğinde şunlar kalıcı olarak kaldırılır:</p>
+<ul>
+  <li>Profilin: görünen ad, kullanıcı adı, biyografi, profil ve kapak fotoğrafı,</li>
+  <li>Kütüphanen, rafların ve okuma durumların,</li>
+  <li>Okuma oturumların, sayfa ilerlemen, serilerin ve hedeflerin,</li>
+  <li>Puanların, incelemelerin, notların ve notlara eklediğin fotoğraflar,</li>
+  <li>Gönderilerin ve fotoğrafları, yorumların ve beğenilerin,</li>
+  <li>Kulüp üyeliklerin ve kulüplerde yazdığın mesajlar,</li>
+  <li>Her iki yöndeki takip ilişkilerin ve engellemelerin.</li>
+</ul>
+
+<h2>Saklananlar ve süresi</h2>
+<ul>
+  <li><strong>Yedekler:</strong> verilerin canlı sistemden anında kaybolur; rutin yedeklerdeki kopyalar en geç <strong>30 gün</strong> içinde döngüden çıkar.</li>
+  <li><strong>Moderasyon kayıtları:</strong> kuralları ihlal ettiğin için şikâyet edildiysen, aynı kötüye kullanımın tekrar tanınabilmesi için şikâyet kaydı saklanabilir. Hesabın gittikten sonra bu kayıt seni tanımlamaz.</li>
+  <li><strong>Ödeme kayıtları:</strong> abonelik ücreti bizim tarafımızdan değil, Google Play tarafından tahsil edilir. Google kendi ödeme ve fatura kayıtlarını vergi mevzuatı gereği saklar; bu kayıtlara erişimimiz yok ve silemeyiz. Aboneliğini <strong>Google Play → Abonelikler</strong> bölümünden yönet veya iptal et.</li>
+</ul>
+<p><strong>Hesabını silmek aboneliğini iptal etmez.</strong> Ücretlendirmenin durması için Google Play üzerinden ayrıca iptal etmen gerekir.</p>
+
+<h2 id="partial">Verinin yalnızca bir kısmını silme</h2>
+<p>Bir şeyleri kaldırmak için hesabını silmek zorunda değilsin. Aşağıdakilerin her biri uygulama içinden, istediğin zaman, tek başına silinebilir:</p>
+<ul>
+  <li><strong>Bir raf:</strong> Kitaplık → rafı aç → sil.</li>
+  <li><strong>Raftaki bir kitap:</strong> rafı aç → kitabı raftan çıkar.</li>
+  <li><strong>Bir not ve fotoğrafı:</strong> kitabı aç → Notlar → notu sil.</li>
+  <li><strong>Bir gönderi ve fotoğrafı:</strong> gönderiyi akışta veya kitap sayfasında bul → sil.</li>
+  <li><strong>Bir yorum:</strong> gönderiyi aç → yorumunu sil.</li>
+  <li><strong>Bir beğeni:</strong> beğeniye tekrar dokun.</li>
+  <li><strong>Kulüp üyeliği:</strong> kulübü aç → Ayrıl.</li>
+  <li><strong>Bir takip:</strong> profili aç → Takibi bırak.</li>
+  <li><strong>Bir engelleme:</strong> Ayarlar → Engellenen kullanıcılar → Engeli kaldır.</li>
+</ul>
+<p>Bazı öğeler henüz uygulama içinden tek başına kaldırılamıyor: kütüphanene eklediğin bir kitap, bir inceleme ve kulüpte gönderdiğin bir mesaj. Bunlardan birinin silinmesi için hesabının e-posta adresinden <a href="mailto:robu.studyo@gmail.com">robu.studyo@gmail.com</a> adresine neyin kaldırılacağını yazarak başvur; <strong>30 gün</strong> içinde işleme alırız. Hesabını silmen bunları da diğer her şeyle birlikte kaldırır.</p>
+
+<h2>İletişim</h2>
+<p><a href="mailto:robu.studyo@gmail.com">robu.studyo@gmail.com</a> — ayrıca <a href="./">gizlilik politikası</a>.</p>
+
+</body>
+</html>
