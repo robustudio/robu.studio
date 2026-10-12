@@ -34,7 +34,7 @@
         body {
             margin: 0;
             background:
-                radial-gradient(760px 440px at 22% 4%, rgba(240, 100, 99, 0.13), transparent 70%),
+                radial-gradient(820px 460px at 50% 2%, rgba(240, 100, 99, 0.13), transparent 70%),
                 radial-gradient(680px 420px at 92% -6%, rgba(240, 100, 99, 0.07), transparent 60%),
                 radial-gradient(620px 460px at -8% 38%, rgba(79, 208, 184, 0.07), transparent 60%),
                 var(--bg);
@@ -163,11 +163,11 @@
         }
 
         /* ---------- Hero ---------- */
-        .hero { padding: clamp(2rem, 5vw, 4rem) 0 clamp(2.5rem, 5vw, 4rem); }
+        .hero { padding: clamp(2rem, 5vw, 4rem) 0 clamp(2.5rem, 5vw, 4rem); text-align: center; }
 
         .hero h1 {
             max-width: 16ch;
-            margin: 0;
+            margin: 0 auto;
             font-size: clamp(2.25rem, 5.6vw, 4.5rem);
             line-height: 1;
             font-weight: 700;
@@ -177,12 +177,12 @@
 
         .hero-sub {
             max-width: 34rem;
-            margin: 1.25rem 0 0;
+            margin: 1.25rem auto 0;
             font-size: clamp(1rem, 1.6vw, 1.125rem);
             color: var(--muted);
         }
 
-        .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
+        .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-top: 1.5rem; }
 
         .btn {
             display: inline-flex;
@@ -203,6 +203,7 @@
         .shelf {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             gap: clamp(0.75rem, 2vw, 1.25rem);
             margin-top: clamp(1.75rem, 4vw, 2.5rem);
         }
