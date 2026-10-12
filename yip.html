@@ -84,8 +84,9 @@
   .ftr-right{ display:flex; align-items:center; gap:16px; font-size:13.5px; }
   .ftr-right a{ text-decoration:none; font-weight:600; }
   .ftr-right a:hover{ text-decoration:underline; }
-  .ftr-right a.soc{ display:grid; place-items:center; width:42px; height:42px; border:1px solid var(--hair); border-radius:50%; color:var(--ink-soft); font-weight:400; transition:color .15s ease, border-color .15s ease; }
+  .ftr-right a.soc, .ftr-right span.soc{ display:grid; place-items:center; width:42px; height:42px; border:1px solid var(--hair); border-radius:50%; color:var(--ink-soft); font-weight:400; transition:color .15s ease, border-color .15s ease; }
   .ftr-right a.soc:hover{ color:var(--ink); border-color:var(--ink-soft); text-decoration:none; }
+  .ftr-right span.soc{ opacity:.5; cursor:default; }
   .ftr-right{ gap:10px; }
 
   
@@ -242,7 +243,7 @@
 <footer><div class="wrap">
   <div class="ftr-row">
     <span data-i18n="footer.copyright">&copy; Robu Studio &mdash; an independent app studio.</span>
-    <span class="ftr-right"><a class="soc" href="https://www.instagram.com/studio.robu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @studio.robu" title="@studio.robu"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor"/></svg></a><a class="soc" href="mailto:hello@robu.studio" aria-label="hello@robu.studio" title="hello@robu.studio"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4.5 8l7.5 5.5L19.5 8"/></svg></a></span>
+    <span class="ftr-right"><a class="soc" href="https://www.instagram.com/studio.robu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @studio.robu" title="@studio.robu"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor"/></svg></a><span class="soc" role="img" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5l5 2.5-5 2.5z" fill="currentColor"/></svg></span><span class="soc" role="img" aria-label="X" title="X"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h4.2L20 20h-4.2z"/><path d="M19.5 4l-6.6 7.3M4.5 20l6.6-7.3"/></svg></span><span class="soc" role="img" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V16M8 7.8v.01M11.5 16v-5.5M11.5 13c0-1.6 1-2.6 2.4-2.6s2.1 1 2.1 2.5V16"/></svg></span><a class="soc" href="mailto:hello@robu.studio" aria-label="hello@robu.studio" title="hello@robu.studio"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4.5 8l7.5 5.5L19.5 8"/></svg></a></span>
   </div>
 </div></footer>
 
