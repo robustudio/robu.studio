@@ -20,9 +20,9 @@
     "tr": "Geliştiriliyor · web'de dene"
   },
   "hero.h1": {
-    "en": "One app for the <em>whole</em> workshop.",
-    "es": "Una app para <em>todo</em> el taller.",
-    "tr": "Tüm atölye için <em>tek</em> uygulama."
+    "en": "One app for the <em>whole workshop.</em>",
+    "es": "Una app para <em>todo el taller.</em>",
+    "tr": "Tüm atölye için <em>tek uygulama.</em>"
   },
   "hero.lead": {
     "en": "Draw colourwork charts and see them knitted. Preview crochet in 3D. Draft life-size sewing patterns. Keep every project in one place.",
@@ -278,5 +278,15 @@
     "en": "Keep every project in one place &mdash; counters, progress, notes and yarn stash",
     "es": "Todos tus proyectos en un solo lugar &mdash; contadores, progreso, notas e inventario de lana",
     "tr": "Her projen tek yerde — sayaçlar, ilerleme, notlar ve iplik stoğu"
+  },
+  "lab.chart": {
+    "en": "Chart",
+    "es": "Patr&oacute;n",
+    "tr": "Şema"
+  },
+  "lab.knitted": {
+    "en": "Knitted",
+    "es": "Tejido",
+    "tr": "Örülmüş"
   }
 }
