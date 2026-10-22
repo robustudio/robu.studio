@@ -9,6 +9,7 @@ HTML in the repo root; this folder only holds what is needed to change those pag
 | `yip/` | `../yip.html` | `node _src/yip/build.mjs` (no dependencies) |
 | `tv-list/` | `../tv-list.html` | `node _src/tv-list/build.mjs` (no dependencies) |
 | `pagely/` | `../pagely.html` | `node _src/pagely/build.mjs` (no dependencies) |
+| `pigeon/` | `../pigeon.html` | `node _src/pigeon/build.mjs` (no dependencies; the dotted world map is baked by `make-map.mjs` into `map-dots.txt`, Natural Earth public-domain data) |
 | `shared/` | — | pieces used by several pages (the Noot "ROBU" wordmark font) |
 
 - Words (EN / ES / TR): `<app>/copy.json`. Layout, CSS and motion: `<app>/template.html`.

@@ -1,0 +1,165 @@
+{
+  "meta.desc": {
+    "en": "Pigeon: a pen-pal app where letters take real time to arrive, scaled to the distance between you and your pen pal. Postcards, stamps and postmarks. In development for Android.",
+    "es": "Pigeon: una app de amigos por correspondencia donde las cartas tardan de verdad en llegar, seg&uacute;n la distancia entre t&uacute; y tu amigo. Postales, sellos y matasellos. En desarrollo para Android.",
+    "tr": "Pigeon: mektupların, seninle mektup arkadaşın arasındaki mesafeye göre gerçekten zaman alarak ulaştığı bir uygulama. Kartpostallar, pullar, posta damgaları. Android için geliştiriliyor."
+  },
+  "nav.studio": { "en": "STUDIO", "es": "ESTUDIO", "tr": "STÜDYO" },
+  "nav.back": { "en": "&larr; All apps", "es": "&larr; Todas las apps", "tr": "&larr; Tüm uygulamalar" },
+  "hero.eyebrow": {
+    "en": "In development &middot; Android",
+    "es": "En desarrollo &middot; Android",
+    "tr": "Geliştiriliyor · Android"
+  },
+  "hero.h1": {
+    "en": "Dear friend,<br><em>this will take<br>a while.</em>",
+    "es": "Querido amigo,<br><em>esto va a tardar<br>un poco.</em>",
+    "tr": "Sevgili dostum,<br><em>bu biraz<br>sürecek.</em>"
+  },
+  "hero.lead": {
+    "en": "Pigeon is a pen-pal app where letters take real time to arrive &mdash; the farther the friend, the longer the wait. Handwritten feeling, real postmarks.",
+    "es": "Pigeon es una app de amigos por correspondencia donde las cartas tardan de verdad en llegar: cuanto m&aacute;s lejos el amigo, m&aacute;s larga la espera. Sensaci&oacute;n de escrito a mano, matasellos de verdad.",
+    "tr": "Pigeon, mektupların gerçekten zaman alarak ulaştığı bir mektup arkadaşlığı uygulaması: arkadaşın ne kadar uzaksa bekleyiş o kadar uzun. El yazısı hissi, gerçek posta damgaları."
+  },
+  "cta.follow": { "en": "Follow @studio.robu", "es": "Sigue a @studio.robu", "tr": "@studio.robu'yu takip et" },
+  "cta.see": { "en": "See the journey", "es": "Mira el viaje", "tr": "Yolculuğu gör" },
+
+  "desk.to": { "en": "To: Min-jun, Seoul", "es": "Para: Min-jun, Se&uacute;l", "tr": "Kime: Min-jun, Seul" },
+  "desk.post": { "en": "Postcard", "es": "Postal", "tr": "Kartpostal" },
+  "desk.p": {
+    "en": "Dear Min-jun,<br>the snow came early<br>this year in Istanbul&hellip;",
+    "es": "Querido Min-jun,<br>este a&ntilde;o la nieve lleg&oacute;<br>pronto a Estambul&hellip;",
+    "tr": "Sevgili Min-jun,<br>bu yıl İstanbul'a kar<br>erken geldi&hellip;"
+  },
+  "desk.note": {
+    "en": "on its way&hellip; arrives in <b data-trip=\"dur\">1d 13h</b>",
+    "es": "en camino&hellip; llega en <b data-trip=\"dur\">1d 13h</b>",
+    "tr": "yolda&hellip; <b data-trip=\"dur\">1g 13sa</b> sonra ulaşır"
+  },
+  "desk.chip": {
+    "en": "&#9993; <span data-trip=\"km\">7,953</span> km &middot; <span data-trip=\"dur\">1d 13h</span>",
+    "es": "&#9993; <span data-trip=\"km\">7.953</span> km &middot; <span data-trip=\"dur\">1d 13h</span>",
+    "tr": "&#9993; <span data-trip=\"km\">7.953</span> km &middot; <span data-trip=\"dur\">1g 13sa</span>"
+  },
+
+  "j.kick": { "en": "The long way", "es": "El camino largo", "tr": "Uzun yol" },
+  "j.h2": {
+    "en": "Distance is<br>part of the <em>letter.</em>",
+    "es": "La distancia es<br>parte de la <em>carta.</em>",
+    "tr": "Mesafe,<br>mektubun <em>parçası.</em>"
+  },
+  "j.sub": {
+    "en": "Every letter travels for a time set by the distance between you and your pen pal &mdash; minutes for a neighbour, days for the other side of the world. It's enforced on the server, so nobody can peek early.",
+    "es": "Cada carta viaja el tiempo que marca la distancia entre t&uacute; y tu amigo: minutos para un vecino, d&iacute;as para el otro lado del mundo. Lo controla el servidor, as&iacute; que nadie puede mirar antes de tiempo.",
+    "tr": "Her mektup, seninle mektup arkadaşın arasındaki mesafenin belirlediği kadar yolda kalır: komşuya dakikalar, dünyanın öbür ucuna günler. Bunu sunucu denetler, kimse erkenden bakamaz."
+  },
+  "j.arrives": { "en": "Arrives in", "es": "Llega en", "tr": "Ulaşmasına" },
+  "j.arrived": { "en": "Arrived", "es": "Entregada", "tr": "Ulaştı" },
+  "j.write": { "en": "Write to&hellip;", "es": "Escribe a&hellip;", "tr": "Şuna yaz:" },
+  "j.note": {
+    "en": "Example times. The final timing may change before launch.",
+    "es": "Tiempos de ejemplo. Los tiempos finales pueden cambiar antes del lanzamiento.",
+    "tr": "Örnek süreler. Nihai süreler çıkıştan önce değişebilir."
+  },
+  "city.istanbul": { "en": "Istanbul", "es": "Estambul", "tr": "İstanbul" },
+  "city.ankara": { "en": "Ankara", "es": "Ankara", "tr": "Ankara" },
+  "city.berlin": { "en": "Berlin", "es": "Berl&iacute;n", "tr": "Berlin" },
+  "city.newyork": { "en": "New York", "es": "Nueva York", "tr": "New York" },
+  "city.seoul": { "en": "Seoul", "es": "Se&uacute;l", "tr": "Seul" },
+  "city.sydney": { "en": "Sydney", "es": "S&iacute;dney", "tr": "Sidney" },
+
+  "l.from": { "en": "Min-jun", "es": "Min-jun", "tr": "Min-jun" },
+  "l.meta": { "en": "Oct 14 &middot; 7,953 km", "es": "14 oct &middot; 7.953 km", "tr": "14 Eki · 7.953 km" },
+  "l.body": {
+    "en": "Dear Elif, the cherry trees outside my window finally started to bloom the day your letter left&hellip;",
+    "es": "Querida Elif, los cerezos de mi ventana por fin empezaron a florecer el d&iacute;a que sali&oacute; tu carta&hellip;",
+    "tr": "Sevgili Elif, penceremin önündeki kiraz ağaçları, mektubun yola çıktığı gün sonunda çiçek açtı&hellip;"
+  },
+  "l.state": { "en": "Arrived &#10003;&#10003;", "es": "Entregada &#10003;&#10003;", "tr": "Ulaştı ✓✓" },
+  "l.meta2": { "en": "Oct 20 &middot; 7,953 km", "es": "20 oct &middot; 7.953 km", "tr": "20 Eki · 7.953 km" },
+  "l.state2": { "en": "In the post", "es": "En camino", "tr": "Yolda" },
+  "p.kick": { "en": "Postcards, not bubbles", "es": "Postales, no burbujas", "tr": "Mesaj balonu değil, kartpostal" },
+  "p.h2": {
+    "en": "Every letter<br>wears a <em>stamp.</em>",
+    "es": "Cada carta<br>lleva un <em>sello.</em>",
+    "tr": "Her mektup<br>bir <em>pul</em> taşır."
+  },
+  "p.sub": {
+    "en": "The sender's country as a stamp, a postmark, words that took their time to get here. No typing dots &mdash; you read it when it lands.",
+    "es": "El pa&iacute;s del remitente como sello, un matasellos, palabras que se tomaron su tiempo en llegar. Sin puntitos de &ldquo;escribiendo&rdquo;: la lees cuando aterriza.",
+    "tr": "Gönderenin ülkesi pul olarak, bir posta damgası, buraya gelmek için zaman alan sözler. &ldquo;Yazıyor&hellip;&rdquo; noktaları yok; mektubu ulaştığında okursun."
+  },
+
+  "s.kick": { "en": "The collection", "es": "La colecci&oacute;n", "tr": "Koleksiyon" },
+  "s.h2": {
+    "en": "Stamps to <em>collect.</em>",
+    "es": "Sellos para <em>coleccionar.</em>",
+    "tr": "Biriktirilecek <em>pullar.</em>"
+  },
+  "s.sub": {
+    "en": "Milestones, world wonders and seasonal editions. Earn them, pick them up in the shop, and show your favourites on your profile.",
+    "es": "Hitos, maravillas del mundo y ediciones de temporada. Gan&aacute;ndolos o en la tienda, y tus favoritos lucen en tu perfil.",
+    "tr": "Dönüm noktaları, dünya harikaları ve mevsim baskıları. Kazan ya da mağazadan al; favorilerini profilinde göster."
+  },
+
+  "m.kick": { "en": "Everything in the post", "es": "Todo en el correo", "tr": "Her şey postada" },
+  "m.h2": {
+    "en": "Meet people <em>slowly.</em>",
+    "es": "Conoce gente <em>despacio.</em>",
+    "tr": "İnsanlarla <em>yavaşça</em> tanış."
+  },
+  "m1.h": { "en": "Message in a bottle", "es": "Mensaje en una botella", "tr": "Şişedeki mesaj" },
+  "m1.p": {
+    "en": "Auto-match sends your first letter to someone new.",
+    "es": "El auto-match env&iacute;a tu primera carta a alguien nuevo.",
+    "tr": "Otomatik eşleşme ilk mektubunu yeni biriyle buluşturur."
+  },
+  "m2.h": { "en": "Open letters", "es": "Cartas abiertas", "tr": "Açık mektuplar" },
+  "m2.p": {
+    "en": "Reply to a letter that anyone can answer.",
+    "es": "Responde a una carta que cualquiera puede contestar.",
+    "tr": "Herkesin yanıtlayabileceği bir mektuba cevap yaz."
+  },
+  "m3.h": { "en": "By city or topic", "es": "Por ciudad o tema", "tr": "Şehre ya da konuya göre" },
+  "m3.p": {
+    "en": "Find people who like what you like, or who live where you're curious about.",
+    "es": "Encuentra gente que comparte tus gustos o que vive donde te da curiosidad.",
+    "tr": "Senin sevdiğini sevenleri ya da merak ettiğin yerde yaşayanları bul."
+  },
+  "m4.h": { "en": "Photos &amp; voice", "es": "Fotos y voz", "tr": "Fotoğraf ve ses" },
+  "m4.p": {
+    "en": "Attach a photo or a voice note. It arrives with the letter.",
+    "es": "Adjunta una foto o una nota de voz. Llega con la carta.",
+    "tr": "Bir fotoğraf ya da ses notu ekle. Mektupla birlikte ulaşır."
+  },
+
+  "v.kick": { "en": "Private by design", "es": "Privado por dise&ntilde;o", "tr": "Tasarımı gereği özel" },
+  "v.h2": {
+    "en": "Only the<br><em>two of you.</em>",
+    "es": "Solo<br><em>los dos.</em>",
+    "tr": "Sadece<br><em>ikiniz.</em>"
+  },
+  "v.sub": {
+    "en": "Your letters can only be read by you and your pen pal, and only once they've arrived. Block or report anyone; the moderation tools can't open private letters.",
+    "es": "Tus cartas solo pueden leerlas t&uacute; y tu amigo, y solo cuando han llegado. Bloquea o denuncia a quien quieras; las herramientas de moderaci&oacute;n no pueden abrir cartas privadas.",
+    "tr": "Mektuplarını yalnızca sen ve mektup arkadaşın okuyabilir, o da ancak ulaştıktan sonra. İstediğini engelle ya da şikâyet et; moderasyon araçları özel mektupları açamaz."
+  },
+  "v.tag": { "en": "&#128274; Opens on arrival", "es": "&#128274; Se abre al llegar", "tr": "&#128274; Ulaşınca açılır" },
+
+  "o.h2": {
+    "en": "Still being <em>written.</em>",
+    "es": "Todav&iacute;a se est&aacute; <em>escribiendo.</em>",
+    "tr": "Hâlâ <em>yazılıyor.</em>"
+  },
+  "o.sub": {
+    "en": "Pigeon is in development for Android. Follow @studio.robu to be there when the first letter lands.",
+    "es": "Pigeon est&aacute; en desarrollo para Android. Sigue a @studio.robu para estar cuando aterrice la primera carta.",
+    "tr": "Pigeon Android için geliştiriliyor. İlk mektup konduğunda haberin olsun diye @studio.robu'yu takip et."
+  },
+
+  "footer.copyright": {
+    "en": "&copy; Robu Studio &mdash; an independent app studio.",
+    "es": "&copy; Robu Studio &mdash; un estudio de apps independiente.",
+    "tr": "&copy; Robu Studio &mdash; bağımsız bir uygulama stüdyosu."
+  }
+}
