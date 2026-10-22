@@ -1,0 +1,307 @@
+{
+  "meta.desc": {
+    "en": "TV-List: track every show and film you watch, tick episodes, discover what's next, watch trailers and share with friends. Coming soon to Android and iOS.",
+    "es": "TV-List: sigue cada serie y pel&iacute;cula que ves, marca episodios, descubre qu&eacute; ver despu&eacute;s, mira tr&aacute;ilers y comparte con amigos. Pr&oacute;ximamente en Android e iOS.",
+    "tr": "TV-List: izlediğin her dizi ve filmi takip et, bölümleri işaretle, sırada ne olduğunu keşfet, fragman izle, arkadaşlarınla paylaş. Yakında Android ve iOS'ta."
+  },
+  "nav.studio": {
+    "en": "STUDIO",
+    "es": "ESTUDIO",
+    "tr": "STÜDYO"
+  },
+  "nav.back": {
+    "en": "&larr; All apps",
+    "es": "&larr; Todas las apps",
+    "tr": "&larr; Tüm uygulamalar"
+  },
+  "hero.eyebrow": {
+    "en": "Coming soon &middot; Android &amp; iOS",
+    "es": "Pr&oacute;ximamente &middot; Android e iOS",
+    "tr": "Yakında · Android ve iOS"
+  },
+  "hero.h1": {
+    "en": "Never lose<br>your <em>place.</em>",
+    "es": "No pierdas<br>tu <em>lugar.</em>",
+    "tr": "Kaldığın<br>yeri <em>kaybetme.</em>"
+  },
+  "hero.lead": {
+    "en": "Every show and film you watch, in one list. Tick each episode, see what's up next, and find what to watch after.",
+    "es": "Cada serie y pel&iacute;cula que ves, en una sola lista. Marca cada episodio, mira cu&aacute;l sigue y descubre qu&eacute; ver despu&eacute;s.",
+    "tr": "İzlediğin her dizi ve film tek listede. Her bölümü işaretle, sıradakini gör, sonra ne izleyeceğini bul."
+  },
+  "cta.follow": {
+    "en": "Follow @tvlist.robu",
+    "es": "Sigue a @tvlist.robu",
+    "tr": "@tvlist.robu'yu takip et"
+  },
+  "cta.how": {
+    "en": "See how it works &darr;",
+    "es": "As&iacute; funciona &darr;",
+    "tr": "Nasıl çalışır &darr;"
+  },
+  "legend.w": {
+    "en": "watched",
+    "es": "visto",
+    "tr": "izlendi"
+  },
+  "legend.n": {
+    "en": "up next",
+    "es": "siguiente",
+    "tr": "sıradaki"
+  },
+  "legend.t": {
+    "en": "to go",
+    "es": "pendiente",
+    "tr": "kalan"
+  },
+  "up.l": {
+    "en": "UP NEXT",
+    "es": "SIGUIENTE",
+    "tr": "SIRADAKİ"
+  },
+  "k1.kick": {
+    "en": "01 &middot; Track",
+    "es": "01 &middot; Seguimiento",
+    "tr": "01 · Takip"
+  },
+  "k1.h2": {
+    "en": "One tap.<br><em>Every episode.</em>",
+    "es": "Un toque.<br><em>Cada episodio.</em>",
+    "tr": "Tek dokunuş.<br><em>Her bölüm.</em>"
+  },
+  "k1.sub": {
+    "en": "Tick an episode when you finish it. &ldquo;Up next&rdquo; always knows where you stopped. Pause or drop a series without losing it, and count your rewatches.",
+    "es": "Marca un episodio al terminarlo. &laquo;Siguiente&raquo; siempre sabe d&oacute;nde te quedaste. Pausa o abandona una serie sin perderla y cuenta tus rewatches.",
+    "tr": "Bitirdiğin bölümü işaretle. “Sıradaki” nerede kaldığını her zaman bilir. Bir diziyi kaybetmeden duraklat ya da bırak, yeniden izlediklerini say."
+  },
+  "k1.card1": {
+    "en": "Your shows",
+    "es": "Tus series",
+    "tr": "Dizilerin"
+  },
+  "k1.card2": {
+    "en": "Right now",
+    "es": "Ahora mismo",
+    "tr": "Şu an"
+  },
+  "k1.b1": {
+    "en": "paused / dropped",
+    "es": "en pausa / abandonada",
+    "tr": "ara verildi / bırakıldı"
+  },
+  "k1.b2": {
+    "en": "rewatch 2x",
+    "es": "rewatch 2x",
+    "tr": "yeniden izle 2x"
+  },
+  "k1.b3": {
+    "en": "half-star ratings",
+    "es": "valoraci&oacute;n con medias estrellas",
+    "tr": "yarım yıldız puan"
+  },
+  "k2.kick": {
+    "en": "02 &middot; Discover",
+    "es": "02 &middot; Descubre",
+    "tr": "02 · Keşfet"
+  },
+  "k2.h2": {
+    "en": "Find what to<br><em>watch next.</em>",
+    "es": "Encuentra qu&eacute;<br><em>ver despu&eacute;s.</em>",
+    "tr": "Sırada ne<br><em>izleyeceğini bul.</em>"
+  },
+  "k2.sub": {
+    "en": "Trending and top-rated titles, filters for platform, country and genre, and a clear answer to &ldquo;where can I watch this?&rdquo;.",
+    "es": "T&iacute;tulos populares y mejor valorados, filtros por plataforma, pa&iacute;s y g&eacute;nero, y una respuesta clara a &laquo;&iquest;d&oacute;nde puedo verlo?&raquo;.",
+    "tr": "Trend ve en yüksek puanlı yapımlar; platform, ülke ve tür filtreleri; ve “bunu nereden izlerim?” sorusuna net bir cevap."
+  },
+  "k2.c1": {
+    "en": "Platform",
+    "es": "Plataforma",
+    "tr": "Platform"
+  },
+  "k2.c2": {
+    "en": "Country",
+    "es": "Pa&iacute;s",
+    "tr": "Ülke"
+  },
+  "k2.c3": {
+    "en": "Genre",
+    "es": "G&eacute;nero",
+    "tr": "Tür"
+  },
+  "k2.c4": {
+    "en": "Where to watch",
+    "es": "D&oacute;nde verlo",
+    "tr": "Nereden izlenir"
+  },
+  "k3.kick": {
+    "en": "03 &middot; Trailers",
+    "es": "03 &middot; Tr&aacute;ilers",
+    "tr": "03 · Fragmanlar"
+  },
+  "k3.h2": {
+    "en": "Trailers,<br><em>one per swipe.</em>",
+    "es": "Tr&aacute;ilers,<br><em>uno por deslizamiento.</em>",
+    "tr": "Fragmanlar,<br><em>her kaydırmada bir tane.</em>"
+  },
+  "k3.sub": {
+    "en": "Flip through trailers like flipping channels, add what you like to your list, then dig into any cast and crew page. Even find the book a title was adapted from.",
+    "es": "Pasa tr&aacute;ilers como quien cambia de canal, a&ntilde;ade lo que te guste a tu lista y explora cualquier p&aacute;gina de reparto y equipo. Incluso encuentra el libro en que se basa un t&iacute;tulo.",
+    "tr": "Fragmanları kanal çevirir gibi geç, beğendiğini listene ekle, sonra herhangi bir oyuncu ve ekip sayfasına dal. Bir yapımın uyarlandığı kitabı bile bul."
+  },
+  "k3.note": {
+    "en": "3 &middot; 2 &middot; 1 &mdash; next trailer",
+    "es": "3 &middot; 2 &middot; 1 &mdash; siguiente tr&aacute;iler",
+    "tr": "3 · 2 · 1 — sıradaki fragman"
+  },
+  "k4.kick": {
+    "en": "04 &middot; Stats &amp; goals",
+    "es": "04 &middot; Estad&iacute;sticas y metas",
+    "tr": "04 · İstatistik ve hedefler"
+  },
+  "k4.h2": {
+    "en": "Watch your<br><em>year add up.</em>",
+    "es": "Mira c&oacute;mo<br><em>se suma tu a&ntilde;o.</em>",
+    "tr": "Yılının nasıl<br><em>toplandığını izle.</em>"
+  },
+  "k4.sub": {
+    "en": "Total watch time, favourite genres, finished versus in progress. Set a goal for the year and collect stamps as you go.",
+    "es": "Tiempo total visto, g&eacute;neros favoritos, terminadas frente a en progreso. Fija una meta para el a&ntilde;o y colecciona sellos.",
+    "tr": "Toplam izleme süresi, en çok izlenen türler, biten ve devam eden yapımlar. Yıl için bir hedef koy, ilerledikçe pul topla."
+  },
+  "k4.s1": {
+    "en": "watch time",
+    "es": "tiempo visto",
+    "tr": "izleme süresi"
+  },
+  "k4.s2": {
+    "en": "episodes",
+    "es": "episodios",
+    "tr": "bölüm"
+  },
+  "k4.s3": {
+    "en": "films",
+    "es": "pel&iacute;culas",
+    "tr": "film"
+  },
+  "k4.goal": {
+    "en": "Your goal for the year",
+    "es": "Tu meta del a&ntilde;o",
+    "tr": "Yıllık hedefin"
+  },
+  "g.drama": {
+    "en": "Drama",
+    "es": "Drama",
+    "tr": "Dram"
+  },
+  "g.comedy": {
+    "en": "Comedy",
+    "es": "Comedia",
+    "tr": "Komedi"
+  },
+  "g.crime": {
+    "en": "Crime",
+    "es": "Crimen",
+    "tr": "Suç"
+  },
+  "k5.kick": {
+    "en": "05 &middot; Friends",
+    "es": "05 &middot; Amigos",
+    "tr": "05 · Arkadaşlar"
+  },
+  "k5.h2": {
+    "en": "Watch with<br><em>your people.</em>",
+    "es": "M&iacute;ralo con<br><em>los tuyos.</em>",
+    "tr": "İzle,<br><em>sevdiklerinle.</em>"
+  },
+  "k5.sub": {
+    "en": "Follow friends, see what they're watching, comment, like and message. Keep your account private and approve your own followers.",
+    "es": "Sigue a tus amigos, mira qu&eacute; est&aacute;n viendo, comenta, da me gusta y escribe mensajes. Mant&eacute;n tu cuenta privada y aprueba a tus seguidores.",
+    "tr": "Arkadaşlarını takip et, ne izlediklerini gör, yorum yap, beğen, mesajlaş. Hesabını gizli tut, takipçilerini kendin onayla."
+  },
+  "k5.b1": {
+    "en": "Finally someone who watches Silo too &#128588;",
+    "es": "Por fin alguien que tambi&eacute;n ve Silo &#128588;",
+    "tr": "Sonunda Silo izleyen biri daha &#128588;"
+  },
+  "k5.b2": {
+    "en": "Episode 9 is next for me!",
+    "es": "&iexcl;El episodio 9 es el siguiente!",
+    "tr": "Sırada 9. bölüm var!"
+  },
+  "k5.b3": {
+    "en": "No spoilers &#129296;",
+    "es": "Sin spoilers &#129296;",
+    "tr": "Spoiler yok &#129296;"
+  },
+  "g.kick": {
+    "en": "Screens",
+    "es": "Pantallas",
+    "tr": "Ekranlar"
+  },
+  "g.h2": {
+    "en": "A look inside.",
+    "es": "Un vistazo por dentro.",
+    "tr": "İçeriye bir bakış."
+  },
+  "shot.1": {
+    "en": "01 &middot; Tracking",
+    "es": "01 &middot; Seguimiento",
+    "tr": "01 · Takip"
+  },
+  "shot.2": {
+    "en": "02 &middot; Discover",
+    "es": "02 &middot; Descubre",
+    "tr": "02 · Keşfet"
+  },
+  "shot.3": {
+    "en": "03 &middot; Trailers",
+    "es": "03 &middot; Tr&aacute;ilers",
+    "tr": "03 · Fragmanlar"
+  },
+  "shot.4": {
+    "en": "04 &middot; Cast &amp; crew",
+    "es": "04 &middot; Reparto y equipo",
+    "tr": "04 · Oyuncu ve ekip"
+  },
+  "shot.5": {
+    "en": "05 &middot; Statistics",
+    "es": "05 &middot; Estad&iacute;sticas",
+    "tr": "05 · İstatistikler"
+  },
+  "o.cd": {
+    "en": "Next episode starts soon",
+    "es": "El siguiente episodio empieza pronto",
+    "tr": "Sıradaki bölüm yakında başlıyor"
+  },
+  "o.h2": {
+    "en": "Up next:<br><em>your list.</em>",
+    "es": "A continuaci&oacute;n:<br><em>tu lista.</em>",
+    "tr": "Sırada:<br><em>senin listen.</em>"
+  },
+  "o.sub": {
+    "en": "TV-List is coming soon to Android and iOS. Follow @tvlist.robu to know the day it lands.",
+    "es": "TV-List llega pronto a Android e iOS. Sigue a @tvlist.robu para saber el d&iacute;a que sale.",
+    "tr": "TV-List yakında Android ve iOS'ta. Çıktığı günü öğrenmek için @tvlist.robu'yu takip et."
+  },
+  "footer.copyright": {
+    "en": "&copy; Robu Studio &mdash; an independent app studio.",
+    "es": "&copy; Robu Studio &mdash; un estudio de apps independiente.",
+    "tr": "&copy; Robu Studio &mdash; bağımsız bir uygulama stüdyosu."
+  },
+  "footer.privacy": {
+    "en": "Privacy policy",
+    "es": "Pol&iacute;tica de privacidad",
+    "tr": "Gizlilik politikası"
+  },
+  "footer.terms": {
+    "en": "Terms of use",
+    "es": "T&eacute;rminos de uso",
+    "tr": "Kullanım koşulları"
+  },
+  "footer.tmdb": {
+    "en": "Show and film data provided by TMDB. This product uses the TMDB API but is not endorsed or certified by TMDB.",
+    "es": "Datos de series y pel&iacute;culas proporcionados por TMDB. Este producto usa la API de TMDB pero no est&aacute; respaldado ni certificado por TMDB.",
+    "tr": "Dizi ve film verileri TMDB tarafından sağlanır. Bu ürün TMDB API'sini kullanır ancak TMDB tarafından onaylanmış veya sertifikalandırılmış değildir."
+  }
+}
