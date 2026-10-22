@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taksi Hesap — Robu Studio</title>
+<meta name="description" content="{{meta.desc}}">
+<meta name="theme-color" content="#ffd271">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600..900&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  {{FONT}}
+  :root{
+    --ink:#1d1710; --ink-soft:#5b4b38; --cream:#fff4d8; --sun:#ffc20e; --coral:#e8452e; --deep:#2a1c10; --robu:#C42A2A;
+    --serif:'Fraunces',Georgia,serif; --sans:'Bricolage Grotesque',system-ui,-apple-system,'Segoe UI',sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--cream);overflow-x:hidden;line-height:1.5}
+  img,svg,video{max-width:100%}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:8px}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 28px;position:relative}
+
+  /* ---------- nav ---------- */
+  .top{position:sticky;top:0;z-index:50;height:0}
+  .navbar{max-width:1100px;margin:0 auto;transform:translateY(20px);display:flex;align-items:center;justify-content:space-between;gap:12px;
+    background:rgba(255,255,255,.7);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.95);border-radius:999px;padding:9px 9px 9px 24px;
+    box-shadow:0 18px 40px -26px rgba(120,70,10,.55)}
+  @media (max-width:1140px){.navbar{margin-left:20px;margin-right:20px}}
+  .brand{display:flex;align-items:baseline;gap:9px;text-decoration:none}
+  .brand .robu{font-family:'Noot','Arial Black',sans-serif;font-size:26px;letter-spacing:.5px;color:var(--robu)}
+  .brand .studio{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+  .hdr-right{display:flex;align-items:center;gap:10px}
+  .lang-switch{display:flex;align-items:center;gap:2px;background:rgba(255,255,255,.7);border-radius:999px;padding:3px}
+  .lang-switch button{font:600 11px var(--mono);letter-spacing:.04em;background:none;border:0;border-radius:999px;padding:7px 11px;cursor:pointer;color:var(--ink-soft)}
+  .lang-switch button[aria-current="true"]{background:#fff;color:var(--ink);box-shadow:0 1px 4px rgba(0,0,0,.14)}
+  .ig-link{background:var(--ink);color:#fff;text-decoration:none;font-weight:600;font-size:13.5px;padding:11px 18px;border-radius:999px;white-space:nowrap}
+  @media (max-width:560px){.ig-link{display:none}.navbar{padding:8px 8px 8px 18px;transform:translateY(14px)}.brand .robu{font-size:22px}}
+
+  /* ---------- sky / hero ---------- */
+  .sky{position:relative;overflow:hidden;
+    background:
+      radial-gradient(560px 560px at 74% 56%, rgba(255,246,196,.95), rgba(255,226,140,.5) 46%, transparent 72%),
+      linear-gradient(#bcd9ec 0%, #e4eadb 20%, #fbe4a0 44%, #ffd271 64%, #ffb458 100%)}
+  .cloud{position:absolute;background:#fff;border-radius:999px;opacity:.85;animation:drift 90s linear infinite}
+  .cloud::before,.cloud::after{content:"";position:absolute;background:#fff;border-radius:50%}
+  .cloud::before{width:42%;height:170%;left:16%;top:-70%}.cloud::after{width:30%;height:130%;right:18%;top:-45%}
+  .c1{left:-6%;top:150px;width:260px;height:50px}
+  .c2{left:46%;top:104px;width:190px;height:34px;opacity:.55;animation-duration:120s;animation-delay:-40s}
+  .c3{left:84%;top:330px;width:240px;height:44px;opacity:.7;animation-duration:105s;animation-delay:-70s}
+  @keyframes drift{from{transform:translateX(0)}to{transform:translateX(-140vw)}}
+  .cloud.c1{animation-name:drift-r}.cloud.c3{animation-name:drift-r}
+  @keyframes drift-r{from{transform:translateX(-30vw)}to{transform:translateX(130vw)}}
+
+  .hero-in{position:relative;z-index:4;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);align-items:center;gap:20px;padding-top:150px;padding-bottom:230px}
+  .back{display:inline-block;font-weight:600;font-size:14px;color:#6b5438;text-decoration:none;margin-bottom:22px}
+  .back:hover{color:var(--ink);text-decoration:underline}
+  .app-id{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+  .app-id img{width:64px;height:64px;border-radius:50%;border:3px solid #fff;box-shadow:0 10px 20px -8px rgba(90,40,0,.5)}
+  .app-id b{font:800 30px var(--serif);letter-spacing:-.01em}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.95);border-radius:999px;padding:7px 14px;
+    font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#7a4a0c}
+  .eyebrow i{width:8px;height:8px;border-radius:50%;background:#2fb457;box-shadow:0 0 0 4px rgba(47,180,87,.2);animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{50%{box-shadow:0 0 0 8px rgba(47,180,87,0)}}
+  h1{font:800 clamp(46px,6.1vw,88px)/.98 var(--serif);letter-spacing:-.02em;margin:20px 0 22px;color:#1a1208;font-variation-settings:'opsz' 144}
+  h1 em{font-style:normal;color:var(--coral);background:linear-gradient(transparent 64%,rgba(255,194,14,.8) 64%,rgba(255,194,14,.8) 90%,transparent 90%);padding:0 4px;margin:0 -4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+  .lead{font-size:clamp(17px,1.5vw,21px);line-height:1.55;color:#4a3a26;max-width:520px;margin:0 0 30px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:16px;padding:15px 24px;border-radius:999px;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.dark{background:#1a1208;color:#fff;box-shadow:0 14px 30px -14px rgba(26,18,8,.75)}
+  .btn.light{background:rgba(255,255,255,.88);color:#1a1208;border:1.5px solid rgba(26,18,8,.2)}
+  .trust{margin-top:26px;display:flex;gap:26px;flex-wrap:wrap;font-size:14px;color:#6b5438}
+  .trust b{display:block;color:#1a1208;font-size:18px;line-height:1.3}
+
+  .hero-phone{position:relative;justify-self:end;width:min(440px,100%);height:700px}
+  .sun{position:absolute;left:50%;top:48%;width:420px;height:420px;margin:-210px 0 0 -210px;border-radius:50%;background:radial-gradient(circle,rgba(255,250,214,.95),rgba(255,222,120,.0) 68%)}
+  .phone{position:absolute;z-index:3;left:50%;top:6px;width:322px;margin-left:-161px;background:#15110d;border-radius:46px;padding:11px;
+    box-shadow:0 60px 80px -30px rgba(90,40,0,.55), inset 0 0 0 2px #4a4036;animation:float 7s ease-in-out infinite}
+  .phone img{display:block;width:100%;height:auto;border-radius:36px}
+  @keyframes float{0%,100%{transform:rotate(5deg) translateY(0)}50%{transform:rotate(4deg) translateY(-12px)}}
+  .chip{position:absolute;z-index:6;background:#fff;border:2px solid #1a1208;border-radius:16px;padding:10px 15px;font-weight:700;font-size:15.5px;white-space:nowrap;
+    box-shadow:0 18px 30px -14px rgba(90,40,0,.5);animation:bob 5s ease-in-out infinite}
+  .chip.y{background:#fff3c4}.chip.g{background:#e6f7e8}
+  .ch1{left:-6px;top:170px}.ch2{right:-14px;top:300px;animation-delay:-1.6s}.ch3{left:6px;top:500px;animation-delay:-3.1s}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+  .route{position:absolute;z-index:1;right:2%;top:96px;width:220px;opacity:.95;pointer-events:none}
+  .route path:first-child{animation:dash 14s linear infinite}
+  @keyframes dash{to{stroke-dashoffset:-260}}
+
+  svg.skyline{position:absolute;left:0;bottom:60px;width:100%;height:330px;z-index:2}
+  .road{position:absolute;left:0;right:0;bottom:0;height:78px;z-index:7;background:#2c2622}
+  .road::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px;background:repeating-conic-gradient(#1a1208 0 25%,#ffc20e 0 50%) 0 0/24px 24px}
+  .road::after{content:"";position:absolute;left:0;right:0;top:44px;height:5px;background:repeating-linear-gradient(90deg,#ffe9a5 0 46px,transparent 46px 92px);opacity:.8;animation:lane 1.6s linear infinite}
+  @keyframes lane{to{background-position:-92px 0}}
+  .taxi{position:absolute;left:0;bottom:32px;width:330px;z-index:8;animation:drive 26s linear infinite;will-change:transform}
+  @keyframes drive{from{transform:translateX(-360px)}to{transform:translateX(calc(100vw + 40px))}}
+  .taxi .body{animation:jolt .45s ease-in-out infinite alternate}
+  @keyframes jolt{to{transform:translateY(-1.8px)}}
+  .taxi .wheel{transform-box:fill-box;transform-origin:center;animation:spin .55s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  /* ---------- sections ---------- */
+  .sec{padding:110px 0 40px}
+  .kicker{font:500 13px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#b8681b;margin-bottom:12px}
+  h2{font:800 clamp(36px,4.4vw,58px)/1.04 var(--serif);letter-spacing:-.02em;margin:0 0 16px;font-variation-settings:'opsz' 144}
+  .sub{font-size:clamp(17px,1.5vw,20px);line-height:1.55;color:var(--ink-soft);max-width:600px;margin:0}
+  .steps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:70px}
+  .steps svg.path{position:absolute;left:0;right:0;top:46px;width:100%;height:60px;z-index:0}
+  .step{position:relative;z-index:1;display:flex;flex-direction:column}
+  .num{width:92px;height:92px;border-radius:50%;background:var(--sun);border:3px solid #1a1208;display:grid;place-items:center;font:900 44px var(--serif);box-shadow:5px 5px 0 #1a1208}
+  .step h3{font:800 28px var(--serif);margin:26px 0 8px}
+  .step p{margin:0 0 26px;font-size:17px;line-height:1.5;color:var(--ink-soft);min-height:78px}
+  .mini{margin-top:auto;width:210px;background:#15110d;border-radius:30px;padding:8px;box-shadow:0 30px 40px -24px rgba(90,40,0,.6)}
+  .mini img{display:block;width:100%;border-radius:23px;height:360px;object-fit:cover;object-position:top}
+
+  .videoband{position:relative;margin-top:90px;padding:100px 0 110px;background:var(--deep);color:#fff}
+  .videoband::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;background:repeating-conic-gradient(#1a1208 0 25%,#ffc20e 0 50%) 0 0/28px 28px}
+  .vgrid{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:60px;align-items:center}
+  .videoband h2{color:#fff}
+  .videoband .sub{color:#e9d3ae}
+  .videoband .kicker{color:#ffc20e}
+  .vwrap{position:relative}
+  .lamp{position:absolute;left:50%;top:-30px;transform:translateX(-50%);background:#ffc20e;color:#1a1208;font:900 18px var(--serif);letter-spacing:.22em;padding:8px 26px 6px;border-radius:12px 12px 0 0;border:3px solid #1a1208;border-bottom:0;z-index:2;animation:glow 3.2s ease-in-out infinite}
+  @keyframes glow{50%{box-shadow:0 0 28px rgba(255,194,14,.7)}}
+  .vframe{border-radius:24px;overflow:hidden;border:4px solid #ffc20e;box-shadow:0 40px 60px -30px #000;background:#000}
+  .vframe video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+
+  .report{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;padding:110px 0 30px}
+  .chat{background:#fff7e0;border-radius:28px;padding:30px;border:3px solid #1a1208;box-shadow:10px 10px 0 #1a1208}
+  .bubble{background:#e8664f;color:#fff;font:400 14.5px/1.5 var(--mono);padding:16px 18px;border-radius:18px 18px 4px 18px;margin-left:auto;max-width:360px;white-space:pre;overflow-x:auto}
+  .bubble.in{background:#fff;color:#1a1208;border:2px solid #e9dcbc;border-radius:18px 18px 18px 4px;margin:0 0 14px;white-space:normal;font:500 15px var(--sans);display:inline-block;max-width:none}
+  .tick{font-size:12px;color:#8a7350;text-align:right;margin-top:6px}
+  .tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+  .tag{background:#fff;border:2px solid #1a1208;border-radius:999px;padding:9px 16px;font-weight:700;font-size:15px}
+
+  .gal{padding:90px 0 60px;overflow:hidden}
+  .gal-row{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding-inline:max(28px,calc(50% - 560px));padding:14px max(28px,calc(50% - 560px)) 30px;scrollbar-width:thin;scrollbar-color:rgba(26,18,8,.4) transparent;-webkit-overflow-scrolling:touch}
+  .gal figure{margin:0;flex:0 0 236px;scroll-snap-align:start}
+  .gal img{display:block;width:100%;height:auto;border-radius:22px;border:3px solid #1a1208;box-shadow:6px 6px 0 #1a1208}
+  .gal figure:nth-child(odd) img{transform:rotate(-1.5deg)}.gal figure:nth-child(even) img{transform:rotate(1.2deg) translateY(8px)}
+  .gal figcaption{margin-top:18px;font-size:14px;line-height:1.45;color:var(--ink-soft)}
+
+  footer{margin-top:30px;background:#1a1208;color:#e9d3ae;padding:0 0 44px}
+  footer::before{content:"";display:block;height:14px;background:repeating-conic-gradient(#ffc20e 0 25%,#1a1208 0 50%) 0 0/28px 28px}
+  .frow{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-top:34px;font-size:14.5px}
+  .soc{display:flex;gap:10px}
+  .soc a,.soc span{width:44px;height:44px;border-radius:50%;border:1px solid #5b4630;display:grid;place-items:center;color:#e9d3ae;transition:border-color .15s,color .15s}
+  .soc a:hover{border-color:#e9d3ae;color:#fff}
+  .soc span{opacity:.5;cursor:default}
+
+  /* reveal on scroll (only when JS is on) */
+  .js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+  .js .rv.in{opacity:1;transform:none}
+  .js .rv.d1{transition-delay:.12s}.js .rv.d2{transition-delay:.24s}
+  .js .steps svg.path path{stroke-dasharray:1200;stroke-dashoffset:1200;transition:stroke-dashoffset 2.2s ease .3s}
+  .js .steps.in svg.path path{stroke-dashoffset:0}
+
+  /* ---------- tablet ---------- */
+  @media (max-width:1000px){
+    .hero-in{grid-template-columns:1fr;padding-top:130px;padding-bottom:150px;gap:30px}
+    .hero-phone{justify-self:center;height:660px}
+    .route{display:none}
+    .videoband .vgrid,.report{grid-template-columns:1fr;gap:44px}
+    .steps{grid-template-columns:1fr;gap:56px;margin-top:50px}
+    .steps svg.path{display:none}
+    .step p{min-height:0}
+    .mini{width:230px}
+    svg.skyline{height:250px}
+    .taxi{width:250px}
+  }
+  /* ---------- phone ---------- */
+  @media (max-width:600px){
+    .wrap{padding:0 20px}
+    .hero-in{padding-top:110px;padding-bottom:130px}
+    .hero-phone{height:640px;width:100%}
+    .phone{width:300px;margin-left:-150px}
+    .ch1{left:0}.ch2{right:0}.ch3{left:0}
+    .sun{width:340px;height:340px;margin:-170px 0 0 -170px}
+    svg.skyline{height:200px;bottom:60px}
+    .taxi{width:200px;bottom:30px}
+    .road{height:70px}
+    .sec{padding-top:80px}
+    .gal figure{flex-basis:200px}
+    .vgrid{gap:36px}
+    .videoband{padding:80px 0 90px}
+    .chat{padding:20px;box-shadow:7px 7px 0 #1a1208}
+    .bubble{font-size:12.5px}
+    .btn{width:100%;justify-content:center}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+    .taxi{transform:translateX(40px)}
+    .phone{transform:rotate(5deg)}
+    .js .rv{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="top"><nav class="navbar" aria-label="Robu Studio">
+  <a class="brand" href="./"><span class="robu">ROBU</span><span class="studio" data-i18n="nav.studio">{{nav.studio}}</span></a>
+  <div class="hdr-right">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang-btn="en" aria-current="true">EN</button>
+      <button type="button" data-lang-btn="es" aria-current="false">ES</button>
+      <button type="button" data-lang-btn="tr" aria-current="false">TR</button>
+    </div>
+    <a class="ig-link" href="https://www.instagram.com/studio.robu/" target="_blank" rel="noopener">@studio.robu</a>
+  </div>
+</nav></div>
+
+<main>
+<section class="sky">
+  <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+
+  <svg class="skyline" viewBox="0 0 1440 330" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <path d="M0 330V220l40-20 50 18 60-34 70 30 60-14 70 40 90-30 60 20 80-26 70 36 90-24 60 28 70-30 80 24 60-18 90 32 70-20 60 26 70-12V330z" fill="#f3b774" opacity=".55"/>
+    <rect x="0" y="262" width="1440" height="68" fill="#f09a45" opacity=".55"/>
+    <g stroke="#fff0b8" stroke-width="3" stroke-linecap="round" opacity=".8"><path d="M980 276h70M1010 290h46M960 304h96M1000 318h50"/></g>
+    <g fill="#d9843f" transform="translate(767 100) scale(.62)">
+      <path d="M820 262V196a68 68 0 0 1 136 0v66z"/>
+      <path d="M760 262v-46a40 40 0 0 1 60 -30v76z"/><path d="M956 262v-76a40 40 0 0 1 60 30v46z"/>
+      <rect x="740" y="262" width="296" height="14"/>
+      <rect x="716" y="120" width="12" height="154"/><path d="M714 120l8-34 8 34z"/><rect x="711" y="168" width="22" height="7"/>
+      <rect x="1046" y="120" width="12" height="154"/><path d="M1044 120l8-34 8 34z"/><rect x="1041" y="168" width="22" height="7"/>
+      <rect x="682" y="160" width="9" height="114"/><path d="M681 160l5-24 5 24z"/>
+      <rect x="1083" y="160" width="9" height="114"/><path d="M1082 160l5-24 5 24z"/>
+      <circle cx="888" cy="122" r="7"/><rect x="886" y="106" width="4" height="16"/>
+    </g>
+    <g fill="#c9742f" transform="translate(343 0)">
+      <rect x="402" y="120" width="44" height="154"/>
+      <rect x="394" y="108" width="60" height="16" rx="3"/>
+      <path d="M396 108h56l-6 -34h-44z" fill="#d68438"/>
+      <path d="M400 74h48l-24 -56z"/>
+      <rect x="423" y="6" width="3" height="16"/>
+      <g fill="#ffe08a"><rect x="418" y="150" width="12" height="22" rx="6"/><rect x="418" y="196" width="12" height="22" rx="6"/></g>
+    </g>
+    <g fill="#5d6b2b"><ellipse cx="70" cy="248" rx="86" ry="74"/><ellipse cx="170" cy="272" rx="60" ry="52"/><ellipse cx="1390" cy="250" rx="76" ry="70"/></g>
+    <g fill="#7f9137" opacity=".9"><ellipse cx="46" cy="228" rx="52" ry="44"/><ellipse cx="1404" cy="232" rx="44" ry="40"/></g>
+  </svg>
+
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <a class="back" href="./" data-i18n="nav.back">{{nav.back}}</a>
+      <div class="app-id"><img src="assets/t-hesap/logo.png" alt="" width="64" height="64"><b>Taksi Hesap</b></div>
+      <span class="eyebrow"><i></i><span data-i18n="hero.eyebrow">{{hero.eyebrow}}</span></span>
+      <h1 data-i18n="hero.h1">{{hero.h1}}</h1>
+      <p class="lead" data-i18n="hero.lead">{{hero.lead}}</p>
+      <div class="btns">
+        <a class="btn dark" href="https://play.google.com/store/apps/details?id=com.thesap.app" target="_blank" rel="noopener"><svg width="18" height="20" viewBox="0 0 16 18" fill="#fff" aria-hidden="true"><path d="M1 1.4v15.2c0 .4.4.6.7.4l12.6-7.6c.3-.2.3-.7 0-.9L1.7 1c-.3-.2-.7 0-.7.4z"/></svg><span data-i18n="cta.play">{{cta.play}}</span></a>
+        <a class="btn light" href="https://testflight.apple.com/join/272Tz85F" target="_blank" rel="noopener"><svg width="16" height="18" viewBox="0 0 16 18" fill="#1a1208" aria-hidden="true"><path d="M12.9 9.5c0-2 1.6-3 1.7-3.1-1-1.4-2.5-1.6-3-1.6-1.3-.1-2.5.7-3.2.7-.6 0-1.7-.7-2.8-.7-1.4 0-2.8.8-3.5 2.1-1.5 2.6-.4 6.4 1.1 8.5.7 1 1.6 2.2 2.8 2.1 1.1 0 1.5-.7 2.9-.7s1.7.7 2.9.7c1.2 0 2-1 2.7-2 .9-1.2 1.2-2.4 1.2-2.5-.1 0-2.3-.9-2.3-3.4z"/></svg><span data-i18n="cta.ios">{{cta.ios}}</span></a>
+      </div>
+      <div class="trust">
+        <div><b data-i18n="trust.1.b">{{trust.1.b}}</b><span data-i18n="trust.1.s">{{trust.1.s}}</span></div>
+        <div><b data-i18n="trust.2.b">{{trust.2.b}}</b><span data-i18n="trust.2.s">{{trust.2.s}}</span></div>
+        <div><b data-i18n="trust.3.b">{{trust.3.b}}</b><span data-i18n="trust.3.s">{{trust.3.s}}</span></div>
+      </div>
+    </div>
+
+    <div class="hero-phone">
+      <svg class="route" viewBox="0 0 240 360" fill="none" aria-hidden="true"><path d="M205 20 C 120 40, 40 90, 80 150 S 190 220, 120 330" stroke="#ffb300" stroke-width="5" stroke-dasharray="12 14" stroke-linecap="round"/><path d="M205 20 l-22 -4 m22 4 l-6 20" stroke="#ffb300" stroke-width="5" stroke-linecap="round"/></svg>
+      <div class="sun"></div>
+      <div class="chip y ch1" data-i18n="chip.1">{{chip.1}}</div>
+      <div class="chip g ch2" data-i18n="chip.2">{{chip.2}}</div>
+      <div class="chip ch3" data-i18n="chip.3">{{chip.3}}</div>
+      <div class="phone"><img src="assets/t-hesap/screen-seyir.jpg" alt="Taksi Hesap" width="480" height="1064"></div>
+    </div>
+  </div>
+
+  <div class="road"></div>
+  <svg class="taxi" viewBox="0 0 330 130" fill="none" aria-hidden="true">
+    <ellipse cx="165" cy="124" rx="140" ry="7" fill="#000" opacity=".28"/>
+    <g class="body">
+      <path d="M22 92c0-10 6-16 16-18l34-8 30-30c6-6 14-9 22-9h66c10 0 18 4 24 12l22 26 30 8c12 3 20 10 20 22v10c0 6-4 9-9 9H31c-6 0-9-4-9-9z" fill="#ffc20e" stroke="#1a1208" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M108 70l22-24c3-3 6-4 10-4h42c4 0 7 2 9 5l16 23z" fill="#d6ebf7" stroke="#1a1208" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M176 44v26" stroke="#1a1208" stroke-width="4"/>
+      <rect x="128" y="22" width="52" height="16" rx="3" fill="#fff" stroke="#1a1208" stroke-width="3"/><text x="154" y="34" font-family="Fraunces,serif" font-weight="900" font-size="11" text-anchor="middle" fill="#1a1208" letter-spacing="1.2">TAKSİ</text>
+      <rect x="38" y="95" width="254" height="9" fill="#1a1208"/><g fill="#ffe27a"><rect x="38" y="95" width="9" height="4.5"/><rect x="56" y="95" width="9" height="4.5"/><rect x="74" y="95" width="9" height="4.5"/><rect x="92" y="95" width="9" height="4.5"/><rect x="110" y="95" width="9" height="4.5"/><rect x="128" y="95" width="9" height="4.5"/><rect x="146" y="95" width="9" height="4.5"/><rect x="164" y="95" width="9" height="4.5"/><rect x="182" y="95" width="9" height="4.5"/><rect x="200" y="95" width="9" height="4.5"/><rect x="218" y="95" width="9" height="4.5"/><rect x="236" y="95" width="9" height="4.5"/><rect x="254" y="95" width="9" height="4.5"/><rect x="272" y="95" width="9" height="4.5"/></g>
+      <path d="M322 86l-12 2" stroke="#fff6c8" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g class="wheel"><circle cx="94" cy="110" r="19" fill="#1a1208"/><circle cx="94" cy="110" r="9" fill="#9a8f84"/><rect x="92" y="96" width="4" height="10" fill="#1a1208" opacity=".55"/></g>
+    <g class="wheel"><circle cx="248" cy="110" r="19" fill="#1a1208"/><circle cx="248" cy="110" r="9" fill="#9a8f84"/><rect x="246" y="96" width="4" height="10" fill="#1a1208" opacity=".55"/></g>
+  </svg>
+</section>
+
+<!-- ---------- 3 steps ---------- -->
+<section class="sec">
+  <div class="wrap">
+    <div class="rv">
+      <div class="kicker" data-i18n="steps.kick">{{steps.kick}}</div>
+      <h2 data-i18n="steps.h2">{{steps.h2}}</h2>
+      <p class="sub" data-i18n="steps.sub">{{steps.sub}}</p>
+    </div>
+    <div class="steps rv" id="steps">
+      <svg class="path" viewBox="0 0 1100 60" preserveAspectRatio="none" fill="none" aria-hidden="true"><path d="M90 30 C 250 -20, 330 70, 520 30 S 820 -10, 1000 30" stroke="#f0a400" stroke-width="4" stroke-dasharray="10 12" stroke-linecap="round"/></svg>
+      <div class="step"><div class="num">1</div><h3 data-i18n="s1.h">{{s1.h}}</h3><p data-i18n="s1.p">{{s1.p}}</p><div class="mini"><img src="assets/t-hesap/screen-seyir.jpg" alt="" loading="lazy" width="480" height="1064"></div></div>
+      <div class="step"><div class="num">2</div><h3 data-i18n="s2.h">{{s2.h}}</h3><p data-i18n="s2.p">{{s2.p}}</p><div class="mini"><img src="assets/t-hesap/screen-alacak.jpg" alt="" loading="lazy" width="480" height="1064"></div></div>
+      <div class="step"><div class="num">3</div><h3 data-i18n="s3.h">{{s3.h}}</h3><p data-i18n="s3.p">{{s3.p}}</p><div class="mini"><img src="assets/t-hesap/screen-arsiv.jpg" alt="" loading="lazy" width="480" height="1064"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- video ---------- -->
+<section class="videoband">
+  <div class="wrap vgrid">
+    <div class="rv">
+      <div class="kicker" data-i18n="v.kick">{{v.kick}}</div>
+      <h2 data-i18n="v.h2">{{v.h2}}</h2>
+      <p class="sub" data-i18n="v.sub">{{v.sub}}</p>
+    </div>
+    <div class="vwrap rv d1">
+      <div class="lamp" aria-hidden="true">TAKSİ</div>
+      <div class="vframe"><video controls preload="metadata" playsinline poster="assets/t-hesap/tanitim-poster.jpg" title="Taksi Hesap"><source src="assets/t-hesap/tanitim.mp4" type="video/mp4"></video></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- report ---------- -->
+<section>
+  <div class="wrap report">
+    <div class="chat rv">
+      <div class="bubble in" data-i18n="r.q">{{r.q}}</div>
+      <div class="bubble">06/08/2026 Perşembe 00:41
+ROBU Studio   28ROBU282
+Başl.Km   : 120.850
+Bitiş.Km  : 121.130
+Gün.Km    : 280
+
+Toplanan  : 10.015 ₺
+Yevmiye   : 2.504 ₺
+Kasa      : -244 ₺</div>
+      <div class="tick">22:53 ✓✓</div>
+    </div>
+    <div class="rv d1">
+      <div class="kicker" data-i18n="r.kick">{{r.kick}}</div>
+      <h2 data-i18n="r.h2">{{r.h2}}</h2>
+      <p class="sub" data-i18n="r.sub">{{r.sub}}</p>
+      <div class="tags"><span class="tag" data-i18n="r.t1">{{r.t1}}</span><span class="tag" data-i18n="r.t2">{{r.t2}}</span><span class="tag" data-i18n="r.t3">{{r.t3}}</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- gallery ---------- -->
+<section class="gal">
+  <div class="wrap rv" style="margin-bottom:24px"><div class="kicker" data-i18n="g.kick">{{g.kick}}</div><h2 style="font-size:clamp(32px,3.6vw,44px)" data-i18n="g.h2">{{g.h2}}</h2></div>
+  <div class="gal-row">
+{{GALLERY}}
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap frow">
+    <span data-i18n="footer.copyright">{{footer.copyright}}</span>
+    <div class="soc">
+{{SOCIAL}}
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.className += ' js';
+(function(){
+  var L = {{DICT}};
+  function apply(lang){
+    document.documentElement.setAttribute('lang', lang);
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var k = el.getAttribute('data-i18n');
+      if (L[k] && L[k][lang]) el.innerHTML = L[k][lang];
+    });
+    document.querySelectorAll('[data-lang-btn]').forEach(function(b){
+      b.setAttribute('aria-current', b.getAttribute('data-lang-btn') === lang ? 'true' : 'false');
+    });
+    try { localStorage.setItem('robu-lang', lang); } catch(e){}
+  }
+  document.querySelectorAll('[data-lang-btn]').forEach(function(b){
+    b.addEventListener('click', function(){ apply(b.getAttribute('data-lang-btn')); });
+  });
+  var saved = null;
+  try { saved = localStorage.getItem('robu-lang'); } catch(e){}
+  var guess = (navigator.language || 'en').slice(0, 2).toLowerCase();
+  if (guess !== 'tr' && guess !== 'es') guess = 'en';
+  apply(saved === 'tr' || saved === 'es' || saved === 'en' ? saved : guess);
+
+  /* reveal on scroll */
+  var els = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.18 });
+    els.forEach(function(el){ io.observe(el); });
+  } else {
+    els.forEach(function(el){ el.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>

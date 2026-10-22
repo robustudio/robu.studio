@@ -1,0 +1,247 @@
+{
+  "meta.desc": {
+    "en": "Taksi Hesap: trips, fuel, credit sales and the daily report for taxi drivers, all on one screen.",
+    "es": "Taksi Hesap: viajes, combustible, fiados y el reporte diario para taxistas, todo en una sola pantalla.",
+    "tr": "Taksi Hesap: taksiciler için seyir, yakıt, veresiye ve günlük rapor, hepsi tek ekranda."
+  },
+  "nav.studio": {
+    "en": "STUDIO",
+    "es": "ESTUDIO",
+    "tr": "STÜDYO"
+  },
+  "nav.back": {
+    "en": "&larr; All apps",
+    "es": "&larr; Todas las apps",
+    "tr": "&larr; Tüm uygulamalar"
+  },
+  "hero.eyebrow": {
+    "en": "Live on Google Play",
+    "es": "Disponible en Google Play",
+    "tr": "Google Play'de yayında"
+  },
+  "hero.h1": {
+    "en": "The taxi driver&rsquo;s <em>pocket ledger.</em>",
+    "es": "La libreta de cuentas <em>del taxista.</em>",
+    "tr": "Taksicinin cebindeki <em>hesap defteri.</em>"
+  },
+  "hero.lead": {
+    "en": "Trips, fuel, credit sales and the daily report &mdash; the whole shift on one screen. You watch the road; the books keep themselves.",
+    "es": "Viajes, combustible, fiados y el reporte diario &mdash; todo el turno en una sola pantalla. T&uacute; mira la carretera; las cuentas se llevan solas.",
+    "tr": "Seyir, yakıt, veresiye ve günlük rapor — vardiyanın bütün hesabı tek ekranda. Sen yola odaklan, hesap kendini tutsun."
+  },
+  "cta.play": {
+    "en": "Get it on Google Play",
+    "es": "Desc&aacute;rgala en Google Play",
+    "tr": "Google Play'den indir"
+  },
+  "cta.ios": {
+    "en": "iOS beta (TestFlight)",
+    "es": "Beta de iOS (TestFlight)",
+    "tr": "iOS beta (TestFlight)"
+  },
+  "trust.1.b": {
+    "en": "No ads",
+    "es": "Sin anuncios",
+    "tr": "Reklam yok"
+  },
+  "trust.1.s": {
+    "en": "Just your shift",
+    "es": "Solo tu turno",
+    "tr": "Sadece vardiyan"
+  },
+  "trust.2.b": {
+    "en": "Backed up",
+    "es": "Con respaldo",
+    "tr": "Yedekli"
+  },
+  "trust.2.s": {
+    "en": "Switch phones, keep records",
+    "es": "Cambia de m&oacute;vil, conserva todo",
+    "tr": "Telefon değişse de kayıtlar kalır"
+  },
+  "trust.3.b": {
+    "en": "Android + iOS",
+    "es": "Android + iOS",
+    "tr": "Android + iOS"
+  },
+  "trust.3.s": {
+    "en": "iOS is in beta",
+    "es": "iOS est&aacute; en beta",
+    "tr": "iOS beta'da"
+  },
+  "chip.1": {
+    "en": "&#8987; Pending 150 &#8378;",
+    "es": "&#8987; Pendiente 150 &#8378;",
+    "tr": "&#8987; Bekliyor 150 &#8378;"
+  },
+  "chip.2": {
+    "en": "&#9989; Collected",
+    "es": "&#9989; Cobrado",
+    "tr": "&#9989; Tahsil edildi"
+  },
+  "chip.3": {
+    "en": "&#128269; Find a customer",
+    "es": "&#128269; Buscar cliente",
+    "tr": "&#128269; Müşteri ara"
+  },
+  "steps.kick": {
+    "en": "One shift, three steps",
+    "es": "Un turno, tres pasos",
+    "tr": "Bir vardiya, üç adım"
+  },
+  "steps.h2": {
+    "en": "Start in the morning, send at night.",
+    "es": "Empieza por la ma&ntilde;ana, env&iacute;a por la noche.",
+    "tr": "Sabah başla, akşam gönder."
+  },
+  "steps.sub": {
+    "en": "Enter the kilometres, add the trips, and at the end of the day send the report to the taxi owner in one tap. The ledger does the rest.",
+    "es": "Anota los kil&oacute;metros, a&ntilde;ade los viajes y al final del d&iacute;a env&iacute;a el reporte al due&ntilde;o del taxi con un toque. El resto lo hace la libreta.",
+    "tr": "Kilometreyi yaz, seferleri ekle, günün sonunda raporu tek dokunuşla taksi sahibine yolla. Hesap defteri gerisini halleder."
+  },
+  "s1.h": {
+    "en": "Enter the kilometres",
+    "es": "Anota los kil&oacute;metros",
+    "tr": "Kilometreyi yaz"
+  },
+  "s1.p": {
+    "en": "Start and end km, daily rate and expenses &mdash; all on one screen, with big touch targets.",
+    "es": "Km de inicio y fin, yevmiye y gastos &mdash; todo en una pantalla, con botones grandes.",
+    "tr": "Başlangıç ve bitiş km, yevmiye, giderler. Hepsi tek ekranda, büyük tuşlarla."
+  },
+  "s2.h": {
+    "en": "Add your trips",
+    "es": "A&ntilde;ade tus viajes",
+    "tr": "Seferleri ekle"
+  },
+  "s2.p": {
+    "en": "Type the fare, pick cash or card. Credit sales live in their own tab &mdash; who owes what, at a glance.",
+    "es": "Escribe la tarifa, elige efectivo o tarjeta. Los fiados tienen su propia pesta&ntilde;a &mdash; qui&eacute;n debe cu&aacute;nto, de un vistazo.",
+    "tr": "Tutarı gir, nakit ya da kart seç. Veresiyeler ayrı sekmede, kimin ne kadar borcu var tek bakışta."
+  },
+  "s3.h": {
+    "en": "Close the day",
+    "es": "Cierra el d&iacute;a",
+    "tr": "Günü arşivle"
+  },
+  "s3.p": {
+    "en": "Cash box, daily rate, fuel &mdash; the day is closed and filed. Open any past date whenever you want.",
+    "es": "Caja, yevmiye, combustible &mdash; el d&iacute;a se cierra y se archiva. Abre cualquier fecha pasada cuando quieras.",
+    "tr": "Kasa, yevmiye, yakıt: gün kapanır, arşive girer. Geçmiş tarihleri istediğin an aç."
+  },
+  "v.kick": {
+    "en": "In 38 seconds",
+    "es": "En 38 segundos",
+    "tr": "38 saniyede"
+  },
+  "v.h2": {
+    "en": "How does Taksi Hesap work?",
+    "es": "&iquest;C&oacute;mo funciona Taksi Hesap?",
+    "tr": "Taksi Hesap nasıl çalışır?"
+  },
+  "v.sub": {
+    "en": "A short intro video: credit sales, analysis, the daily report and maintenance reminders.",
+    "es": "Un v&iacute;deo corto de presentaci&oacute;n: fiados, an&aacute;lisis, reporte diario y recordatorios de mantenimiento.",
+    "tr": "Kısa tanıtım videosunu izle: veresiye, analiz, günlük rapor ve bakım hatırlatmaları."
+  },
+  "r.q": {
+    "en": "Today&rsquo;s report?",
+    "es": "&iquest;El reporte de hoy?",
+    "tr": "Bugünkü rapor?"
+  },
+  "r.kick": {
+    "en": "To the taxi owner",
+    "es": "Al due&ntilde;o del taxi",
+    "tr": "Taksi sahibine"
+  },
+  "r.h2": {
+    "en": "The report in one message.",
+    "es": "El reporte en un solo mensaje.",
+    "tr": "Rapor tek mesajda."
+  },
+  "r.sub": {
+    "en": "The daily report, the trip log and the analysis summary arrive as ready-made text over WhatsApp. No typing, no wrong sums.",
+    "es": "El reporte diario, el registro de viajes y el resumen de an&aacute;lisis llegan como texto listo por WhatsApp. Sin escribir, sin cuentas mal hechas.",
+    "tr": "Günlük rapor, seyir kaydı ve analiz özeti hazır metin olarak WhatsApp'a düşer. Elle yazmak yok, yanlış hesap yok."
+  },
+  "r.t1": {
+    "en": "&#128203; Daily report",
+    "es": "&#128203; Reporte diario",
+    "tr": "&#128203; Günlük rapor"
+  },
+  "r.t2": {
+    "en": "&#128338; Trip log",
+    "es": "&#128338; Registro de viajes",
+    "tr": "&#128338; Seyir kaydı"
+  },
+  "r.t3": {
+    "en": "&#128202; Analysis summary",
+    "es": "&#128202; Resumen de an&aacute;lisis",
+    "tr": "&#128202; Analiz özeti"
+  },
+  "g.kick": {
+    "en": "Screens",
+    "es": "Pantallas",
+    "tr": "Ekranlar"
+  },
+  "g.h2": {
+    "en": "All in your pocket.",
+    "es": "Todo en tu bolsillo.",
+    "tr": "Hepsi cebinde."
+  },
+  "footer.copyright": {
+    "en": "&copy; Robu Studio &mdash; an independent app studio.",
+    "es": "&copy; Robu Studio &mdash; un estudio de apps independiente.",
+    "tr": "&copy; Robu Studio &mdash; bağımsız bir uygulama stüdyosu."
+  },
+  "app.thesap.gallery.1": {
+    "en": "Trip tracking &mdash; km, expenses and fares in one screen",
+    "es": "Seguimiento de viajes &mdash; km, gastos y tarifas en una pantalla",
+    "tr": "Sefer takibi — km, giderler ve ücretler tek ekranda"
+  },
+  "app.thesap.gallery.2": {
+    "en": "Receivables &mdash; see who owes you what, at a glance",
+    "es": "Cobros pendientes &mdash; mira qui&eacute;n te debe cu&aacute;nto, de un vistazo",
+    "tr": "Veresiye ve alacak — kimin ne kadar borcu var, tek bakışta"
+  },
+  "app.thesap.gallery.3": {
+    "en": "Analysis &mdash; see where the money goes",
+    "es": "An&aacute;lisis &mdash; mira a d&oacute;nde va el dinero",
+    "tr": "Analiz — paranın nereye gittiğini gör"
+  },
+  "app.thesap.gallery.4": {
+    "en": "Archive &mdash; every day, logged and easy to find",
+    "es": "Archivo &mdash; cada d&iacute;a, registrado y f&aacute;cil de encontrar",
+    "tr": "Arşiv — her gün kaydedilir, bulması kolay"
+  },
+  "app.thesap.gallery.5": {
+    "en": "Settings &mdash; your vehicles, rates and support in one place",
+    "es": "Ajustes &mdash; tus veh&iacute;culos, tarifas y soporte en un solo lugar",
+    "tr": "Ayarlar — araçların, oranların ve destek tek yerde"
+  },
+  "app.thesap.gallery.6": {
+    "en": "Share an analysis summary &mdash; over WhatsApp",
+    "es": "Comparte un resumen de an&aacute;lisis &mdash; por WhatsApp",
+    "tr": "Analiz özetini paylaş — WhatsApp üzerinden"
+  },
+  "app.thesap.gallery.7": {
+    "en": "Send your daily report to the taxi owner &mdash; one tap, over WhatsApp",
+    "es": "Env&iacute;a tu reporte diario al due&ntilde;o del taxi &mdash; con un toque, por WhatsApp",
+    "tr": "Günlük raporunu taksi sahibine gönder — tek dokunuşla, WhatsApp üzerinden"
+  },
+  "app.thesap.gallery.8": {
+    "en": "Share a trip log &mdash; over WhatsApp",
+    "es": "Comparte un registro de viaje &mdash; por WhatsApp",
+    "tr": "Sefer kaydını paylaş — WhatsApp üzerinden"
+  },
+  "app.thesap.gallery.9": {
+    "en": "Statistics &mdash; every expense, category by category",
+    "es": "Estad&iacute;sticas &mdash; cada gasto, categor&iacute;a por categor&iacute;a",
+    "tr": "İstatistik — tüm giderlerin kategori kategori"
+  },
+  "app.thesap.gallery.10": {
+    "en": "Never miss maintenance or paperwork &mdash; the app reminds you",
+    "es": "No olvides el mantenimiento ni los tr&aacute;mites &mdash; la app te avisa",
+    "tr": "Bakım ve resmi işlemleri unutma — uygulama hatırlatır"
+  }
+}
