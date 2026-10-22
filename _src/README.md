@@ -8,6 +8,7 @@ HTML in the repo root; this folder only holds what is needed to change those pag
 | `taksi-hesap/` | `../t-hesap.html` | `node _src/taksi-hesap/build.mjs` (no dependencies) |
 | `yip/` | `../yip.html` | `node _src/yip/build.mjs` (no dependencies) |
 | `tv-list/` | `../tv-list.html` | `node _src/tv-list/build.mjs` (no dependencies) |
+| `pagely/` | `../pagely.html` | `node _src/pagely/build.mjs` (no dependencies) |
 | `shared/` | — | pieces used by several pages (the Noot "ROBU" wordmark font) |
 
 - Words (EN / ES / TR): `<app>/copy.json`. Layout, CSS and motion: `<app>/template.html`.

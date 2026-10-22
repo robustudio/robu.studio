@@ -1,0 +1,202 @@
+{
+  "meta.desc": {
+    "en": "Pagely: track every book you read. What you're reading, what you've finished, what's next, with progress, notes, reading streaks and year-end stats. Coming soon to Android and iOS.",
+    "es": "Pagely: sigue cada libro que lees. Lo que lees, lo que terminaste y lo que sigue, con progreso, notas, rachas de lectura y estad&iacute;sticas del a&ntilde;o. Pr&oacute;ximamente en Android e iOS.",
+    "tr": "Pagely: okuduğun her kitabı takip et. Okuduklarını, bitirdiklerini ve sıradakileri; ilerleme, notlar, okuma serileri ve yıllık istatistiklerle. Yakında Android ve iOS'ta."
+  },
+  "nav.studio": {
+    "en": "STUDIO",
+    "es": "ESTUDIO",
+    "tr": "STÜDYO"
+  },
+  "nav.back": {
+    "en": "&larr; All apps",
+    "es": "&larr; Todas las apps",
+    "tr": "&larr; Tüm uygulamalar"
+  },
+  "hero.eyebrow": {
+    "en": "Coming soon &middot; Android &amp; iOS",
+    "es": "Pr&oacute;ximamente &middot; Android e iOS",
+    "tr": "Yakında · Android ve iOS"
+  },
+  "hero.h1": {
+    "en": "Your digital <em>library.</em>",
+    "es": "Tu biblioteca <em>digital.</em>",
+    "tr": "Dijital <em>kütüphanen.</em>"
+  },
+  "hero.lead": {
+    "en": "Track every book you read. What you're reading, what you've finished, what's next &mdash; with progress, notes and year-end stats.",
+    "es": "Sigue cada libro que lees. Lo que lees, lo que terminaste y lo que sigue &mdash; con progreso, notas y estad&iacute;sticas del a&ntilde;o.",
+    "tr": "Okuduğun her kitabı takip et. Okuduklarını, bitirdiklerini ve sıradakileri &mdash; ilerleme, notlar ve yıllık istatistiklerle."
+  },
+  "cta.follow": {
+    "en": "Follow @studio.robu",
+    "es": "Sigue a @studio.robu",
+    "tr": "@studio.robu'yu takip et"
+  },
+  "cta.in": {
+    "en": "Step inside",
+    "es": "Pasa dentro",
+    "tr": "İçeri gir"
+  },
+  "k1.kick": {
+    "en": "The stacks",
+    "es": "Las estanter&iacute;as",
+    "tr": "Raflar"
+  },
+  "k1.h2": {
+    "en": "Every book,<br>on its <em>shelf.</em>",
+    "es": "Cada libro,<br>en su <em>estante.</em>",
+    "tr": "Her kitap<br>kendi <em>rafında.</em>"
+  },
+  "k1.sub": {
+    "en": "Search for a book, scan its barcode or add it by hand. Sort it into reading, finished or want-to-read, and keep private shelves of your own.",
+    "es": "Busca un libro, escanea su c&oacute;digo de barras o a&ntilde;&aacute;delo a mano. Ord&eacute;nalo en leyendo, terminado o quiero leer, y crea tus propias estanter&iacute;as privadas.",
+    "tr": "Kitabı ara, barkodunu tara ya da elle ekle. Okuyorum, bitirdim ya da okuyacağım diye ayır; kendi özel raflarını oluştur."
+  },
+  "k1.card": {
+    "en": "MY LIBRARY",
+    "es": "MI BIBLIOTECA",
+    "tr": "KÜTÜPHANEM"
+  },
+  "k1.r1": {
+    "en": "Currently reading",
+    "es": "Leyendo ahora",
+    "tr": "Şu an okuduklarım"
+  },
+  "k1.r2": {
+    "en": "Shelves",
+    "es": "Estanter&iacute;as",
+    "tr": "Raflar"
+  },
+  "k1.r3": {
+    "en": "Yearly goal",
+    "es": "Meta anual",
+    "tr": "Yıllık hedef"
+  },
+  "k2.kick": {
+    "en": "The reading room",
+    "es": "La sala de lectura",
+    "tr": "Okuma odası"
+  },
+  "k2.h2": {
+    "en": "Pick up<br>where you <em>left off.</em>",
+    "es": "Retoma<br>donde lo <em>dejaste.</em>",
+    "tr": "Kaldığın<br>yerden <em>devam et.</em>"
+  },
+  "k2.sub": {
+    "en": "Save your page, start the timer and read. Time you spend paused doesn't count, and your notes stay attached to the book.",
+    "es": "Guarda tu p&aacute;gina, inicia el temporizador y lee. El tiempo en pausa no cuenta, y tus notas se quedan con el libro.",
+    "tr": "Sayfanı kaydet, zamanlayıcıyı başlat ve oku. Duraklattığın süre sayılmaz, notların kitabın yanında kalır."
+  },
+  "k2.s1": {
+    "en": "last session",
+    "es": "&uacute;ltima sesi&oacute;n",
+    "tr": "son oturum"
+  },
+  "k2.s2": {
+    "en": "this month",
+    "es": "este mes",
+    "tr": "bu ay"
+  },
+  "k2.s3": {
+    "en": "pages so far",
+    "es": "p&aacute;ginas hasta ahora",
+    "tr": "şu ana kadar sayfa"
+  },
+  "k3.kick": {
+    "en": "The reading card",
+    "es": "La tarjeta de lectura",
+    "tr": "Okuma kartı"
+  },
+  "k3.h2": {
+    "en": "Stamp every<br>day you <em>read.</em>",
+    "es": "Sella cada<br>d&iacute;a que <em>lees.</em>",
+    "tr": "Okuduğun her<br>güne <em>damga vur.</em>"
+  },
+  "k3.sub": {
+    "en": "Each day you read earns a stamp on your card. Build a streak, chase a yearly goal and watch your year add up.",
+    "es": "Cada d&iacute;a que lees gana un sello en tu tarjeta. Crea una racha, persigue una meta anual y mira c&oacute;mo suma tu a&ntilde;o.",
+    "tr": "Okuduğun her gün kartına bir damga kazandırır. Seri yap, yıllık hedefin peşinden git ve yılının nasıl birikti izle."
+  },
+  "k3.card": {
+    "en": "READING CARD",
+    "es": "TARJETA DE LECTURA",
+    "tr": "OKUMA KARTI"
+  },
+  "k3.s1": {
+    "en": "days read",
+    "es": "d&iacute;as de lectura",
+    "tr": "okunan gün"
+  },
+  "k3.s2": {
+    "en": "day streak",
+    "es": "d&iacute;as de racha",
+    "tr": "günlük seri"
+  },
+  "k3.s3": {
+    "en": "best streak",
+    "es": "mejor racha",
+    "tr": "en iyi seri"
+  },
+  "rc.read": {
+    "en": "READ",
+    "es": "LE&Iacute;DO",
+    "tr": "OKUNDU"
+  },
+  "k4.kick": {
+    "en": "The collection",
+    "es": "La colecci&oacute;n",
+    "tr": "Koleksiyon"
+  },
+  "k4.h2": {
+    "en": "Collect a stamp<br>for every <em>milestone.</em>",
+    "es": "Colecciona un sello<br>por cada <em>hito.</em>",
+    "tr": "Her <em>dönüm noktası</em><br>için bir damga."
+  },
+  "k4.sub": {
+    "en": "Finish a book, hold a streak, write a note. Stamps and book stamps fill your collection as you go; some are still locked.",
+    "es": "Termina un libro, mant&eacute;n una racha, escribe una nota. Los sellos y los sellos de libro llenan tu colecci&oacute;n; algunos siguen bloqueados.",
+    "tr": "Bir kitabı bitir, seri tut, not yaz. Damgalar ve kitap damgaları koleksiyonunu doldurur; bazıları hâlâ kilitli."
+  },
+  "k5.kick": {
+    "en": "The reading club",
+    "es": "El club de lectura",
+    "tr": "Okuma kulübü"
+  },
+  "k5.h2": {
+    "en": "Good books are<br>better <em>together.</em>",
+    "es": "Los buenos libros son<br>mejores <em>juntos.</em>",
+    "tr": "İyi kitaplar<br><em>birlikte</em> daha güzel."
+  },
+  "k5.sub": {
+    "en": "Follow friends and see what they finish. Join a reading club, chat about the chapter, and approve who follows you.",
+    "es": "Sigue a tus amigos y mira qu&eacute; terminan. &Uacute;nete a un club de lectura, charla sobre el cap&iacute;tulo y aprueba qui&eacute;n te sigue.",
+    "tr": "Arkadaşlarını takip et, bitirdiklerini gör. Bir okuma kulübüne katıl, bölümü sohbet et ve seni kimin takip edeceğini sen onayla."
+  },
+  "o.h2": {
+    "en": "The library<br><em>opens soon.</em>",
+    "es": "La biblioteca<br><em>abre pronto.</em>",
+    "tr": "Kütüphane<br><em>yakında açılıyor.</em>"
+  },
+  "o.sub": {
+    "en": "Pagely is coming soon to Android and iOS. Follow @studio.robu to know the day it lands.",
+    "es": "Pagely llega pronto a Android e iOS. Sigue a @studio.robu para saber el d&iacute;a que sale.",
+    "tr": "Pagely yakında Android ve iOS'ta. Çıktığı günü öğrenmek için @studio.robu'yu takip et."
+  },
+  "footer.copyright": {
+    "en": "&copy; Robu Studio &mdash; an independent app studio.",
+    "es": "&copy; Robu Studio &mdash; un estudio de apps independiente.",
+    "tr": "&copy; Robu Studio &mdash; bağımsız bir uygulama stüdyosu."
+  },
+  "footer.privacy": {
+    "en": "Privacy policy",
+    "es": "Pol&iacute;tica de privacidad",
+    "tr": "Gizlilik politikası"
+  },
+  "footer.terms": {
+    "en": "Terms of use",
+    "es": "T&eacute;rminos de uso",
+    "tr": "Kullanım koşulları"
+  }
+}
