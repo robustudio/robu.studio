@@ -22,7 +22,7 @@ const IC = {
 };
 const social = [
   `      <a href="https://www.instagram.com/studio.robu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @studio.robu" title="@studio.robu">${IC.ig}</a>`,
-  `      <span role="img" aria-label="YouTube" title="YouTube">${IC.yt}</span>`,
+  `      <a href="https://www.youtube.com/@StudioRobu" target="_blank" rel="noopener noreferrer" aria-label="YouTube @StudioRobu" title="YouTube">${IC.yt}</a>`,
   `      <span role="img" aria-label="X" title="X">${IC.x}</span>`,
   `      <span role="img" aria-label="LinkedIn" title="LinkedIn">${IC.li}</span>`,
   `      <a href="mailto:hello@robu.studio" aria-label="hello@robu.studio" title="hello@robu.studio">${IC.mail}</a>`,
