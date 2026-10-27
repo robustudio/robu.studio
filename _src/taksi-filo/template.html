@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Taksi Filo — Robu Studio</title>
+<title>Taksi Hesap Filo — Robu Studio</title>
 <meta name="description" content="{{meta.desc}}">
 <meta name="theme-color" content="#ffe9a8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -137,6 +137,13 @@
   .row5 figure{margin:0}.row5 img{display:block;width:100%;height:auto;border-radius:22px;border:1px solid var(--line);box-shadow:0 22px 30px -22px rgba(60,40,10,.6)}
   .row5 figcaption{font:500 12.5px var(--mono);color:var(--soft);margin-top:10px;letter-spacing:.04em}
 
+  .plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:44px}
+  .pl{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px 24px 28px;box-shadow:0 26px 30px -24px rgba(60,40,10,.6)}
+  .pl .vis{height:84px;display:flex;align-items:center}
+  .pl .vis.big{font:800 64px var(--serif);color:var(--blue);letter-spacing:-.03em}.pl .vis.big small{font:600 22px var(--mono);margin-left:6px;color:var(--soft)}
+  .pl .stack{position:relative}.pl .stack .plate{position:absolute;left:0}.pl .stack .plate:nth-child(1){top:2px}.pl .stack .plate:nth-child(2){top:20px;left:16px}.pl .stack .plate:nth-child(3){top:38px;left:32px}
+  .pl h3{font:800 24px var(--serif);margin:6px 0 6px}.pl p{margin:0;color:var(--soft);font-size:15.5px}
+  .pnote{margin:20px 0 0;font:500 12.5px var(--mono);color:var(--soft)}
   .with{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:70px;align-items:center}
   .pair{display:flex;align-items:center;justify-content:center;gap:22px}
   .pair .ic{width:clamp(96px,12vw,128px);aspect-ratio:1;border-radius:28%;overflow:hidden;box-shadow:0 26px 34px -22px rgba(60,40,10,.7);flex:none}.pair .ic img{display:block;width:100%;height:100%;object-fit:cover}
@@ -163,6 +170,7 @@
     .split.rev .col-text{order:0}
     .sec{padding:80px 0}
     .row5{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .plans{grid-template-columns:1fr}
     .scene{height:360px}
   }
   @media (max-width:600px){
@@ -294,6 +302,17 @@
   <p class="rv" style="margin:22px 0 0;font:500 12.5px var(--mono);color:var(--soft)" data-i18n="sh.note">{{sh.note}}</p>
 </div></section>
 
+<!-- ================= plans ================= -->
+<section class="sec alt"><div class="wrap">
+  <div class="rv"><div class="kick" data-i18n="pl.kick">{{pl.kick}}</div><h2 data-i18n="pl.h2">{{pl.h2}}</h2><p class="sub" data-i18n="pl.sub">{{pl.sub}}</p></div>
+  <div class="plans">
+    <div class="pl rv"><div class="vis"><span class="plate">34 FL 4821</span></div><h3 data-i18n="pl1.h">{{pl1.h}}</h3><p data-i18n="pl1.p">{{pl1.p}}</p></div>
+    <div class="pl rv d1"><div class="vis big">7<small data-i18n="pl2.u">{{pl2.u}}</small></div><h3 data-i18n="pl2.h">{{pl2.h}}</h3><p data-i18n="pl2.p">{{pl2.p}}</p></div>
+    <div class="pl rv d2"><div class="vis stack" aria-hidden="true"><span class="plate s">34 FL 4821</span><span class="plate s">34 TX 1234</span><span class="plate s">35 AB 902</span></div><h3 data-i18n="pl3.h">{{pl3.h}}</h3><p data-i18n="pl3.p">{{pl3.p}}</p></div>
+  </div>
+  <p class="pnote rv" data-i18n="pl.note">{{pl.note}}</p>
+</div></section>
+
 <!-- ================= with Taksi Hesap ================= -->
 <section class="sec"><div class="wrap with">
   <div class="rv">
@@ -321,7 +340,7 @@
   <div class="wrap frow">
     <div>
       <span data-i18n="footer.copyright">{{footer.copyright}}</span>
-      <div class="flinks"><a id="lk-priv" href="legal/taksi-filo/en.html" data-i18n="footer.privacy">{{footer.privacy}}</a><a id="lk-del" href="legal/taksi-filo/delete-account.html" data-i18n="footer.delete">{{footer.delete}}</a></div>
+      <div class="flinks"><a id="lk-priv" href="legal/taksi-filo/en.html" data-i18n="footer.privacy">{{footer.privacy}}</a><a id="lk-del" href="legal/taksi-filo/delete-account.html" data-i18n="footer.delete">{{footer.delete}}</a><a href="mailto:support@robu.studio" data-i18n="footer.support">{{footer.support}}</a></div>
     </div>
     <div class="soc">
 {{SOCIAL}}

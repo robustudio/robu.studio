@@ -1,11 +1,19 @@
 {
   "meta.desc": {
-    "en": "Taksi Filo: follow your taxis and drivers in one place. With the driver's consent, see the shifts saved in Taksi Hesap: takings, cash and card, daily pay, expenses, km. In development for Android and iOS.",
-    "es": "Taksi Filo: sigue tus taxis y conductores en un solo lugar. Con el consentimiento del conductor, ve los turnos guardados en Taksi Hesap: recaudaci&oacute;n, efectivo y tarjeta, paga diaria, gastos, km. En desarrollo para Android e iOS.",
-    "tr": "Taksi Filo: taksilerini ve şoförlerini tek yerden takip et. Şoförün onayıyla Taksi Hesap'ta kaydedilen vardiyaları gör: hasılat, nakit ve kart, yevmiye, giderler, km. Android ve iOS için geliştiriliyor."
+    "en": "Taksi Hesap Filo: follow your taxis and drivers in one place. With the driver's consent, see the shifts saved in Taksi Hesap: takings, cash and card, daily pay, expenses, km. In development for Android and iOS.",
+    "es": "Taksi Hesap Filo: sigue tus taxis y conductores en un solo lugar. Con el consentimiento del conductor, ve los turnos guardados en Taksi Hesap: recaudaci&oacute;n, efectivo y tarjeta, paga diaria, gastos, km. En desarrollo para Android e iOS.",
+    "tr": "Taksi Hesap Filo: taksilerini ve şoförlerini tek yerden takip et. Şoförün onayıyla Taksi Hesap'ta kaydedilen vardiyaları gör: hasılat, nakit ve kart, yevmiye, giderler, km. Android ve iOS için geliştiriliyor."
   },
-  "nav.studio": { "en": "STUDIO", "es": "ESTUDIO", "tr": "STÜDYO" },
-  "nav.back": { "en": "&larr; All apps", "es": "&larr; Todas las apps", "tr": "&larr; Tüm uygulamalar" },
+  "nav.studio": {
+    "en": "STUDIO",
+    "es": "ESTUDIO",
+    "tr": "STÜDYO"
+  },
+  "nav.back": {
+    "en": "&larr; All apps",
+    "es": "&larr; Todas las apps",
+    "tr": "&larr; Tüm uygulamalar"
+  },
   "hero.eyebrow": {
     "en": "In development &middot; Android &amp; iOS",
     "es": "En desarrollo &middot; Android e iOS",
@@ -17,16 +25,35 @@
     "tr": "Her taksi,<br><em>hesabı belli.</em>"
   },
   "hero.lead": {
-    "en": "Taksi Filo lets taxi owners and tenants follow their vehicles and drivers &mdash; with the driver's consent, straight from the shifts saved in Taksi Hesap.",
-    "es": "Taksi Filo permite a due&ntilde;os e inquilinos de taxis seguir sus veh&iacute;culos y conductores: con el consentimiento del conductor, directamente desde los turnos guardados en Taksi Hesap.",
-    "tr": "Taksi Filo, taksi sahiplerinin ve kiracıların araçlarını ve şoförlerini takip etmesini sağlar: şoförün onayıyla, doğrudan Taksi Hesap'ta kaydedilen vardiyalardan."
+    "en": "Taksi Hesap Filo lets taxi owners and tenants follow their vehicles and drivers &mdash; with the driver's consent, straight from the shifts saved in Taksi Hesap.",
+    "es": "Taksi Hesap Filo permite a due&ntilde;os e inquilinos de taxis seguir sus veh&iacute;culos y conductores: con el consentimiento del conductor, directamente desde los turnos guardados en Taksi Hesap.",
+    "tr": "Taksi Hesap Filo, taksi sahiplerinin ve kiracıların araçlarını ve şoförlerini takip etmesini sağlar: şoförün onayıyla, doğrudan Taksi Hesap'ta kaydedilen vardiyalardan."
   },
-  "cta.follow": { "en": "Follow @studio.robu", "es": "Sigue a @studio.robu", "tr": "@studio.robu'yu takip et" },
-  "cta.see": { "en": "How it works", "es": "C&oacute;mo funciona", "tr": "Nasıl çalışır" },
-  "fleet.total": { "en": "All plates today", "es": "Todas las placas hoy", "tr": "Tüm plakalar bugün" },
-  "bub.today": { "en": "Today", "es": "Hoy", "tr": "Bugün" },
-
-  "s1.kick": { "en": "01 &middot; Vehicles", "es": "01 &middot; Veh&iacute;culos", "tr": "01 · Araçlar" },
+  "cta.follow": {
+    "en": "Follow @studio.robu",
+    "es": "Sigue a @studio.robu",
+    "tr": "@studio.robu'yu takip et"
+  },
+  "cta.see": {
+    "en": "How it works",
+    "es": "C&oacute;mo funciona",
+    "tr": "Nasıl çalışır"
+  },
+  "fleet.total": {
+    "en": "All plates today",
+    "es": "Todas las placas hoy",
+    "tr": "Tüm plakalar bugün"
+  },
+  "bub.today": {
+    "en": "Today",
+    "es": "Hoy",
+    "tr": "Bugün"
+  },
+  "s1.kick": {
+    "en": "01 &middot; Vehicles",
+    "es": "01 &middot; Veh&iacute;culos",
+    "tr": "01 · Araçlar"
+  },
   "s1.h2": {
     "en": "Add your<br><em>plates.</em>",
     "es": "A&ntilde;ade tus<br><em>placas.</em>",
@@ -37,8 +64,11 @@
     "es": "Escribe las placas que tienes o alquilas y ponle un apodo a cada una. M&aacute;rcala como Due&ntilde;o o Inquilino. Sin documentos, sin verificaci&oacute;n de placa.",
     "tr": "Sahibi ya da kiracısı olduğun plakaları gir, her birine bir takma ad ver. Sahip mi Kiracı mı olduğunu işaretle. Belge yok, plaka doğrulaması yok."
   },
-
-  "s2.kick": { "en": "02 &middot; Drivers", "es": "02 &middot; Conductores", "tr": "02 · Şoförler" },
+  "s2.kick": {
+    "en": "02 &middot; Drivers",
+    "es": "02 &middot; Conductores",
+    "tr": "02 · Şoförler"
+  },
   "s2.h2": {
     "en": "Invite your<br><em>driver.</em>",
     "es": "Invita a tu<br><em>conductor.</em>",
@@ -54,9 +84,16 @@
     "es": "Hola Hasan, me gustar&iacute;a seguir tus turnos en 34 TX 1234.",
     "tr": "Merhaba Hasan, 34 TX 1234 plakadaki vardiyalarını takip etmek istiyorum."
   },
-  "s2.link": { "en": "Open invite in Taksi Filo", "es": "Abrir invitaci&oacute;n en Taksi Filo", "tr": "Daveti Taksi Filo'da aç" },
-
-  "s3.kick": { "en": "03 &middot; Consent", "es": "03 &middot; Consentimiento", "tr": "03 · Onay" },
+  "s2.link": {
+    "en": "Open invite in Taksi Hesap Filo",
+    "es": "Abrir invitaci&oacute;n en Taksi Hesap Filo",
+    "tr": "Daveti Taksi Hesap Filo'da aç"
+  },
+  "s3.kick": {
+    "en": "03 &middot; Consent",
+    "es": "03 &middot; Consentimiento",
+    "tr": "03 · Onay"
+  },
   "s3.h2": {
     "en": "The driver<br><em>says yes.</em>",
     "es": "El conductor<br><em>dice que s&iacute;.</em>",
@@ -67,14 +104,41 @@
     "es": "Los registros aparecen solo cuando el conductor acepta, y &eacute;l puede dejar de compartir en cualquier momento.",
     "tr": "Kayıtlar yalnızca şoför kabul ederse görünür; şoför istediği an paylaşımı durdurabilir."
   },
-  "g1.h": { "en": "Only this plate", "es": "Solo esta placa", "tr": "Yalnızca bu plaka" },
-  "g1.p": { "en": "The driver's other plates are never shared.", "es": "Las otras placas del conductor nunca se comparten.", "tr": "Şoförün diğer plakaları asla paylaşılmaz." },
-  "g2.h": { "en": "Only from the day they accept", "es": "Solo desde el d&iacute;a que acepta", "tr": "Yalnızca kabul ettiği günden itibaren" },
-  "g2.p": { "en": "Shifts before that day stay private.", "es": "Los turnos anteriores a ese d&iacute;a siguen siendo privados.", "tr": "O günden önceki vardiyalar gizli kalır." },
-  "g3.h": { "en": "Stop any time", "es": "Detener cuando quiera", "tr": "İstediği an durdurur" },
-  "g3.p": { "en": "One tap on the Sharing screen and access ends right away.", "es": "Un toque en la pantalla Compartir y el acceso termina al instante.", "tr": "Paylaşımlar ekranında tek dokunuş, erişim hemen biter." },
-
-  "s4.kick": { "en": "04 &middot; Tracking", "es": "04 &middot; Seguimiento", "tr": "04 · Takip" },
+  "g1.h": {
+    "en": "Only this plate",
+    "es": "Solo esta placa",
+    "tr": "Yalnızca bu plaka"
+  },
+  "g1.p": {
+    "en": "The driver's other plates are never shared.",
+    "es": "Las otras placas del conductor nunca se comparten.",
+    "tr": "Şoförün diğer plakaları asla paylaşılmaz."
+  },
+  "g2.h": {
+    "en": "Only from the day they accept",
+    "es": "Solo desde el d&iacute;a que acepta",
+    "tr": "Yalnızca kabul ettiği günden itibaren"
+  },
+  "g2.p": {
+    "en": "Shifts before that day stay private.",
+    "es": "Los turnos anteriores a ese d&iacute;a siguen siendo privados.",
+    "tr": "O günden önceki vardiyalar gizli kalır."
+  },
+  "g3.h": {
+    "en": "Stop any time",
+    "es": "Detener cuando quiera",
+    "tr": "İstediği an durdurur"
+  },
+  "g3.p": {
+    "en": "One tap on the Sharing screen and access ends right away.",
+    "es": "Un toque en la pantalla Compartir y el acceso termina al instante.",
+    "tr": "Paylaşımlar ekranında tek dokunuş, erişim hemen biter."
+  },
+  "s4.kick": {
+    "en": "04 &middot; Tracking",
+    "es": "04 &middot; Seguimiento",
+    "tr": "04 · Takip"
+  },
   "s4.h2": {
     "en": "Every shift,<br><em>every number.</em>",
     "es": "Cada turno,<br><em>cada cifra.</em>",
@@ -90,8 +154,11 @@
     "es": "Las cifras vienen de los turnos que el conductor guarda en Taksi Hesap. Un turno aparece cuando el conductor lo guarda.",
     "tr": "Tutarlar, şoförün Taksi Hesap'ta kaydettiği vardiyalardan gelir. Vardiya, şoför kaydedince görünür."
   },
-
-  "s5.kick": { "en": "05 &middot; Analysis", "es": "05 &middot; An&aacute;lisis", "tr": "05 · Analiz" },
+  "s5.kick": {
+    "en": "05 &middot; Analysis",
+    "es": "05 &middot; An&aacute;lisis",
+    "tr": "05 · Analiz"
+  },
   "s5.h2": {
     "en": "Know where the<br><em>money goes.</em>",
     "es": "Sabe a d&oacute;nde<br><em>va el dinero.</em>",
@@ -102,51 +169,159 @@
     "es": "Beneficio neto, gr&aacute;ficos semanales, promedios por turno, viaje y km, los mejores d&iacute;as de la semana, ingresos por plataforma y partidas de gasto, y una comparaci&oacute;n con el per&iacute;odo anterior.",
     "tr": "Net kâr, haftalık grafikler, vardiya, sefer ve km başına ortalamalar, haftanın en iyi günleri, platforma göre gelir ve gider kalemleri; üstüne bir önceki dönemle karşılaştırma."
   },
-
-  "sh.kick": { "en": "A look inside", "es": "Un vistazo", "tr": "İçeriye bir bakış" },
-  "sh.h2": { "en": "The screens", "es": "Las pantallas", "tr": "Ekranlar" },
-  "sh.1": { "en": "Shift list", "es": "Lista de turnos", "tr": "Vardiya listesi" },
-  "sh.2": { "en": "Net profit", "es": "Beneficio neto", "tr": "Net kâr" },
-  "sh.3": { "en": "Averages", "es": "Promedios", "tr": "Ortalamalar" },
-  "sh.4": { "en": "Cash flow", "es": "Flujo de efectivo", "tr": "Nakit akışı" },
-  "sh.5": { "en": "Income sources", "es": "Fuentes de ingreso", "tr": "Gelir kaynakları" },
-  "sh.6": { "en": "Driver's sharing", "es": "Compartir del conductor", "tr": "Şoförün paylaşımları" },
+  "sh.kick": {
+    "en": "A look inside",
+    "es": "Un vistazo",
+    "tr": "İçeriye bir bakış"
+  },
+  "sh.h2": {
+    "en": "The screens",
+    "es": "Las pantallas",
+    "tr": "Ekranlar"
+  },
+  "sh.1": {
+    "en": "Shift list",
+    "es": "Lista de turnos",
+    "tr": "Vardiya listesi"
+  },
+  "sh.2": {
+    "en": "Net profit",
+    "es": "Beneficio neto",
+    "tr": "Net kâr"
+  },
+  "sh.3": {
+    "en": "Averages",
+    "es": "Promedios",
+    "tr": "Ortalamalar"
+  },
+  "sh.4": {
+    "en": "Cash flow",
+    "es": "Flujo de efectivo",
+    "tr": "Nakit akışı"
+  },
+  "sh.5": {
+    "en": "Income sources",
+    "es": "Fuentes de ingreso",
+    "tr": "Gelir kaynakları"
+  },
+  "sh.6": {
+    "en": "Driver's sharing",
+    "es": "Compartir del conductor",
+    "tr": "Şoförün paylaşımları"
+  },
   "sh.note": {
     "en": "Screens show sample data.",
     "es": "Las pantallas muestran datos de ejemplo.",
     "tr": "Ekranlarda örnek veriler gösterilmektedir."
   },
-
-  "w.kick": { "en": "Works with Taksi Hesap", "es": "Funciona con Taksi Hesap", "tr": "Taksi Hesap ile çalışır" },
+  "w.kick": {
+    "en": "Works with Taksi Hesap",
+    "es": "Funciona con Taksi Hesap",
+    "tr": "Taksi Hesap ile çalışır"
+  },
   "w.h2": {
     "en": "Built on<br><em>Taksi Hesap.</em>",
     "es": "Construido sobre<br><em>Taksi Hesap.</em>",
     "tr": "<em>Taksi Hesap'ın</em><br>üstüne kurulu."
   },
   "w.p": {
-    "en": "Taksi Filo reads the shifts drivers save in Taksi Hesap. It is a separate app: drivers keep using Taksi Hesap as before, and you don't need Taksi Filo to use it.",
-    "es": "Taksi Filo lee los turnos que los conductores guardan en Taksi Hesap. Es una app aparte: los conductores siguen usando Taksi Hesap como siempre y no necesitas Taksi Filo para usarla.",
-    "tr": "Taksi Filo, şoförlerin Taksi Hesap'ta kaydettiği vardiyaları okur. Ayrı bir uygulamadır: şoförler Taksi Hesap'ı her zamanki gibi kullanmaya devam eder, Taksi Hesap için Taksi Filo gerekmez."
+    "en": "Taksi Hesap Filo reads the shifts drivers save in Taksi Hesap. It is a separate app: drivers keep using Taksi Hesap as before, and you don't need Taksi Hesap Filo to use it.",
+    "es": "Taksi Hesap Filo lee los turnos que los conductores guardan en Taksi Hesap. Es una app aparte: los conductores siguen usando Taksi Hesap como siempre y no necesitas Taksi Hesap Filo para usarla.",
+    "tr": "Taksi Hesap Filo, şoförlerin Taksi Hesap'ta kaydettiği vardiyaları okur. Ayrı bir uygulamadır: şoförler Taksi Hesap'ı her zamanki gibi kullanmaya devam eder, Taksi Hesap için Taksi Hesap Filo gerekmez."
   },
-  "w.link": { "en": "See Taksi Hesap &rarr;", "es": "Ver Taksi Hesap &rarr;", "tr": "Taksi Hesap'a bak &rarr;" },
-  "w.flow": { "en": "shifts", "es": "turnos", "tr": "vardiyalar" },
-
+  "w.link": {
+    "en": "See Taksi Hesap &rarr;",
+    "es": "Ver Taksi Hesap &rarr;",
+    "tr": "Taksi Hesap'a bak &rarr;"
+  },
+  "w.flow": {
+    "en": "shifts",
+    "es": "turnos",
+    "tr": "vardiyalar"
+  },
   "o.h2": {
     "en": "In development.<br><em>Follow along.</em>",
     "es": "En desarrollo.<br><em>S&iacute;guenos.</em>",
     "tr": "Geliştiriliyor.<br><em>Takipte kal.</em>"
   },
   "o.sub": {
-    "en": "Taksi Filo is being built for Android and iOS. Follow @studio.robu to know when it opens.",
-    "es": "Taksi Filo se est&aacute; construyendo para Android e iOS. Sigue a @studio.robu para saber cu&aacute;ndo abre.",
-    "tr": "Taksi Filo Android ve iOS için geliştiriliyor. Ne zaman açıldığını öğrenmek için @studio.robu'yu takip et."
+    "en": "Taksi Hesap Filo is being built for Android and iOS. Follow @studio.robu to know when it opens.",
+    "es": "Taksi Hesap Filo se est&aacute; construyendo para Android e iOS. Sigue a @studio.robu para saber cu&aacute;ndo abre.",
+    "tr": "Taksi Hesap Filo Android ve iOS için geliştiriliyor. Ne zaman açıldığını öğrenmek için @studio.robu'yu takip et."
   },
-
   "footer.copyright": {
     "en": "&copy; Robu Studio &mdash; an independent app studio.",
     "es": "&copy; Robu Studio &mdash; un estudio de apps independiente.",
     "tr": "&copy; Robu Studio &mdash; bağımsız bir uygulama stüdyosu."
   },
-  "footer.privacy": { "en": "Privacy policy", "es": "Pol&iacute;tica de privacidad", "tr": "Gizlilik politikası" },
-  "footer.delete": { "en": "Delete account", "es": "Eliminar cuenta", "tr": "Hesap silme" }
+  "footer.privacy": {
+    "en": "Privacy policy",
+    "es": "Pol&iacute;tica de privacidad",
+    "tr": "Gizlilik politikası"
+  },
+  "footer.delete": {
+    "en": "Delete account",
+    "es": "Eliminar cuenta",
+    "tr": "Hesap silme"
+  },
+  "pl.kick": {
+    "en": "06 &middot; Plans",
+    "es": "06 &middot; Planes",
+    "tr": "06 · Planlar"
+  },
+  "pl.h2": {
+    "en": "Start free,<br><em>grow by the vehicle.</em>",
+    "es": "Empieza gratis,<br><em>crece por veh&iacute;culo.</em>",
+    "tr": "Ücretsiz başla,<br><em>araç sayısıyla büyü.</em>"
+  },
+  "pl.sub": {
+    "en": "Taksi Hesap Filo has a free plan for one vehicle and one driver. More vehicles? A yearly plan by vehicle count, billed through your store and cancellable there any time.",
+    "es": "Taksi Hesap Filo tiene un plan gratuito para un veh&iacute;culo y un conductor. &iquest;M&aacute;s veh&iacute;culos? Un plan anual seg&uacute;n el n&uacute;mero de veh&iacute;culos, cobrado a trav&eacute;s de tu tienda y cancelable all&iacute; en cualquier momento.",
+    "tr": "Taksi Hesap Filo'nun bir araç ve bir şoför için ücretsiz planı var. Daha fazla araç mı? Araç sayısına göre yıllık plan; ödeme mağaza üzerinden, iptal de oradan istediğin an."
+  },
+  "pl1.h": {
+    "en": "Free",
+    "es": "Gratis",
+    "tr": "Ücretsiz"
+  },
+  "pl1.p": {
+    "en": "1 vehicle and 1 driver.",
+    "es": "1 veh&iacute;culo y 1 conductor.",
+    "tr": "1 araç ve 1 şoför."
+  },
+  "pl2.h": {
+    "en": "7-day trial",
+    "es": "Prueba de 7 d&iacute;as",
+    "tr": "7 günlük deneme"
+  },
+  "pl2.p": {
+    "en": "New accounts try everything for 7 days, no card needed. After that you move to the free plan.",
+    "es": "Las cuentas nuevas lo prueban todo durante 7 d&iacute;as, sin tarjeta. Despu&eacute;s pasas al plan gratuito.",
+    "tr": "Yeni hesaplar 7 gün boyunca her şeyi dener, kart gerekmez. Sonrasında ücretsiz plana geçilir."
+  },
+  "pl3.h": {
+    "en": "Yearly, by vehicle",
+    "es": "Anual, por veh&iacute;culo",
+    "tr": "Yıllık, araç sayısına göre"
+  },
+  "pl3.p": {
+    "en": "Add more vehicles with a yearly plan sized to your fleet. Change or cancel it in the store.",
+    "es": "A&ntilde;ade m&aacute;s veh&iacute;culos con un plan anual a la medida de tu flota. C&aacute;mbialo o canc&eacute;lalo en la tienda.",
+    "tr": "Filona göre bir yıllık planla daha fazla araç ekle. Değişikliği ya da iptali mağazadan yaparsın."
+  },
+  "pl.note": {
+    "en": "Prices are shown in the store.",
+    "es": "Los precios se muestran en la tienda.",
+    "tr": "Fiyatlar mağazada gösterilir."
+  },
+  "footer.support": {
+    "en": "Support",
+    "es": "Soporte",
+    "tr": "Destek"
+  },
+  "pl2.u": {
+    "en": "days",
+    "es": "d&iacute;as",
+    "tr": "gün"
+  }
 }
