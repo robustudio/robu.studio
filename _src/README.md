@@ -10,6 +10,7 @@ HTML in the repo root; this folder only holds what is needed to change those pag
 | `tv-list/` | `../tv-list.html` | `node _src/tv-list/build.mjs` (no dependencies) |
 | `pagely/` | `../pagely.html` | `node _src/pagely/build.mjs` (no dependencies) |
 | `pigeon/` | `../pigeon.html` | `node _src/pigeon/build.mjs` (no dependencies; the dotted world map is baked by `make-map.mjs` into `map-dots.txt`, Natural Earth public-domain data) |
+| `taksi-filo/` | `../taksi-filo.html` | `node _src/taksi-filo/build.mjs` (no dependencies; `taxi.txt` = the Taksi Hesap taxi SVG, screens in `assets/taksi-filo/` come from `Taksi-Filo/store-screenshots/ads/{tr,en}-light`, resized to 520 px) |
 | `shared/` | — | pieces used by several pages (the Noot "ROBU" wordmark font) |
 
 - Words (EN / ES / TR): `<app>/copy.json`. Layout, CSS and motion: `<app>/template.html`.

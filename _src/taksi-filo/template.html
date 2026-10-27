@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taksi Filo — Robu Studio</title>
+<meta name="description" content="{{meta.desc}}">
+<meta name="theme-color" content="#ffe9a8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..900;1,9..144,500..700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap">
+<style>
+  {{FONT}}
+  :root{
+    --cream:#fff4d8; --sand:#f3dfae; --sun:#ffc20e; --gold:#f5a623; --navy:#1a2332; --ink:#1a1208; --soft:#5b4b38; --card:#fffaf0; --blue:#2b4fd8; --line:#f0dfae; --robu:#ff8a76;
+    --serif:'Fraunces',Georgia,serif; --sans:'Bricolage Grotesque',system-ui,-apple-system,'Segoe UI',sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--sans);color:var(--navy);background:var(--cream);overflow-x:hidden;line-height:1.5}
+  img,svg{max-width:100%}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 28px;position:relative}
+
+  /* ---------- nav ---------- */
+  .top{position:sticky;top:0;z-index:80;height:0}
+  .navbar{max-width:1100px;margin:0 auto;transform:translateY(20px);display:flex;align-items:center;justify-content:space-between;gap:12px;
+    background:rgba(26,35,50,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(245,166,35,.25);border-radius:999px;padding:9px 9px 9px 24px;box-shadow:0 14px 30px -16px rgba(60,40,10,.7)}
+  @media (max-width:1140px){.navbar{margin-left:20px;margin-right:20px}}
+  .brand{display:flex;align-items:baseline;gap:9px;text-decoration:none}
+  .brand .robu{font-family:'Noot','Arial Black',sans-serif;font-size:26px;letter-spacing:.5px;color:var(--robu)}
+  .brand .studio{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#aab3c8}
+  .hdr-right{display:flex;align-items:center;gap:10px}
+  .lang-switch{display:flex;align-items:center;gap:2px;background:rgba(255,255,255,.1);border-radius:999px;padding:3px}
+  .lang-switch button{font:600 11px var(--mono);background:none;border:0;border-radius:999px;padding:7px 11px;cursor:pointer;color:#aab3c8}
+  .lang-switch button[aria-current="true"]{background:var(--gold);color:var(--navy)}
+  .ig-link{background:var(--gold);color:var(--navy);text-decoration:none;font-weight:800;font-size:13.5px;padding:11px 18px;border-radius:999px;white-space:nowrap}
+  @media (max-width:560px){.ig-link{display:none}.navbar{padding:8px 8px 8px 18px;transform:translateY(14px)}.brand .robu{font-size:22px}}
+
+  /* plates, the one object everything here is about */
+  .plate{display:inline-flex;align-items:center;position:relative;background:#fff;color:#111;border-radius:6px;padding:4px 12px 4px 26px;font:700 17px var(--mono);letter-spacing:.04em;box-shadow:0 0 0 1.5px #111 inset;white-space:nowrap}
+  .plate::before{content:"TR";position:absolute;left:0;top:0;bottom:0;width:17px;background:#1b4fcf;color:#fff;font:600 7px var(--mono);display:grid;place-items:end center;padding-bottom:3px;border-radius:5px 0 0 5px}
+  .plate.s{font-size:13px;padding:3px 9px 3px 21px}.plate.s::before{width:13px;font-size:6px}
+
+  /* ---------- hero: the fleet on the road ---------- */
+  .hero{position:relative;overflow:hidden;background:linear-gradient(#ffe9a8,#fff4d8 66%);padding-top:150px}
+  .sun{position:absolute;right:11%;top:84px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,#ffd45c,#ffc20e 60%,rgba(255,194,14,0) 72%);opacity:.8;animation:drift 18s ease-in-out infinite alternate}
+  @keyframes drift{to{transform:translate(-30px,12px)}}
+  .center{text-align:center;position:relative;z-index:3}
+  .back{display:inline-block;font-weight:600;font-size:14px;color:var(--soft);text-decoration:none;margin-bottom:18px}
+  .back:hover{color:var(--navy);text-decoration:underline}
+  .tag{display:inline-flex;align-items:center;gap:9px;background:var(--navy);color:#ffd45c;border-radius:999px;padding:8px 16px;font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase}
+  .tag i{width:8px;height:8px;border-radius:50%;background:var(--sun);animation:pulse 2.6s ease-in-out infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,194,14,.55)}100%{box-shadow:0 0 0 9px rgba(255,194,14,0)}}
+  h1{font:800 clamp(52px,7.4vw,108px)/.93 var(--serif);letter-spacing:-.03em;margin:22px auto 20px;max-width:960px;font-variation-settings:'opsz' 144}
+  h1 em,h2 em{font-style:italic;font-weight:600;color:var(--blue)}
+  .lead{font-size:clamp(17px,1.5vw,20px);line-height:1.55;color:var(--soft);max-width:620px;margin:0 auto 28px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+  .btn{display:inline-flex;font-weight:800;font-size:16px;padding:16px 28px;border-radius:999px;text-decoration:none;transition:transform .15s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.n{background:var(--navy);color:#fff}.btn.o{border:2px solid var(--navy);color:var(--navy)}
+  .center>*{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+  .center>:nth-child(2){animation-delay:.05s}.center>:nth-child(3){animation-delay:.1s}.center>:nth-child(4){animation-delay:.15s}.center>:nth-child(5){animation-delay:.2s}.center>:nth-child(6){animation-delay:.25s}
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+  .scene{position:relative;height:430px;margin-top:10px;padding-top:0}
+  .scene .total{top:22px}
+  .skyl{position:absolute;left:0;bottom:78px;width:300%;height:200px;display:flex;animation:pan 170s linear infinite;will-change:transform}
+  .skyl svg{flex:none;width:33.3334%;height:100%;fill:#efd58f}
+  .skyl svg:nth-child(2){transform:scaleX(-1)}
+  @keyframes pan{to{transform:translateX(-66.6667%)}}
+  .road{position:absolute;left:0;right:0;bottom:0;height:96px;background:#2a2f3a}
+  .road::before{content:"";position:absolute;left:0;right:0;top:0;height:8px;background:#e8d9b0}
+  .road::after{content:"";position:absolute;left:0;right:0;top:50px;height:5px;background:repeating-linear-gradient(90deg,#ffe9a5 0 46px,transparent 46px 92px);opacity:.8;animation:lane 1.6s linear infinite}
+  @keyframes lane{to{background-position:-92px 0}}
+  .total{position:absolute;left:50%;top:0;transform:translateX(-50%);z-index:6;background:var(--navy);color:#fff;border-radius:16px;padding:10px 18px;text-align:center;box-shadow:0 18px 26px -14px rgba(26,35,50,.7)}
+  .total small{display:block;font:500 11.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#ffd45c}
+  .total b{font:700 26px var(--mono)}
+  .tx{position:absolute;bottom:34px;left:0;width:clamp(210px,22vw,300px);animation:drive var(--sp,24s) linear infinite;animation-delay:var(--dl,0s);will-change:transform;z-index:4}
+  @keyframes drive{from{transform:translateX(-360px)}to{transform:translateX(calc(100vw + 40px))}}
+  .tx svg{display:block;width:100%;height:auto}
+  .tx .body{animation:jolt .45s ease-in-out infinite alternate}
+  @keyframes jolt{to{transform:translateY(-1.8px)}}
+  .tx .wheel{transform-box:fill-box;transform-origin:center;animation:spin .55s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .tag2{position:absolute;left:50%;bottom:100%;transform:translateX(-50%);margin-bottom:8px;text-align:center;white-space:nowrap}
+  .tag2::after{content:"";display:block;width:2px;height:16px;background:var(--navy);margin:0 auto}
+  .bub{display:inline-block;background:var(--navy);color:#fff;border-radius:14px;padding:7px 13px;font:600 14px var(--mono);margin-top:8px;box-shadow:0 14px 20px -10px rgba(26,35,50,.6);transition:background .3s}
+  .bub b{color:#ffd45c;font-weight:700}
+  .bub.ok{background:#17603f}.bub.ok b{color:#a8f0c5}
+  .bub.ok::before{content:"\2713 ";color:#a8f0c5}
+
+  /* ---------- sections ---------- */
+  .sec{padding:110px 0;position:relative}
+  .alt{background:var(--sand)}
+  .nv{background:var(--navy);color:#fff}
+  .kick{display:flex;align-items:center;gap:10px;font:500 12.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#b5650d;margin-bottom:14px}
+  .kick::before{content:"";width:32px;height:2px;background:#b5650d}
+  .nv .kick{color:#ffd45c}.nv .kick::before{background:#ffd45c}
+  h2{font:800 clamp(38px,5vw,66px)/.98 var(--serif);letter-spacing:-.03em;margin:0 0 18px;font-variation-settings:'opsz' 144}
+  .nv h2{color:#fff}.nv h2 em{color:#ffd45c}
+  .sub{font-size:clamp(17px,1.4vw,19px);line-height:1.6;color:var(--soft);max-width:480px;margin:0}
+  .nv .sub{color:#c3cbd8}
+  .split{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:90px;align-items:center}
+  .split.rev{grid-template-columns:340px minmax(0,1fr)}
+  .split.rev .col-text{order:2}
+  .js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+  .js .rv.in{opacity:1;transform:none}
+  .js .rv.d1{transition-delay:.12s}.js .rv.d2{transition-delay:.24s}.js .rv.d3{transition-delay:.36s}
+
+  .phone{background:var(--navy);border-radius:44px;padding:10px;box-shadow:0 44px 60px -30px rgba(60,40,10,.65),0 0 0 1px rgba(255,255,255,.06) inset;width:100%;max-width:340px;justify-self:center}
+  .nv .phone{box-shadow:0 44px 60px -28px #000,0 0 0 1.5px #3a4a62}
+  .phone img{display:block;width:100%;height:auto;border-radius:34px}
+
+  .minis{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .mini{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px;box-shadow:0 14px 20px -16px rgba(60,40,10,.6);font-size:14px}
+  .mini .n{display:block;font:500 11.5px var(--mono);color:var(--soft);letter-spacing:.04em}.mini b{font:700 18px var(--mono)}
+  .wa{margin-top:26px;max-width:440px;background:#dcf8c6;border-radius:16px 16px 16px 4px;padding:14px 16px;color:#1c3a14;font-size:15px;box-shadow:0 14px 20px -14px rgba(60,40,10,.5)}
+  .wa u{display:inline-block;margin-top:8px;background:#fff;border-radius:10px;padding:6px 12px;text-decoration:none;font-weight:700;color:#1a5a33}
+
+  .guar{display:grid;gap:14px;margin-top:30px;max-width:520px}
+  .g{display:flex;gap:16px;align-items:flex-start;background:rgba(255,255,255,.06);border:1px solid #33425b;border-radius:16px;padding:16px 18px}
+  .g i{flex:none;width:30px;height:30px;border-radius:50%;background:#17603f;color:#a8f0c5;font-style:normal;font-weight:800;display:grid;place-items:center;transform:scale(.4);opacity:0}
+  .in .g i{animation:tick .45s cubic-bezier(.3,1.6,.5,1) forwards;animation-delay:calc(var(--k) * .28s + .3s)}
+  @keyframes tick{to{transform:scale(1);opacity:1}}
+  .g b{display:block;font-size:18px}.g span{color:#b4bfd1;font-size:15px}
+
+  .src{display:grid;gap:12px;margin-top:26px;max-width:440px}
+  .src .r{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;align-items:center;font:600 13.5px var(--mono)}
+  .src .bar{display:block;height:10px;border-radius:99px;background:rgba(26,35,50,.12);overflow:hidden}.src .bar i{display:block;height:100%;background:var(--gold);border-radius:99px;transform-origin:0 50%;transform:scaleX(0);transition:transform 1.1s cubic-bezier(.2,.7,.2,1) .3s}
+  .in .src .bar i{transform:scaleX(1)}
+
+  .shots{padding:80px 0 90px;background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .shots h2{font-size:clamp(34px,4vw,52px)}
+  .row5{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;margin-top:34px}
+  .row5 figure{margin:0}.row5 img{display:block;width:100%;height:auto;border-radius:22px;border:1px solid var(--line);box-shadow:0 22px 30px -22px rgba(60,40,10,.6)}
+  .row5 figcaption{font:500 12.5px var(--mono);color:var(--soft);margin-top:10px;letter-spacing:.04em}
+
+  .with{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:70px;align-items:center}
+  .pair{display:flex;align-items:center;justify-content:center;gap:22px}
+  .pair .ic{width:clamp(96px,12vw,128px);aspect-ratio:1;border-radius:28%;overflow:hidden;box-shadow:0 26px 34px -22px rgba(60,40,10,.7);flex:none}.pair .ic img{display:block;width:100%;height:100%;object-fit:cover}
+  .pair .ar{display:flex;align-items:center;gap:6px;color:var(--navy);font:600 12.5px var(--mono);letter-spacing:.06em;text-transform:uppercase;flex-direction:column}
+  .pair .ar svg{width:80px;height:auto}
+  .pair .ar path.d{stroke-dasharray:6 8;animation:dash 1.2s linear infinite}
+  @keyframes dash{to{stroke-dashoffset:-14}}
+  .link{display:inline-block;margin-top:22px;font-weight:800;color:var(--navy);text-underline-offset:5px}
+
+  .end{background:var(--navy);color:#fff;text-align:center;padding:110px 0}
+  .end h2{color:#fff}.end h2 em{color:#ffd45c}
+  .end .sub{margin:0 auto 26px;color:#c3cbd8}
+  .end .btn{background:var(--sun);color:var(--navy)}
+  footer{background:#10161f;color:#9aa6bb;padding:34px 0 40px}
+  .frow{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:14.5px}
+  .flinks{display:flex;gap:18px;margin-top:6px;font-size:14px;flex-wrap:wrap}.flinks a{color:#9aa6bb}
+  .soc{display:flex;gap:10px}
+  .soc a,.soc span{width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(245,166,35,.4);display:grid;place-items:center;color:#f3dfae;transition:border-color .15s}
+  .soc a:hover{border-color:#f3dfae}.soc span{opacity:.5;cursor:default}
+
+  @media (max-width:1000px){
+    .hero{padding-top:130px}
+    .split,.split.rev,.with{grid-template-columns:1fr;gap:50px}
+    .split.rev .col-text{order:0}
+    .sec{padding:80px 0}
+    .row5{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .scene{height:360px}
+  }
+  @media (max-width:600px){
+    .wrap{padding:0 20px}
+    .btn{width:100%;justify-content:center}
+    .row5{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .scene{height:330px}
+    .tx{width:200px}
+    .bub{font-size:12.5px;padding:6px 10px}
+    .plate{font-size:14px}
+    .total b{font-size:22px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+    .tx:nth-of-type(1){transform:translateX(8vw)}.tx:nth-of-type(2){transform:translateX(38vw)}.tx:nth-of-type(3){transform:translateX(64vw)}
+    .g i{opacity:1;transform:none}.src .bar i{transform:none}.js .rv{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+<div class="top"><nav class="navbar" aria-label="Robu Studio">
+  <a class="brand" href="./"><span class="robu">ROBU</span><span class="studio" data-i18n="nav.studio">{{nav.studio}}</span></a>
+  <div class="hdr-right">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang-btn="en" aria-current="true">EN</button>
+      <button type="button" data-lang-btn="es" aria-current="false">ES</button>
+      <button type="button" data-lang-btn="tr" aria-current="false">TR</button>
+    </div>
+    <a class="ig-link" href="https://www.instagram.com/studio.robu/" target="_blank" rel="noopener">@studio.robu</a>
+  </div>
+</nav></div>
+
+<main id="main">
+<!-- ================= hero ================= -->
+<section class="hero">
+  <div class="wrap center">
+    <a class="back" href="./" data-i18n="nav.back">{{nav.back}}</a><br>
+    <span class="tag"><i></i><span data-i18n="hero.eyebrow">{{hero.eyebrow}}</span></span>
+    <h1 data-i18n="hero.h1">{{hero.h1}}</h1>
+    <p class="lead" data-i18n="hero.lead">{{hero.lead}}</p>
+    <div class="btns"><a class="btn n" href="https://www.instagram.com/studio.robu/" target="_blank" rel="noopener" data-i18n="cta.follow">{{cta.follow}}</a><a class="btn o" href="#how" data-i18n="cta.see">{{cta.see}}</a></div>
+  </div>
+  <div class="scene" id="scene" aria-hidden="true">
+    <div class="skyl"><svg viewBox="0 0 1440 200" preserveAspectRatio="none">{{SKYLINE}}</svg><svg viewBox="0 0 1440 200" preserveAspectRatio="none">{{SKYLINE}}</svg><svg viewBox="0 0 1440 200" preserveAspectRatio="none">{{SKYLINE}}</svg></div>
+    <div class="road"></div>
+    <div class="total" id="total"><small data-i18n="fleet.total">{{fleet.total}}</small><b id="total-v">0 ₺</b></div>
+    <div class="tx" data-amt="1660.5" style="--sp:23s;--dl:-3s"><div class="tag2"><span class="plate">34 FL 4821</span><br><span class="bub"><span data-i18n="bub.today">{{bub.today}}</span> <b>0 ₺</b></span></div><svg viewBox="0 0 330 130" fill="none">{{TAXI}}</svg></div>
+    <div class="tx" data-amt="1273" style="--sp:27s;--dl:-11s"><div class="tag2"><span class="plate">34 TX 1234</span><br><span class="bub"><span data-i18n="bub.today">{{bub.today}}</span> <b>0 ₺</b></span></div><svg viewBox="0 0 330 130" fill="none">{{TAXI}}</svg></div>
+    <div class="tx" data-amt="2492.5" style="--sp:25s;--dl:-19s"><div class="tag2"><span class="plate">35 AB 902</span><br><span class="bub"><span data-i18n="bub.today">{{bub.today}}</span> <b>0 ₺</b></span></div><svg viewBox="0 0 330 130" fill="none">{{TAXI}}</svg></div>
+  </div>
+</section>
+
+<!-- ================= 01 vehicles ================= -->
+<section class="sec" id="how"><div class="wrap split">
+  <div class="col-text rv">
+    <div class="kick" data-i18n="s1.kick">{{s1.kick}}</div>
+    <h2 data-i18n="s1.h2">{{s1.h2}}</h2>
+    <p class="sub" data-i18n="s1.sub">{{s1.sub}}</p>
+    <div class="minis"><span class="mini"><span class="plate s">34 FL 4821</span></span><span class="mini"><span class="plate s">34 TX 1234</span></span><span class="mini"><span class="plate s">35 AB 902</span></span></div>
+  </div>
+  <div class="phone rv d1"><img src="assets/taksi-filo/en-araclar.jpg" data-img="assets/taksi-filo/{L}-araclar.jpg" alt="" width="520" height="1131" loading="lazy"></div>
+</div></section>
+
+<!-- ================= 02 drivers ================= -->
+<section class="sec alt"><div class="wrap split rev">
+  <div class="phone rv"><img src="assets/taksi-filo/en-soforler.jpg" data-img="assets/taksi-filo/{L}-soforler.jpg" alt="" width="520" height="1131" loading="lazy"></div>
+  <div class="col-text rv d1">
+    <div class="kick" data-i18n="s2.kick">{{s2.kick}}</div>
+    <h2 data-i18n="s2.h2">{{s2.h2}}</h2>
+    <p class="sub" data-i18n="s2.sub">{{s2.sub}}</p>
+    <div class="wa"><span data-i18n="s2.wa">{{s2.wa}}</span><br><u data-i18n="s2.link">{{s2.link}}</u></div>
+  </div>
+</div></section>
+
+<!-- ================= 03 consent ================= -->
+<section class="sec nv"><div class="wrap split">
+  <div class="col-text rv">
+    <div class="kick" data-i18n="s3.kick">{{s3.kick}}</div>
+    <h2 data-i18n="s3.h2">{{s3.h2}}</h2>
+    <p class="sub" data-i18n="s3.sub">{{s3.sub}}</p>
+    <div class="guar">
+      <div class="g" style="--k:0"><i>&#10003;</i><div><b data-i18n="g1.h">{{g1.h}}</b><span data-i18n="g1.p">{{g1.p}}</span></div></div>
+      <div class="g" style="--k:1"><i>&#10003;</i><div><b data-i18n="g2.h">{{g2.h}}</b><span data-i18n="g2.p">{{g2.p}}</span></div></div>
+      <div class="g" style="--k:2"><i>&#10003;</i><div><b data-i18n="g3.h">{{g3.h}}</b><span data-i18n="g3.p">{{g3.p}}</span></div></div>
+    </div>
+  </div>
+  <div class="phone rv d1"><img src="assets/taksi-filo/en-sofor-davet-onay.jpg" data-img="assets/taksi-filo/{L}-sofor-davet-onay.jpg" alt="" width="520" height="1131" loading="lazy"></div>
+</div></section>
+
+<!-- ================= 04 tracking ================= -->
+<section class="sec"><div class="wrap split rev">
+  <div class="phone rv"><img src="assets/taksi-filo/en-takip-ozet.jpg" data-img="assets/taksi-filo/{L}-takip-ozet.jpg" alt="" width="520" height="1131" loading="lazy"></div>
+  <div class="col-text rv d1">
+    <div class="kick" data-i18n="s4.kick">{{s4.kick}}</div>
+    <h2 data-i18n="s4.h2">{{s4.h2}}</h2>
+    <p class="sub" data-i18n="s4.sub">{{s4.sub}}</p>
+    <p class="sub" style="margin-top:14px;font-size:15px;opacity:.85" data-i18n="s4.note">{{s4.note}}</p>
+  </div>
+</div></section>
+
+<!-- ================= 05 analysis ================= -->
+<section class="sec alt"><div class="wrap split">
+  <div class="col-text rv">
+    <div class="kick" data-i18n="s5.kick">{{s5.kick}}</div>
+    <h2 data-i18n="s5.h2">{{s5.h2}}</h2>
+    <p class="sub" data-i18n="s5.sub">{{s5.sub}}</p>
+    <div class="src" aria-hidden="true">
+      <div class="r"><span>Durak</span><span class="bar"><i style="width:78%"></i></span></div>
+      <div class="r"><span>BiTaksi</span><span class="bar"><i style="width:44%"></i></span></div>
+      <div class="r"><span>Uber</span><span class="bar"><i style="width:38%"></i></span></div>
+      <div class="r"><span>Yandex Pro</span><span class="bar"><i style="width:30%"></i></span></div>
+    </div>
+  </div>
+  <div class="phone rv d1"><img src="assets/taksi-filo/en-analiz-grafikler.jpg" data-img="assets/taksi-filo/{L}-analiz-grafikler.jpg" alt="" width="520" height="1131" loading="lazy"></div>
+</div></section>
+
+<!-- ================= gallery ================= -->
+<section class="shots"><div class="wrap">
+  <div class="kick rv" data-i18n="sh.kick">{{sh.kick}}</div>
+  <h2 class="rv" data-i18n="sh.h2">{{sh.h2}}</h2>
+  <div class="row5 rv">
+    <figure><img src="assets/taksi-filo/en-takip-kayit-listesi.jpg" data-img="assets/taksi-filo/{L}-takip-kayit-listesi.jpg" alt="" width="520" height="1131" loading="lazy"><figcaption data-i18n="sh.1">{{sh.1}}</figcaption></figure>
+    <figure><img src="assets/taksi-filo/en-analiz.jpg" data-img="assets/taksi-filo/{L}-analiz.jpg" alt="" width="520" height="1131" loading="lazy"><figcaption data-i18n="sh.2">{{sh.2}}</figcaption></figure>
+    <figure><img src="assets/taksi-filo/en-analiz-ortalamalar.jpg" data-img="assets/taksi-filo/{L}-analiz-ortalamalar.jpg" alt="" width="520" height="1131" loading="lazy"><figcaption data-i18n="sh.3">{{sh.3}}</figcaption></figure>
+    <figure><img src="assets/taksi-filo/en-istatistik.jpg" data-img="assets/taksi-filo/{L}-istatistik.jpg" alt="" width="520" height="1131" loading="lazy"><figcaption data-i18n="sh.4">{{sh.4}}</figcaption></figure>
+    <figure><img src="assets/taksi-filo/en-istatistik-giderler.jpg" data-img="assets/taksi-filo/{L}-istatistik-giderler.jpg" alt="" width="520" height="1131" loading="lazy"><figcaption data-i18n="sh.5">{{sh.5}}</figcaption></figure>
+    <figure><img src="assets/taksi-filo/en-sofor-paylasimlar.jpg" data-img="assets/taksi-filo/{L}-sofor-paylasimlar.jpg" alt="" width="520" height="1131" loading="lazy"><figcaption data-i18n="sh.6">{{sh.6}}</figcaption></figure>
+  </div>
+  <p class="rv" style="margin:22px 0 0;font:500 12.5px var(--mono);color:var(--soft)" data-i18n="sh.note">{{sh.note}}</p>
+</div></section>
+
+<!-- ================= with Taksi Hesap ================= -->
+<section class="sec"><div class="wrap with">
+  <div class="rv">
+    <div class="kick" data-i18n="w.kick">{{w.kick}}</div>
+    <h2 data-i18n="w.h2">{{w.h2}}</h2>
+    <p class="sub" data-i18n="w.p">{{w.p}}</p>
+    <a class="link" href="t-hesap.html" data-i18n="w.link">{{w.link}}</a>
+  </div>
+  <div class="pair rv d1" aria-hidden="true">
+    <span class="ic"><img src="icons/s/t-hesap.webp" alt="" width="256" height="256"></span>
+    <span class="ar"><svg viewBox="0 0 80 24" fill="none"><path class="d" d="M2 12H70" stroke="#1a2332" stroke-width="3" stroke-linecap="round"/><path d="M62 4l12 8-12 8" stroke="#1a2332" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="w.flow">{{w.flow}}</span></span>
+    <span class="ic"><img src="icons/s/taksi-filo.webp" alt="" width="256" height="256"></span>
+  </div>
+</div></section>
+
+<!-- ================= outro ================= -->
+<section class="end"><div class="wrap rv">
+  <h2 data-i18n="o.h2">{{o.h2}}</h2>
+  <p class="sub" data-i18n="o.sub">{{o.sub}}</p>
+  <a class="btn" href="https://www.instagram.com/studio.robu/" target="_blank" rel="noopener" data-i18n="cta.follow">{{cta.follow}}</a>
+</div></section>
+</main>
+
+<footer>
+  <div class="wrap frow">
+    <div>
+      <span data-i18n="footer.copyright">{{footer.copyright}}</span>
+      <div class="flinks"><a id="lk-priv" href="legal/taksi-filo/en.html" data-i18n="footer.privacy">{{footer.privacy}}</a><a id="lk-del" href="legal/taksi-filo/delete-account.html" data-i18n="footer.delete">{{footer.delete}}</a></div>
+    </div>
+    <div class="soc">
+{{SOCIAL}}
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.className += ' js';
+(function(){
+  var L = {{DICT}};
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var cur = 'en';
+
+  function fmt(v){ try { return new Intl.NumberFormat(cur === 'es' ? 'es' : cur === 'tr' ? 'tr' : 'en', { useGrouping: 'always' }).format(Math.round(v)) + ' ₺'; } catch(e){ return Math.round(v) + ' ₺'; } }
+
+  function apply(lang){
+    cur = lang;
+    document.documentElement.setAttribute('lang', lang);
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var k = el.getAttribute('data-i18n');
+      if (L[k] && L[k][lang]) el.innerHTML = L[k][lang];
+    });
+    document.querySelectorAll('img[data-img]').forEach(function(im){
+      im.src = im.getAttribute('data-img').replace('{L}', lang === 'tr' ? 'tr' : 'en');
+    });
+    document.querySelectorAll('[data-lang-btn]').forEach(function(b){
+      b.setAttribute('aria-current', b.getAttribute('data-lang-btn') === lang ? 'true' : 'false');
+    });
+    var tr = lang === 'tr';
+    document.getElementById('lk-priv').href = tr ? 'legal/taksi-filo/' : 'legal/taksi-filo/en.html';
+    document.getElementById('lk-del').href = tr ? 'legal/taksi-filo/hesap-silme.html' : 'legal/taksi-filo/delete-account.html';
+    try { localStorage.setItem('robu-lang', lang); } catch(e){}
+    tick(true);
+  }
+  document.querySelectorAll('[data-lang-btn]').forEach(function(b){
+    b.addEventListener('click', function(){ apply(b.getAttribute('data-lang-btn')); });
+  });
+
+  /* ---- each taxi's day builds up while it drives; the shift is "saved" near the end of the road ---- */
+  var taxis = Array.prototype.slice.call(document.querySelectorAll('.tx')).map(function(el){
+    return { el: el, amt: +el.getAttribute('data-amt'), bub: el.querySelector('.bub'), val: null, ok: null };
+  });
+  var totalEl = document.getElementById('total-v'), lastTot = '';
+  function ease(t){ return 1 - Math.pow(1 - t, 3); }
+  function tick(force){
+    var vw = window.innerWidth, sum = 0;
+    taxis.forEach(function(t){
+      var r = t.el.getBoundingClientRect();
+      var p = reduce ? 1 : (r.left + r.width) / (vw + r.width);
+      p = Math.max(0, Math.min(1, p));
+      var done = p >= 0.82, v = t.amt * ease(Math.min(1, p / 0.82));
+      sum += v;
+      var text = fmt(v);
+      if (force || text !== t.val) { t.bub.querySelector('b').textContent = text; t.val = text; }
+      if (force || done !== t.ok) { t.bub.classList.toggle('ok', done); t.ok = done; }
+    });
+    var tt = fmt(sum);
+    if (tt !== lastTot) { totalEl.textContent = tt; lastTot = tt; }
+  }
+  function loop(){ tick(false); requestAnimationFrame(loop); }
+
+  var saved = null;
+  try { saved = localStorage.getItem('robu-lang'); } catch(e){}
+  var guess = (navigator.language || 'en').slice(0, 2).toLowerCase();
+  if (guess !== 'tr' && guess !== 'es') guess = 'en';
+  apply(saved === 'tr' || saved === 'es' || saved === 'en' ? saved : guess);
+  if (!reduce) requestAnimationFrame(loop);
+
+  var els = document.querySelectorAll('.rv');
+  function reveal(e){ e.classList.add('in'); }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { reveal(e.target); io.unobserve(e.target); } });
+    }, { threshold: 0.16 });
+    els.forEach(function(el){ io.observe(el); });
+  } else { els.forEach(reveal); }
+})();
+</script>
+</body>
+</html>
