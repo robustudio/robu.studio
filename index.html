@@ -631,6 +631,17 @@
         footer a { text-decoration: none; }
         footer a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
 
+        .footer-art {
+            display: flex;
+            justify-content: center;
+            padding: 0 0 max(1.5rem, env(safe-area-inset-bottom));
+        }
+        .footer-art img {
+            display: block;
+            width: min(100%, 813px);
+            height: auto;
+        }
+
         /* ---------- Republic Day side pennants (homepage only) ---------- */
         .holiday-flag { display: none; }
         @media (min-width: 1440px) {
@@ -925,6 +936,10 @@
                 </nav>
             </div>
         </footer>
+
+        <div class="footer-art" aria-hidden="true">
+            <img src="./assets/home/republic-day-footer.png" alt="" width="813" height="125" loading="lazy">
+        </div>
 
     </div>
 
