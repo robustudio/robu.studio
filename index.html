@@ -631,6 +631,23 @@
         footer a { text-decoration: none; }
         footer a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
 
+        /* ---------- Republic Day side pennants (homepage only) ---------- */
+        .holiday-flag { display: none; }
+        @media (min-width: 1440px) {
+            .holiday-flag {
+                display: block;
+                position: absolute;
+                top: 8.25rem;
+                z-index: 2;
+                width: clamp(5rem, 7.64vw, 7.25rem);
+                height: auto;
+                pointer-events: none;
+                filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.22));
+            }
+            .holiday-flag--left { left: max(1rem, calc((100vw - 72rem) / 2 - 7.625rem)); }
+            .holiday-flag--right { right: max(1rem, calc((100vw - 72rem) / 2 - 7.625rem)); }
+        }
+
         /* ---------- Small screens ---------- */
         @media (max-width: 900px) {
             .hero { grid-template-columns: 1fr; gap: 0.5rem; padding-bottom: 2rem; }
@@ -657,6 +674,9 @@
 </head>
 <body>
     <script>document.documentElement.className += ' js';</script>
+    <img class="holiday-flag holiday-flag--left" src="./assets/home/flag-29-ekim.png" alt="" aria-hidden="true">
+    <img class="holiday-flag holiday-flag--right" src="./assets/home/ataturk-29-ekim.png" alt="" aria-hidden="true">
+
     <div class="wrap">
 
         <header class="nav">
