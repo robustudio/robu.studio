@@ -169,6 +169,11 @@
   .sealed .seal{top:96px;width:84px;height:84px;margin-left:-42px}.sealed .seal img{width:56px;height:auto}
   .sealed .lockt{position:absolute;left:50%;bottom:-8px;transform:translateX(-50%) rotate(-3deg);background:var(--navy);color:#fff;border-radius:999px;padding:9px 18px;font:600 13.5px var(--mono);white-space:nowrap;box-shadow:0 12px 16px -8px rgba(0,0,0,.5)}
 
+  .gal{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:38px max(28px,calc((100vw - 1160px)/2 + 28px)) 18px;scroll-padding-inline:max(28px,calc((100vw - 1160px)/2 + 28px));scrollbar-width:thin;scrollbar-color:var(--navy) transparent}
+  .gal:focus-visible{outline:2px solid var(--blue);outline-offset:-4px}
+  .gal figure{margin:0;flex:0 0 auto;width:min(310px,74vw);scroll-snap-align:start;border-radius:26px;overflow:hidden;background:var(--navy);box-shadow:0 24px 30px -20px rgba(60,40,10,.6)}
+  .gal img{display:block;width:100%;height:auto}
+  .gnote{font:500 13px var(--mono);letter-spacing:.02em;color:var(--ink2);margin:8px 0 0}
   .end{background:var(--navy);color:#fff;text-align:center;padding:110px 0 0;overflow:hidden}
   .end h2{color:#fff}.end h2 em{color:var(--cream)}
   .end .sub{margin:0 auto 26px;color:#c8cff5}
@@ -319,6 +324,21 @@
   <div class="sealed rv" aria-hidden="true"><div class="e"><div class="seal"><img src="assets/pigeon/pigeon.webp" alt=""></div></div><div class="lockt" data-i18n="v.tag">{{v.tag}}</div></div>
   <div class="rv d1"><div class="kick" data-i18n="v.kick">{{v.kick}}</div><h2 data-i18n="v.h2">{{v.h2}}</h2><p class="sub" data-i18n="v.sub">{{v.sub}}</p></div>
 </div></section>
+
+<!-- ================= screens ================= -->
+<section class="sec" id="screens" aria-labelledby="g-h2">
+  <div class="wrap"><div class="rv"><div class="kick" data-i18n="g.kick">{{g.kick}}</div><h2 id="g-h2" data-i18n="g.h2">{{g.h2}}</h2><p class="sub" data-i18n="g.sub">{{g.sub}}</p></div></div>
+  <div class="gal rv d1" tabindex="0">
+    <figure><img src="assets/pigeon/screens/s1.webp" alt="Letters Worth Waiting For: the Mailbox with letters on the way and arrived, set against Istanbul at sunset." width="720" height="1280" loading="lazy"></figure>
+    <figure><img src="assets/pigeon/screens/s2.webp" alt="Every Stamp Tells a Story: a stamp card for the peregrine falcon, set against Cappadocia." width="720" height="1280" loading="lazy"></figure>
+    <figure><img src="assets/pigeon/screens/s3.webp" alt="Collect a World of Wonders: the Stamp Atlas with collectible bird stamps, set against the Antalya coast." width="720" height="1280" loading="lazy"></figure>
+    <figure><img src="assets/pigeon/screens/s4.webp" alt="Your Words Know No Borders: the world map of letters and pen pals, set against the Black Sea." width="720" height="1280" loading="lazy"></figure>
+    <figure><img src="assets/pigeon/screens/s5.webp" alt="Some Words Feel Like Home: a letter from a pen pal in Japan, set against a forest lake in Bolu." width="720" height="1280" loading="lazy"></figure>
+    <figure><img src="assets/pigeon/screens/s6.webp" alt="A Little Piece of Today: a daily journal page with a mood and a photo, set against the terraces of Pamukkale." width="720" height="1280" loading="lazy"></figure>
+    <figure><img src="assets/pigeon/screens/s7.webp" alt="Your Story, Beautifully Collected: the profile with favorite stamps, set against Mardin." width="720" height="1280" loading="lazy"></figure>
+  </div>
+  <div class="wrap"><p class="gnote" data-i18n="g.note">{{g.note}}</p></div>
+</section>
 
 <!-- ================= outro ================= -->
 <section class="end"><div class="wrap rv">

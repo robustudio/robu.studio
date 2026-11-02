@@ -176,5 +176,25 @@
     "en": "Child safety",
     "es": "Seguridad infantil",
     "tr": "Çocuk güvenliği"
+  },
+  "g.kick": {
+    "en": "Inside the app",
+    "es": "Dentro de la app",
+    "tr": "Uygulamanın içi"
+  },
+  "g.h2": {
+    "en": "Take a <em>look around.</em>",
+    "es": "Echa un <em>vistazo.</em>",
+    "tr": "Bir <em>göz at.</em>"
+  },
+  "g.sub": {
+    "en": "The mailbox, stamp cards, the world map and your daily pages: a first look at Pigeon.",
+    "es": "El buz&oacute;n, los sellos, el mapa del mundo y tus p&aacute;ginas diarias: un primer vistazo a Pigeon.",
+    "tr": "Posta kutusu, pullar, dünya haritası ve günlük sayfaların: Pigeon&rsquo;a ilk bakış."
+  },
+  "g.note": {
+    "en": "Screens show sample data. Pigeon is still in development.",
+    "es": "Las pantallas muestran datos de ejemplo. Pigeon sigue en desarrollo.",
+    "tr": "Ekranlarda örnek veriler görünür. Pigeon hâlâ geliştirme aşamasında."
   }
 }
