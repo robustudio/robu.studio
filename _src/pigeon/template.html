@@ -333,7 +333,7 @@
   <div class="wrap frow">
     <div>
       <span data-i18n="footer.copyright">{{footer.copyright}}</span>
-      <div class="flinks"><a id="lk-priv" href="legal/pigeon/en.html" data-i18n="footer.privacy">{{footer.privacy}}</a><a id="lk-del" href="legal/pigeon/delete-account.html" data-i18n="footer.delete">{{footer.delete}}</a></div>
+      <div class="flinks"><a id="lk-priv" href="legal/pigeon/en.html" data-i18n="footer.privacy">{{footer.privacy}}</a><a id="lk-del" href="legal/pigeon/delete-account.html" data-i18n="footer.delete">{{footer.delete}}</a><a id="lk-child" href="legal/pigeon/child-safety.html" data-i18n="footer.child">{{footer.child}}</a></div>
     </div>
     <div class="soc">
 {{SOCIAL}}
@@ -393,6 +393,7 @@ document.documentElement.className += ' js';
     var tr = lang === 'tr';
     document.getElementById('lk-priv').href = tr ? 'legal/pigeon/' : 'legal/pigeon/en.html';
     document.getElementById('lk-del').href = tr ? 'legal/pigeon/hesap-silme.html' : 'legal/pigeon/delete-account.html';
+    document.getElementById('lk-child').href = tr ? 'legal/pigeon/cocuk-guvenligi.html' : 'legal/pigeon/child-safety.html';
     try { localStorage.setItem('robu-lang', lang); } catch(e){}
     requestAnimationFrame(layout);
   }

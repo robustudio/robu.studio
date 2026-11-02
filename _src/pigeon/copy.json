@@ -171,5 +171,10 @@
     "en": "Delete account",
     "es": "Eliminar cuenta",
     "tr": "Hesap silme"
+  },
+  "footer.child": {
+    "en": "Child safety",
+    "es": "Seguridad infantil",
+    "tr": "Çocuk güvenliği"
   }
 }
