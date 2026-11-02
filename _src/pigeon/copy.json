@@ -161,5 +161,15 @@
     "en": "&copy; Robu Studio &mdash; an independent app studio.",
     "es": "&copy; Robu Studio &mdash; un estudio de apps independiente.",
     "tr": "&copy; Robu Studio &mdash; bağımsız bir uygulama stüdyosu."
+  },
+  "footer.privacy": {
+    "en": "Privacy &amp; terms",
+    "es": "Privacidad y t&eacute;rminos",
+    "tr": "Gizlilik ve şartlar"
+  },
+  "footer.delete": {
+    "en": "Delete account",
+    "es": "Eliminar cuenta",
+    "tr": "Hesap silme"
   }
 }
