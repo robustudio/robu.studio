@@ -163,9 +163,14 @@
     "tr": "&copy; Robu Studio &mdash; bağımsız bir uygulama stüdyosu."
   },
   "footer.privacy": {
-    "en": "Privacy &amp; terms",
-    "es": "Privacidad y t&eacute;rminos",
-    "tr": "Gizlilik ve şartlar"
+    "en": "Privacy policy",
+    "es": "Pol&iacute;tica de privacidad",
+    "tr": "Gizlilik politikası"
+  },
+  "footer.terms": {
+    "en": "Terms of use",
+    "es": "T&eacute;rminos de uso",
+    "tr": "Kullanım koşulları"
   },
   "footer.delete": {
     "en": "Delete account",

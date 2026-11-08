@@ -243,5 +243,15 @@
     "en": "Never miss maintenance or paperwork &mdash; the app reminds you",
     "es": "No olvides el mantenimiento ni los tr&aacute;mites &mdash; la app te avisa",
     "tr": "Bakım ve resmi işlemleri unutma — uygulama hatırlatır"
+  },
+  "footer.privacy": {
+    "en": "Privacy policy",
+    "es": "Pol&iacute;tica de privacidad",
+    "tr": "Gizlilik politikası"
+  },
+  "footer.terms": {
+    "en": "Terms of use",
+    "es": "T&eacute;rminos de uso",
+    "tr": "Kullanım koşulları"
   }
 }
