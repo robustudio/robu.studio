@@ -38,8 +38,9 @@
 
   <!-- ══════════ TÜRKÇE ══════════ -->
   <section id="tr">
-    <h1>🚕 Taksi Hesap — Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-    <div class="sub">Son güncelleme: 14 Kasım 2026</div>
+    <h1 id="kvkk">🚕 Taksi Hesap — Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
+    <div class="sub">Son güncelleme: 15 Kasım 2026</div>
+    <div class="sub" style="margin-top:-14px;">Bu belge aynı zamanda 6698 sayılı Kanun'un 10. maddesi kapsamındaki KVKK aydınlatma yükümlülüğünü de karşılar — ayrı bir sayfaya gerek yoktur.</div>
     <div class="lang">🌐 <a href="#en">English version below</a></div>
 
     <div class="card">
@@ -49,7 +50,9 @@
     <h2>1. Topladığımız veriler</h2>
     <ul>
       <li><strong>Giriş bilgisi:</strong> Google veya Apple ile giriş yaptığınızda hesabınızın e-posta adresi ve benzersiz kullanıcı kimliği (UID).</li>
-      <li><strong>Profil bilgileri (sizin girdiğiniz):</strong> ad-soyad, telefon numarası, taksi plakası/plakaları, rolünüz (sahip / şoför) ve günlük yevmiye tutarı.</li>
+      <li><strong>Profil bilgileri (sizin girdiğiniz):</strong> ad-soyad, telefon numarası, taksi plakası/plakaları, rolünüz (sahip / şoför) ve günlük yevmiye tutarı.
+      <!-- TODO(sahip): Kodda iOS'ta kayıt ekranında ad-soyad/telefon alanları Apple Guideline 4 nedeniyle hiç gösterilmiyor (Android'de gösteriliyor). Bu cümle "istekleri toplanan alanları" anlatıyor, platforma göre ayrım yapmıyor — onaylarsan böyle kalabilir (iOS kullanıcısı bu alanları sonradan girebilir), ya da "iOS'ta kayıt sırasında istenmez" diye bir not eklememi ister misin? -->
+      </li>
       <li><strong>Hesap tutma kayıtlarınız:</strong> seyir (sürüş), kasa, alacak/veresiye, diğer tahsilat ve periyodik bakım/işlem kayıtlarınız — telefon değiştirdiğinizde veya uygulamayı yeniden kurduğunuzda kaybolmamaları için hesabınıza bağlı olarak otomatik yedeklenir.</li>
       <li><strong>Abonelik bilgisi:</strong> abonelik planı (3 aylık / yıllık), satın alma tarihi, aktif olup olmadığı ve mağazanın verdiği sipariş/işlem kimliği. <em>Kart veya ödeme bilgilerinizi görmeyiz; ödeme tamamen Google Play / Apple App Store tarafından işlenir.</em></li>
       <li><strong>Destek mesajları:</strong> uygulama içinden bize gönderdiğiniz geri bildirim ve destek mesajları.</li>
@@ -113,8 +116,9 @@
 
   <!-- ══════════ ENGLISH ══════════ -->
   <section id="en">
-    <h1>🚕 Taksi Hesap — Privacy Policy and KVKK Disclosure Notice</h1>
-    <div class="sub">Last updated: 14 November 2026</div>
+    <h1 id="kvkk-en">🚕 Taksi Hesap — Privacy Policy and KVKK Disclosure Notice</h1>
+    <div class="sub">Last updated: 15 November 2026</div>
+    <div class="sub" style="margin-top:-14px;">This document also fulfils the KVKK disclosure obligation under Article 10 of Law No. 6698 — a separate page is not needed.</div>
     <div class="lang">🌐 <a href="#tr">Türkçe sürüm yukarıda</a></div>
 
     <div class="card">
@@ -124,7 +128,9 @@
     <h2>1. Data we collect</h2>
     <ul>
       <li><strong>Sign-in data:</strong> the e-mail address of your Google or Apple account and a unique user ID (UID).</li>
-      <li><strong>Profile data (entered by you):</strong> full name, phone number, taxi plate number(s), your role (owner / driver) and daily wage amount.</li>
+      <li><strong>Profile data (entered by you):</strong> full name, phone number, taxi plate number(s), your role (owner / driver) and daily wage amount.
+      <!-- TODO(sahip): On iOS the sign-up screen hides the name/phone fields (Apple Guideline 4), Android still shows them. This line describes the fields the data model supports without a platform distinction — fine as-is (iOS users can still add them later), or would you like a note saying "not requested at sign-up on iOS"? -->
+      </li>
       <li><strong>Bookkeeping records:</strong> your trip, cash, receivable/credit, other collections and periodic maintenance/procedure records — automatically backed up under your account so they are not lost if you switch phones or reinstall the app.</li>
       <li><strong>Subscription data:</strong> plan (3-month / yearly), purchase date, whether it is active, and the order/transaction ID issued by the store. <em>We never see your card or payment details; payments are processed entirely by Google Play / the Apple App Store.</em></li>
       <li><strong>Support messages:</strong> feedback and support messages you send us from within the app.</li>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taksi Hesap — Hesap Silme</title>
+<title>Taksi Hesap — Hesap Silme / Delete Account</title>
 <style>
   :root {
     --bg: #0b1120; --card: #141d2e; --border: #2e3f56; --text: #e8e8e8;
@@ -40,38 +40,84 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>🚕 Taksi Hesap — Hesap Silme</h1>
-  <div class="sub">Taksi Hesap uygulaması (Android ve iOS) hesap ve veri silme talimatları</div>
 
-  <div class="card">
-    <h2 style="margin-top:0;">Uygulama İçinden Silme (Önerilen)</h2>
-    <div class="step"><span class="step-num">1</span><div>Taksi Hesap uygulamasını açın ve <strong>Ayarlar</strong> sekmesine gidin.</div></div>
-    <div class="step"><span class="step-num">2</span><div><strong>Hesabımı Sil</strong> seçeneğine dokunun.</div></div>
-    <div class="step"><span class="step-num">3</span><div>Aktif bir aboneliğiniz varsa önce mağaza ayarlarından iptal edin: Android'de Google Play → Abonelikler, iPhone'da Ayarlar → Apple Kimliği → Abonelikler.</div></div>
-    <div class="step"><span class="step-num">4</span><div>"Evet, İptal Ettim — Hesabı Sil" butonuna basın. Hesabınız <strong>anında</strong> silinir.</div></div>
-  </div>
+  <!-- ══════════ TÜRKÇE ══════════ -->
+  <section id="tr">
+    <h1>🚕 Taksi Hesap — Hesap Silme</h1>
+    <div class="sub">Son güncelleme: 15 Kasım 2026</div>
+    <div class="sub" style="margin-top:-18px;">🌐 <a href="#en">English version below</a></div>
 
-  <h2>Neler Silinir?</h2>
-  <div class="card">
-    <ul>
-      <li class="gone">✅ Profil bilgileriniz (isim, telefon, e-posta, plaka)</li>
-      <li class="gone">✅ Abonelik durumu kaydınız</li>
-      <li class="gone">✅ Google / Apple / Firebase giriş hesabınız</li>
-      <li class="gone">✅ Hesap tutma kayıtlarınız (seyir, kasa, alacak/veresiye vb.) — hem cihazınızdan hem buluttan</li>
-    </ul>
-  </div>
+    <div class="card">
+      <h2 style="margin-top:0;">Uygulama İçinden Silme (Önerilen)</h2>
+      <div class="step"><span class="step-num">1</span><div>Taksi Hesap uygulamasını açın ve <strong>Ayarlar</strong> sekmesine gidin.</div></div>
+      <div class="step"><span class="step-num">2</span><div><strong>Hesabımı Sil</strong> seçeneğine dokunun, açılan uyarıyı okuyun ve <strong>🗑️ Hesabı Sil</strong> ile onaylayın.</div></div>
+      <div class="step"><span class="step-num">3</span><div>Hesabınız <strong>anında</strong> silinir. Bu işlem <strong>geri alınamaz</strong> ve aktif bir aboneliğiniz varsa onu <strong>iptal etmez</strong>.</div></div>
+      <div class="step"><span class="step-num">4</span><div>Aktif bir aboneliğiniz varsa, hesap silindikten hemen sonra uygulama mağazanın abonelik sayfasını sizin için otomatik açar (Android'de Google Play → Abonelikler, iPhone'da Ayarlar → Apple Kimliği → Abonelikler); faturalandırmanın durması için oradan da iptal etmeniz gerekir.</div></div>
+    </div>
+    <p style="font-size:12px;color:var(--muted);margin:-6px 0 0;">Not: Güvenlik nedeniyle uzun süredir giriş yapmadıysanız, uygulama önce çıkış yapıp tekrar giriş yapmanızı isteyebilir.</p>
 
-  <h2>Neler Saklanır?</h2>
-  <div class="card">
-    <ul>
-      <li class="keep">📩 Daha önce gönderdiğiniz destek/geri bildirim mesajları, destek kayıtları için saklanır.</li>
-    </ul>
-  </div>
+    <h2>Neler Silinir?</h2>
+    <div class="card">
+      <ul>
+        <li class="gone">✅ Profil bilgileriniz (isim, telefon, plaka, rol, e-posta)</li>
+        <li class="gone">✅ Abonelik durumu kaydınız</li>
+        <li class="gone">✅ Google / Apple / Firebase giriş hesabınız</li>
+        <li class="gone">✅ Hesap tutma kayıtlarınız (seyir, kasa, alacak/veresiye vb.) — hem cihazınızdan hem buluttan</li>
+      </ul>
+    </div>
 
-  <h2>Uygulamaya Erişemiyorsanız</h2>
-  <div class="card">
-    <p style="margin:0;">Hesabınıza veya cihazınıza erişiminiz yoksa, kayıtlı e-posta adresinizi belirterek <a href="mailto:support@robu.studio">support@robu.studio</a> adresine yazın; hesabınızı sizin adınıza sileriz.</p>
-  </div>
+    <h2>Neler Saklanır?</h2>
+    <div class="card">
+      <ul>
+        <li class="keep">📩 Daha önce gönderdiğiniz destek/geri bildirim mesajları, destek kayıtları için saklanır.</li>
+      </ul>
+    </div>
+
+    <h2>Uygulamaya Erişemiyorsanız</h2>
+    <div class="card">
+      <p style="margin:0;">Hesabınıza veya cihazınıza erişiminiz yoksa, kayıtlı e-posta adresinizi belirterek <a href="mailto:support@robu.studio">support@robu.studio</a> adresine yazın; hesabınızı sizin adınıza sileriz.</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- ══════════ ENGLISH ══════════ -->
+  <section id="en">
+    <h1>🚕 Taksi Hesap — Delete Account</h1>
+    <div class="sub">Last updated: 15 November 2026</div>
+    <div class="sub" style="margin-top:-18px;">🌐 <a href="#tr">Türkçe sürüm yukarıda</a></div>
+
+    <div class="card">
+      <h2 style="margin-top:0;">Delete From Inside the App (Recommended)</h2>
+      <div class="step"><span class="step-num">1</span><div>Open the Taksi Hesap app and go to the <strong>Settings</strong> tab.</div></div>
+      <div class="step"><span class="step-num">2</span><div>Tap <strong>Delete My Account</strong>, read the warning, and confirm with <strong>🗑️ Delete Account</strong>.</div></div>
+      <div class="step"><span class="step-num">3</span><div>Your account is deleted <strong>instantly</strong>. This action <strong>cannot be undone</strong> and does <strong>not cancel</strong> an active subscription.</div></div>
+      <div class="step"><span class="step-num">4</span><div>If you have an active subscription, right after deletion the app automatically opens the store's subscription page for you (Android: Google Play → Subscriptions, iPhone: Settings → Apple ID → Subscriptions); cancel it there too so billing stops.</div></div>
+    </div>
+    <p style="font-size:12px;color:var(--muted);margin:-6px 0 0;">Note: for security, if you haven't signed in recently the app may first ask you to sign out and sign back in.</p>
+
+    <h2>What Gets Deleted</h2>
+    <div class="card">
+      <ul>
+        <li class="gone">✅ Your profile (name, phone, plate, role, email)</li>
+        <li class="gone">✅ Your subscription status record</li>
+        <li class="gone">✅ Your Google / Apple / Firebase sign-in account</li>
+        <li class="gone">✅ Your bookkeeping records (trips, cash, receivables/credit, etc.) — both on your device and in the cloud</li>
+      </ul>
+    </div>
+
+    <h2>What's Retained</h2>
+    <div class="card">
+      <ul>
+        <li class="keep">📩 Support/feedback messages you previously sent are kept for support records.</li>
+      </ul>
+    </div>
+
+    <h2>If You Can't Access the App</h2>
+    <div class="card">
+      <p style="margin:0;">If you no longer have access to your account or device, email <a href="mailto:support@robu.studio">support@robu.studio</a> with the address registered to your account, and we will delete it on your behalf.</p>
+    </div>
+  </section>
 
   <footer>Taksi Hesap &middot; <a href="gizlilik.html">Gizlilik Politikası / Privacy Policy</a> &middot; <a href="kosullar.html">Kullanım Koşulları / Terms of Service</a></footer>
 </div>
