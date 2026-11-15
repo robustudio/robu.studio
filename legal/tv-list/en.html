@@ -26,16 +26,18 @@
 <a class="lang" href="index.html">← Türkçe sürüm</a>
 
 <h1 id="privacy">TV-List — Privacy Policy</h1>
-<p class="muted">Last updated: August 15, 2026</p>
+<p class="muted">Last updated: November 15, 2026</p>
 
 <p>This privacy policy explains how the <strong>TV-List</strong> mobile app (package <code>studio.robu.tvlist</code>) collects, uses and protects your personal data. By using the app you agree to this policy.</p>
 
 <h2>Data we collect</h2>
 <ul>
-  <li><strong>Account:</strong> The email address, name and profile photo Google gives us when you sign in. We never see or store your password — Google handles authentication.</li>
-  <li><strong>Profile:</strong> Display name, username, bio, profile and cover photos, and any social media handles you add.</li>
-  <li><strong>App content:</strong> Your watchlists, watched episodes/movies, favorites, custom lists, ratings and reviews, notes, comments, posts and any photos you upload, likes, club memberships and messages, follows/followers, and messages you send to other users.</li>
+  <li><strong>Account:</strong> The email address and name <strong>Google</strong> or <strong>Apple</strong> gives us when you sign in, plus your profile photo when signing in with Google. We never see or store your password — Google or Apple handles authentication. If you choose "Hide My Email" with Apple, we receive Apple's relay address rather than your real one.</li>
+  <li><strong>Profile:</strong> Display name, username, bio, profile and cover photos, any social media handles you add, and optionally a <strong>country and city</strong> you enter yourself. Location is optional and comes from your own choice, not from your device's location sensor; the app never asks for location permission.</li>
+  <li><strong>App content:</strong> Your watchlists, watched episodes/movies, favorites, custom lists, ratings and reviews, notes, comments, posts and any photos you upload, stories that disappear after 24 hours, likes, club memberships and messages, follows/followers, and messages you send to other users.</li>
   <li><strong>Moderation:</strong> Users you block and reports you submit.</li>
+  <li><strong>Subscription status:</strong> If you buy Premium, the plan (monthly/yearly), status and period end date as reported to us by the store. <strong>We never see or store your card or payment details</strong> — payment is taken by Google Play or the App Store.</li>
+  <li><strong>Notification token:</strong> If you allow notifications, your device's notification token is stored against your account so we can send them.</li>
 </ul>
 
 <h2>How we use data</h2>
@@ -52,25 +54,44 @@
   <li><strong>Supabase:</strong> Used for authentication, database and file (image) storage. Your data is stored on Supabase servers.</li>
   <li><strong>TMDB (The Movie Database):</strong> Provides show and movie data. This product uses the TMDB API but is not endorsed or certified by TMDB. No personal data is shared with TMDB.</li>
   <li><strong>YouTube:</strong> Trailers are played via embedded YouTube; YouTube's own privacy policy applies.</li>
-  <li><strong>Expo:</strong> Used for over-the-air app updates.</li>
+  <li><strong>Expo (EAS):</strong> Used for over-the-air app updates and for hosting the web version that shared profile links open.</li>
+  <li><strong>Google Play Billing / Apple App Store:</strong> Sell and renew the Premium subscription. The store takes the payment; we only ask the store whether a subscription is valid and store the answer.</li>
+  <li><strong>Google Books:</strong> When showing the book a title was adapted from, only the <em>title of the production</em> is queried. No personal data is shared.</li>
+  <li><strong>Apple:</strong> Handles authentication if you use "Sign in with Apple".</li>
 </ul>
 
 <h2>Photos</h2>
-<p>We ask for access to your device's photo library when you add a profile picture, a cover image or a post. Only the images you pick are uploaded. Post photos are kept in private storage and served to authorised viewers through short-lived links.</p>
+<p>We ask for access to your device's photo library when you add a profile picture, a cover image, a post, a story or a photo in a chat. Only the images you pick are uploaded; the app does not access your camera. Post photos are kept in private storage and served to authorised viewers through short-lived links.</p>
+
+<h2>Sharing your profile</h2>
+<p>You can share your profile with a link. It opens <code>/u/your-username</code> on the app's web version and is <strong>visible to visitors who are not signed in</strong>. A private account stays private; what appears is governed by the per-section visibility settings under <strong>Profile → ⋯ → Privacy</strong>.</p>
+
+<h2>Subscription and payments</h2>
+<p>Some features are unlocked by a <strong>Premium</strong> subscription, sold through <strong>Google Play</strong> (Android) or the <strong>App Store</strong> (iOS) and renewing automatically.</p>
+<ul>
+  <li>The store takes the payment. <strong>We never see or store your card number, billing address or payment details.</strong></li>
+  <li>After a purchase we ask the store to confirm it is genuine. Only the <strong>plan, status and period end date</strong> are stored from the answer.</li>
+  <li>Managing and cancelling the subscription is done from your store account, under that store's rules.</li>
+</ul>
 
 <h2>Notifications</h2>
-<p>With your permission, we schedule local notifications on your device for new episodes of shows you track. These are generated on the device; no additional data is sent to our servers for this.</p>
+<p>With your permission, two kinds of notification are sent:</p>
+<ul>
+  <li><strong>Generated on the device:</strong> New-episode reminders for shows you track are scheduled locally; no data is sent to our servers for these.</li>
+  <li><strong>Sent from our server:</strong> New followers, messages, likes, comments and posts from the app's own account. For these, your device's <strong>notification token</strong> is stored against your account and handled through Google's (Android) and Apple's (iOS) notification services. You can turn individual kinds off inside the app, and withdraw the permission from your device settings at any time.</li>
+</ul>
 
 <h2>Data retention and deletion</h2>
-<p>Your data is kept while your account is active. You can delete your account any time from within the app: <strong>Profile → Account → Delete my account</strong>. This <strong>permanently</strong> and irreversibly deletes your account and all associated data, including profile, lists, watch history, ratings, notes, comments, posts, photos, club memberships, messages and follows. See the <a href="./delete-account.html">account deletion page</a> for a step-by-step guide and what to do if you can't open the app.</p>
+<p>Your data is kept while your account is active. You can delete your account any time from within the app: <strong>Profile → ⋯ → Account → Delete my account</strong>. This <strong>permanently</strong> and irreversibly deletes your account and all associated data, including profile, lists, watch history, ratings, notes, comments, posts, photos, club memberships, messages and follows. See the <a href="./delete-account.html">account deletion page</a> for a step-by-step guide and what to do if you can't open the app.</p>
 <p><strong>Retention:</strong> Deleting your account removes your data from the live system immediately. Copies held in backups cycle out within <strong>30 days</strong> at the latest.</p>
 <p>If you cannot access the app, email <a href="mailto:support@robu.studio">support@robu.studio</a> to request deletion.</p>
 
 <h2>Getting a copy of your data</h2>
-<p>You can request a machine-readable copy of the data we hold about you. Email <a href="mailto:support@robu.studio">support@robu.studio</a> from your account's Google address and we will respond <strong>within 30 days</strong>. This is currently handled by email rather than from inside the app.</p>
+<p>You can download a machine-readable copy <strong>from inside the app</strong>: <strong>Profile → ⋯ → Export your data</strong>. JSON and CSV are offered, covering your library, ratings, watched episodes and lists. This is part of the Premium subscription.</p>
+<p>If you do not have a subscription, or cannot open the app, email <a href="mailto:support@robu.studio">support@robu.studio</a> from your account's address and we will respond <strong>within 30 days</strong>.</p>
 
 <h2>Your rights</h2>
-<p>Depending on where you live, you may have the right to access the personal data we hold about you, to have it corrected or erased, to receive a copy in a portable format, to object to or restrict certain processing, and to lodge a complaint with your local data protection authority. Turkish users additionally hold the rights set out in Article 11 of Law No. 6698 (KVKK). To exercise any of these, email us from your account's address; account deletion is also available at any time from <strong>Profile → Account → Delete my account</strong>.</p>
+<p>Depending on where you live, you may have the right to access the personal data we hold about you, to have it corrected or erased, to receive a copy in a portable format, to object to or restrict certain processing, and to lodge a complaint with your local data protection authority. Turkish users additionally hold the rights set out in Article 11 of Law No. 6698 (KVKK). To exercise any of these, email us from your account's address; account deletion is also available at any time from <strong>Profile → ⋯ → Account → Delete my account</strong>.</p>
 <p><strong>Data controller:</strong> Belemir Leşkeri, Kocaeli/Türkiye — Contact: <a href="mailto:support@robu.studio">support@robu.studio</a></p>
 <p><strong>Legal bases:</strong> We process your data to perform our contract with you (providing the app you signed up for), to meet legal obligations (moderation and abuse records), and on the basis of legitimate interests (preventing abuse, improving the service).</p>
 
@@ -79,6 +100,23 @@
 
 <h2>Children's privacy</h2>
 <p>TV-List is not directed to children under 13 and does not knowingly collect data from them. If we learn we've collected data from a user under 13, we delete their account and data.</p>
+
+<h2 id="kvkk">KVKK Disclosure Notice</h2>
+<p>This section is provided under Article 10 of Turkish Law No. 6698 on the Protection of Personal Data (KVKK). It is the English counterpart of the <a href="index.html#kvkk">Turkish notice</a>; in case of any discrepancy, the Turkish text governs.</p>
+
+<p><strong>Data controller:</strong> Belemir Leşkeri, Kocaeli/Türkiye — Contact: <a href="mailto:support@robu.studio">support@robu.studio</a></p>
+
+<p><strong>Data processed and how it is collected:</strong> The data listed under "Data we collect" above, collected electronically while you use the app — either entered by you directly, or received automatically when you sign in with your <strong>Google or Apple</strong> account.</p>
+
+<p><strong>Purposes:</strong> Creating your account and verifying your identity; providing core services such as watch tracking, lists, notes, the calendar and statistics; running social features such as following, posts, comments and clubs; preventing abuse and improving the service.</p>
+
+<p><strong>Legal grounds (KVKK Art. 5):</strong> Your data is processed because it is <em>directly related to the conclusion or performance of a contract</em> (the data required to provide the app to you), because it is <em>necessary for the controller to fulfil a legal obligation</em> (reports and moderation records), and on the basis of <em>legitimate interests, provided this does not harm your fundamental rights and freedoms</em> (preventing abuse, improving the service).</p>
+
+<p><strong>Transfers:</strong> Your data is transferred to the infrastructure providers used to deliver the service: <strong>Supabase</strong> (database, authentication and file storage), <strong>Google</strong> (sign-in, notification delivery, Google Books queries), <strong>Apple</strong> (sign-in, notification delivery), <strong>Google Play and the App Store</strong> (selling and verifying subscriptions), <strong>TMDB</strong> (show and film data — no personal data is shared), <strong>Expo/EAS</strong> (app updates and hosting the web version). <strong>These providers' servers are located outside Türkiye, so your data is transferred abroad in this context.</strong> Your data is never sold or marketed to third parties for advertising. <!-- TODO(sahip): Under KVKK Art. 9 the basis for the transfer abroad (explicit consent / standard contract / undertaking) should be stated. Same decision as in the Turkish page. --></p>
+
+<p><strong>Your rights (KVKK Art. 11):</strong> You have the right to learn whether your personal data is processed; to request information if it has been; to learn the purpose of processing and whether it is used accordingly; to know the third parties to whom it is transferred, in Türkiye or abroad; to request correction if it is incomplete or inaccurate; to request erasure or destruction; to request that correction, erasure and destruction be notified to the third parties it was transferred to; to object to a result against you arising from analysis solely by automated systems; and to claim compensation if you suffer damage from unlawful processing.</p>
+
+<p>To exercise these rights, write to <a href="mailto:support@robu.studio">support@robu.studio</a> from your account's email address. Applications are answered within <strong>30 days</strong> at the latest. For deletion, <strong>Profile → ⋯ → Account → Delete my account</strong> inside the app is always available.</p>
 
 <h2>Changes</h2>
 <p>We may update this policy from time to time. Significant changes will be posted on this page.</p>
@@ -89,15 +127,15 @@
 <hr />
 
 <h1 id="terms">TV-List — Terms of Use</h1>
-<p class="muted">Last updated: August 15, 2026</p>
+<p class="muted">Last updated: November 15, 2026</p>
 
 <p>By using TV-List you agree to these terms. If you do not agree, please do not use the app.</p>
 
 <h2>Your account</h2>
 <ul>
-  <li>You must be at least 13 years old to create an account.</li>
+  <li>You must be at least 13 years old to create an account. <!-- TODO(sahip): Same decision as the Turkish page — 13 is the US COPPA threshold; under KVKK and GDPR the age of consent varies between 13 and 16 by country, and the app is distributed in Türkiye and the EU. -->  </li>
   <li>You are responsible for keeping your credentials safe and for activity on your account.</li>
-  <li>You can permanently delete your account any time from within the app (Profile → Account → Delete my account).</li>
+  <li>You can permanently delete your account any time from within the app (Profile → ⋯ → Account → Delete my account).</li>
 </ul>
 
 <h2>User content and zero tolerance</h2>
@@ -114,11 +152,24 @@
 <h2>Moderation</h2>
 <p>From inside the app you can <strong>block</strong> any user and <strong>report</strong> any user, comment or post. We review reports as quickly as we can, <strong>normally within 24 hours</strong>; where a rule has been broken we remove the content and suspend or terminate the account where warranted. That window may be longer during a backlog or a technical outage. These decisions are ours to make and require no prior notice.</p>
 
+<h2>Premium subscription</h2>
+<p>Some features — detailed statistics and the year in review, unlimited lists, messaging, creating your own club, profile customisation, seeing who viewed your story, and exporting your data — are unlocked by a <strong>Premium</strong> subscription. The rest of the app is free.</p>
+<ul>
+  <li>The subscription is sold <strong>monthly</strong> or <strong>yearly</strong> and <strong>renews automatically</strong>. The current price is shown on the purchase screen, as reported by the store.</li>
+  <li>Payment is charged to your <strong>Google Play</strong> or <strong>App Store</strong> account when you confirm the purchase.</li>
+  <li>It renews by itself unless turned off at least <strong>24 hours</strong> before the period ends. Turning off renewal and managing the subscription is done in your store account's subscription settings.</li>
+  <li><strong>Refunds</strong> are handled by the store you bought from, under that store's rules. <!-- TODO(sahip): Decide whether you want a separate statement about the right of withdrawal and the digital-content exception under Turkish distance-selling rules. Mirror of the Turkish page. --></li>
+  <li>When a subscription ends, Premium features switch off; your data is not deleted and stays in your account.</li>
+</ul>
+
 <h2>Content data</h2>
 <p>Show and movie information comes from TMDB. TV-List is not endorsed or certified by TMDB. The app does not stream any content; it provides tracking and discovery tools only.</p>
 
 <h2>Disclaimer</h2>
 <p>The app is provided "as is". We do not guarantee uninterrupted or error-free service, and we are not liable for damages arising from third-party content (TMDB data, user content, external links).</p>
+
+<h2>Governing law</h2>
+<p>These terms are governed by the laws of the Republic of Türkiye. <!-- TODO(sahip): If you want to name a competent court (e.g. the courts of Kocaeli), it belongs here. In consumer matters the consumer's place of residence keeps its jurisdiction. Mirror of the Turkish page. --></p>
 
 <h2>Changes and contact</h2>
 <p>We may update these terms; significant changes will be posted on this page. Questions: <a href="mailto:support@robu.studio">support@robu.studio</a></p>
