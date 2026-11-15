@@ -15,9 +15,9 @@
     "tr": "&larr; Tüm uygulamalar"
   },
   "hero.eyebrow": {
-    "en": "Live on Google Play",
-    "es": "Disponible en Google Play",
-    "tr": "Google Play'de yayında"
+    "en": "Live on Google Play and the App Store",
+    "es": "Disponible en Google Play y App Store",
+    "tr": "Google Play ve App Store'da yayında"
   },
   "hero.h1": {
     "en": "The taxi driver&rsquo;s <em>pocket ledger.</em>",
@@ -35,9 +35,9 @@
     "tr": "Google Play'den indir"
   },
   "cta.ios": {
-    "en": "iOS beta (TestFlight)",
-    "es": "Beta de iOS (TestFlight)",
-    "tr": "iOS beta (TestFlight)"
+    "en": "Download on the App Store",
+    "es": "Desc&aacute;rgala en App Store",
+    "tr": "App Store'dan indir"
   },
   "trust.1.b": {
     "en": "No ads",
@@ -65,9 +65,9 @@
     "tr": "Android + iOS"
   },
   "trust.3.s": {
-    "en": "iOS is in beta",
-    "es": "iOS est&aacute; en beta",
-    "tr": "iOS beta'da"
+    "en": "Google Play and the App Store",
+    "es": "En Google Play y App Store",
+    "tr": "Google Play ve App Store'da"
   },
   "chip.1": {
     "en": "&#8987; Pending 150 &#8378;",
