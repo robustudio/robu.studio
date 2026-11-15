@@ -323,5 +323,10 @@
     "en": "days",
     "es": "d&iacute;as",
     "tr": "gün"
+  },
+  "footer.terms": {
+    "en": "Terms of use",
+    "es": "T&eacute;rminos de uso",
+    "tr": "Kullanım koşulları"
   }
 }

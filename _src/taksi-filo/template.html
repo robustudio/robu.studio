@@ -339,7 +339,7 @@
   <div class="wrap frow">
     <div>
       <span data-i18n="footer.copyright">{{footer.copyright}}</span>
-      <div class="flinks"><a id="lk-priv" href="legal/taksi-filo/en.html" data-i18n="footer.privacy">{{footer.privacy}}</a><a id="lk-del" href="legal/taksi-filo/delete-account.html" data-i18n="footer.delete">{{footer.delete}}</a><a href="mailto:support@robu.studio" data-i18n="footer.support">{{footer.support}}</a></div>
+      <div class="flinks"><a id="lk-priv" href="legal/taksi-filo/en.html" data-i18n="footer.privacy">{{footer.privacy}}</a><a id="lk-terms" href="legal/taksi-filo/terms-of-use.html" data-i18n="footer.terms">{{footer.terms}}</a><a id="lk-del" href="legal/taksi-filo/delete-account.html" data-i18n="footer.delete">{{footer.delete}}</a><a href="mailto:support@robu.studio" data-i18n="footer.support">{{footer.support}}</a></div>
     </div>
     <div class="soc">
 {{SOCIAL}}
@@ -371,6 +371,7 @@ document.documentElement.className += ' js';
     });
     var tr = lang === 'tr';
     document.getElementById('lk-priv').href = tr ? 'legal/taksi-filo/' : 'legal/taksi-filo/en.html';
+    document.getElementById('lk-terms').href = tr ? 'legal/taksi-filo/kullanim-kosullari.html' : 'legal/taksi-filo/terms-of-use.html';
     document.getElementById('lk-del').href = tr ? 'legal/taksi-filo/hesap-silme.html' : 'legal/taksi-filo/delete-account.html';
     try { localStorage.setItem('robu-lang', lang); } catch(e){}
     tick(true);

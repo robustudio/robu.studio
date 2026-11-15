@@ -21,7 +21,7 @@ footer { margin-top:40px; font-size:12px; color:var(--muted); text-align:center;
 <body>
 <div class="wrap">
   <h1>🚕 Taksi Hesap Filo — Privacy Policy and KVKK Disclosure Notice</h1>
-  <div class="sub">Last updated: October 27, 2026</div>
+  <div class="sub">Last updated: November 15, 2026</div>
   <div class="lang">🌐 <a href="index.html">Türkçe sürüm</a></div>
   <div class="card">Under Turkish Law No. 6698 on the Protection of Personal Data ("KVKK"), this notice explains how the Taksi Hesap Filo mobile app (Android and iOS), developed by Belemir Leşkeri (an individual) as data controller, handles your personal data. Contact: support@robu.studio. By using the app you confirm that you have read this notice.</div>
   <h2>1. What Taksi Hesap Filo is</h2>
@@ -30,10 +30,10 @@ footer { margin-top:40px; font-size:12px; color:var(--muted); text-align:center;
   <ul>
     <li><b>Sign-in data:</b> when you sign in with Google or Apple, your account e-mail, the name the provider gives us and a unique user ID (UID). The sign-in system is shared with Taksi Hesap: the same account works in both apps.</li>
     <li><b>Profile:</b> an optional full name (if you leave it empty your account's name or a generic name is used; you can change it in Settings), optional phone number, your role (taxi owner / tenant) and language. Each time you open the app (at most twice a day) the app version, build number, platform (Android/iOS) and time of last use are also written to your profile; they are used to spot outdated versions and to give support.</li>
-    <li><b>Subscription (if you manage vehicles):</b> if you subscribe through Google Play or the App Store, the app asks the store which subscription is active and writes how many vehicles it covers, the platform and the time of the last check to your profile. Payment details such as your card stay with Google/Apple and never reach us. The trial lasts 7 days from the day you create your account. In special cases (for example a gift) the app's administrator can grant you plan access by hand; that grant is stored on your profile.</li>
+    <li><b>Subscription (if you manage vehicles):</b> if you subscribe through Google Play or the App Store, the app asks the store which subscription is active and writes how many vehicles it covers, the platform and the time of the last check to your profile. Payment details such as your card stay with Google/Apple and never reach us. The trial lasts 7 days from the day you first create your profile; that day is kept in a separate record together with your account's ID (only the ID and the date), so deleting and re-creating your profile does not restart the trial. In special cases (for example a gift) the app's administrator can grant you plan access by hand; that grant is stored on your profile.</li>
     <li><b>Vehicles (if you are a manager):</b> the plates you declare, optional nicknames and an owner/tenant label per vehicle. We do not ask for or verify ownership documents; a plate is your own declaration.</li>
     <li><b>Driver invites (if you are a manager):</b> the invited person's name and optional e-mail/phone, the invite's plate and expiry. An invite also carries your name and, if set, your phone so that it can be shown on the consent screen.</li>
-    <li><b>Sharing (if you are a driver):</b> which plate's records you share with which manager and from which date; when you accepted and which version of the text you accepted.</li>
+    <li><b>Sharing (if you are a driver):</b> which plate's records you share with which manager and from which date; when you accepted and which version of the text you accepted. The sharing link also holds both parties' names and the manager's phone (if any).</li>
     <li><b>Your Taksi Hesap shift records (if you are a driver and accepted sharing):</b> the manager sees only your shift records for the shared plate from the day sharing started: date, km, takings (cash/card), daily pay (yevmiye), expense items and trip count. These records stay in Taksi Hesap; Taksi Hesap Filo does not copy them to its own servers, it only displays them on the manager's screen.</li>
     <li><b>Check on the consent screen:</b> before you accept an invite we look at whether that plate is in your own Taksi Hesap profile. This check is only for your own account, its result is shown only to you, and nothing is stored.</li>
     <li><b>Your suggestion / complaint messages (if you send any):</b> the message and its topic; so that we can reply and fix the problem, also your name, e-mail address, role, app version and platform (Android/iOS). Only you and the app's administrator (the data controller) can read a message.</li>
@@ -57,10 +57,12 @@ footer { margin-top:40px; font-size:12px; color:var(--muted); text-align:center;
   <ul>
     <li>Google Firebase (Authentication and Cloud Firestore): sign-in and storage of the data above. A Firebase project shared with Taksi Hesap is used; Taksi Hesap Filo data is kept in its own collections.</li>
     <li>Google Sign-In and Sign in with Apple: authentication.</li>
+    <li>robu.studio (GitHub Pages): hosts these texts and the invite landing page. The invite link carries only the invite ID; the page uses no cookies or analytics, but the hosting provider may process technical connection data such as your IP address when the page is requested, under its own policy.</li>
   </ul>
   <p>These providers' servers may be outside Türkiye, so your data may be transferred abroad. They are subject to their own privacy policies. Your data is not shared with other third parties (except records shared with a manager with the driver's consent) and is not disclosed unless legally required.</p>
   <h2>6. Retention and deletion</h2>
   <p>Your data is kept while your account is open. You can delete your account any time in the app under <b>Settings → Delete my account</b> (you will be asked to sign in once more for security). This immediately deletes your Taksi Hesap Filo profile, vehicles, invites, sharing and suggestion/complaint messages. If you also have a Taksi Hesap account, that account and its records are not touched and your sign-in record is kept for Taksi Hesap. If you do not use Taksi Hesap, your sign-in record is deleted too. Details: <a href="delete-account.html">Account deletion</a>.</p>
+  <p><b>Trial record (the one exception):</b> the day your 7-day trial began is kept in a separate record together with your account's unique ID (and nothing else), so that you cannot restart the trial by deleting and re-creating your profile (legitimate interest, KVKK art. 5/2-f). <b>Delete my account</b> does not remove this record. If you do not use Taksi Hesap your sign-in record is deleted as well, so the record can no longer be linked to you; if you have a Taksi Hesap account the record stays tied to that same sign-in ID. You can write to <a href="mailto:support@robu.studio">support@robu.studio</a> to have this record deleted too (the trial can then be restarted).</p>
   <p>Records a manager wrote in their own account (for example the invite they wrote for you) are that manager's data and are deleted when they delete their account.</p>
   <h2>7. Security</h2>
   <p>Data travels over encrypted connections (HTTPS/TLS) provided by Firebase and is protected by access rules: a user can read only their own data, and a manager only the records a driver has approved. The app's administrator (the data controller) can see Taksi Hesap Filo data (profile details, vehicles, sharing status, app version and incoming messages) to run the app, give support and keep it secure, and can delete a user's Taksi Hesap Filo data (profile, vehicles, invitations, sharing links and messages); this does not touch Taksi Hesap records. No method is 100% secure, but we take reasonable technical measures.</p>
@@ -84,7 +86,7 @@ footer { margin-top:40px; font-size:12px; color:var(--muted); text-align:center;
   <p>This policy may be updated; significant changes will be announced in the app or on this page. The date at the top shows the last update.</p>
   <h2>11. Contact</h2>
   <p>Belemir Leşkeri — support@robu.studio</p>
-  <footer>© Taksi Hesap Filo — support@robu.studio</footer>
+  <footer><a href="en.html">Privacy Policy</a> · <a href="terms-of-use.html">Terms of Use</a> · <a href="delete-account.html">Account deletion</a><br>© Taksi Hesap Filo — support@robu.studio</footer>
 </div>
 </body>
 </html>
