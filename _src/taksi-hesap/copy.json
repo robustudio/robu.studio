@@ -130,9 +130,9 @@
     "tr": "Kasa, yevmiye, yakıt: gün kapanır, arşive girer. Geçmiş tarihleri istediğin an aç."
   },
   "v.kick": {
-    "en": "In 38 seconds",
-    "es": "En 38 segundos",
-    "tr": "38 saniyede"
+    "en": "In 43 seconds",
+    "es": "En 43 segundos",
+    "tr": "43 saniyede"
   },
   "v.h2": {
     "en": "How does Taksi Hesap work?",
@@ -253,5 +253,20 @@
     "en": "Terms of use",
     "es": "T&eacute;rminos de uso",
     "tr": "Kullanım koşulları"
+  },
+  "v.play": {
+    "en": "Play the video",
+    "es": "Reproducir el v&iacute;deo",
+    "tr": "Videoyu oynat"
+  },
+  "v.note": {
+    "en": "The video loads from YouTube only when you press play.",
+    "es": "El v&iacute;deo se carga desde YouTube solo al pulsar reproducir.",
+    "tr": "Video, yalnızca oynat'a bastığında YouTube'dan yüklenir."
+  },
+  "v.yt": {
+    "en": "Watch on YouTube",
+    "es": "Ver en YouTube",
+    "tr": "YouTube'da izle"
   }
 }

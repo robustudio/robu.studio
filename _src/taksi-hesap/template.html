@@ -125,7 +125,14 @@
   .lamp{position:absolute;left:50%;top:-30px;transform:translateX(-50%);background:#ffc20e;color:#1a1208;font:900 18px var(--serif);letter-spacing:.22em;padding:8px 26px 6px;border-radius:12px 12px 0 0;border:3px solid #1a1208;border-bottom:0;z-index:2;animation:glow 3.2s ease-in-out infinite}
   @keyframes glow{50%{box-shadow:0 0 28px rgba(255,194,14,.7)}}
   .vframe{border-radius:24px;overflow:hidden;border:4px solid #ffc20e;box-shadow:0 40px 60px -30px #000;background:#000}
-  .vframe video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+  .vframe iframe,.ytf{display:block;width:100%;aspect-ratio:16/9;border:0;background:#000}
+  .ytf{position:relative;overflow:hidden;color:#fff;text-decoration:none;cursor:pointer}
+  .ytf img{display:block;width:100%;height:100%;object-fit:cover}
+  .ytf .play{position:absolute;left:4.5%;top:8%;display:inline-flex;align-items:center;gap:12px;padding:13px 26px 13px 20px;border-radius:999px;background:#ffc20e;color:#1a1208;border:3px solid #1a1208;font:800 17px var(--sans);box-shadow:0 10px 30px rgba(0,0,0,.5);transition:transform .15s ease}
+  .ytf .play svg{width:20px;height:23px;flex:none}
+  @media (max-width:600px){.ytf .play{padding:8px 14px 8px 12px;gap:8px;font-size:13px;border-width:2px}.ytf .play svg{width:14px;height:16px}}
+  .ytf:hover .play,.ytf:focus-visible .play{transform:scale(1.05)}
+  .vnote{margin:14px 4px 0;font-size:13px;line-height:1.5;color:#e9d3ae;opacity:.9}.vnote a{color:#ffc20e}
 
   .report{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;padding:110px 0 30px}
   .chat{background:#fff7e0;border-radius:28px;padding:30px;border:3px solid #1a1208;box-shadow:10px 10px 0 #1a1208}
@@ -313,7 +320,8 @@
     </div>
     <div class="vwrap rv d1">
       <div class="lamp" aria-hidden="true">TAKSİ</div>
-      <div class="vframe"><video controls preload="metadata" playsinline poster="assets/t-hesap/tanitim-poster.jpg" title="Taksi Hesap"><source src="assets/t-hesap/tanitim.mp4" type="video/mp4"></video></div>
+      <div class="vframe"><a class="ytf" href="https://youtu.be/guANtay_0fQ" target="_blank" rel="noopener" data-yt="guANtay_0fQ"><img src="assets/t-hesap/video-poster.jpg" alt="" width="1280" height="720" loading="lazy"><span class="play"><svg viewBox="0 0 34 38" fill="#1a1208" aria-hidden="true"><path d="M3 3.2v31.6c0 1.6 1.7 2.5 3 1.7l26-15.8c1.2-.7 1.2-2.6 0-3.3L6 1.5C4.7.7 3 1.6 3 3.2z"/></svg><span data-i18n="v.play">{{v.play}}</span></span></a></div>
+      <p class="vnote"><span data-i18n="v.note">{{v.note}}</span> <a href="https://youtu.be/guANtay_0fQ" target="_blank" rel="noopener" data-i18n="v.yt">{{v.yt}}</a></p>
     </div>
   </div>
 </section>
@@ -401,6 +409,23 @@ document.documentElement.className += ' js';
   } else {
     els.forEach(function(el){ el.classList.add('in'); });
   }
+})();
+</script>
+<script>
+(function(){
+  var f = document.querySelector('.ytf');
+  if (!f) return;
+  f.addEventListener('click', function(e){
+    e.preventDefault();
+    var i = document.createElement('iframe');
+    i.src = 'https://www.youtube-nocookie.com/embed/' + f.getAttribute('data-yt') + '?autoplay=1&rel=0&playsinline=1';
+    i.title = 'Taksi Hesap';
+    i.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    i.allowFullscreen = true;
+    i.referrerPolicy = 'strict-origin-when-cross-origin';
+    f.replaceWith(i);
+    i.focus();
+  });
 })();
 </script>
 </body>
