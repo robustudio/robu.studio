@@ -25,21 +25,26 @@
 
 <a class="lang" href="./">← Türkçe sürüm</a>
 
+<p class="muted"><a href="#privacy">Privacy policy</a> · <a href="#kvkk">KVKK disclosure notice</a> · <a href="#terms">Terms of use</a> · <a href="./delete-account.html">Account deletion</a></p>
+
 <h1 id="privacy">Pagely — Privacy Policy</h1>
-<p class="muted">Last updated: 13 October 2026</p>
+<p class="muted">Last updated: 24 November 2026</p>
 
 <p>This privacy policy explains how the <strong>Pagely</strong> mobile app (package name <code>studio.robu.pagely</code>) collects, uses and protects your personal data. By using the app you accept this policy.</p>
 
 <h2>Data we collect</h2>
 <ul>
-  <li><strong>Account:</strong> You sign in with your Google account or with Apple. From Google we receive your email address and the name and picture on your Google profile; from Apple we receive your name (only the first time you approve) and either your email address or the private relay address Apple creates for you. <strong>The app has no passwords, so none is stored with us.</strong></li>
-  <li><strong>Profile:</strong> Display name, username, bio, profile picture and cover photo, and, only if you choose to add them, your country and city.</li>
-  <li><strong>App content:</strong> Your library and shelves, reading status and page progress, reading sessions and durations, reading goals, ratings and reviews, notes and any page photos attached to them, posts and post photos, comments and likes, club memberships and club messages, direct messages, stories and who viewed them, book requests you send, bookcases you arrange, who you follow and who follows you (including the authors and publishers you follow), and the extra details you record on a book, such as its format, series, price, how you got it and your recommendation.</li>
+  <li><strong>Account:</strong> You sign in with your Google account, with Apple, or with an email address and password. From Google we receive your email address and the name and picture on your Google profile; from Apple we receive your name (only the first time you approve) and either your email address or the private relay address Apple creates for you. If you sign in with email, or set a password under Account → Password, we store your email address and your password; <strong>the password is not kept in plain text but only as a one-way hash in our authentication service, Supabase, and we cannot see it.</strong> The app does not currently send you confirmation or password-reset emails.
+</li>
+  <li><strong>Profile:</strong> Display name, username, bio, profile picture and cover photo; only if you choose to add them, your country, your city and the links you put on your profile (TV-List, Instagram, Goodreads, X and Spotify usernames, a website); and your profile appearance settings (name colour, accent colour, background image).</li>
+  <li><strong>App content:</strong> Your library and shelves, reading status and page progress, reading sessions and durations, reading goals, ratings and reviews, scorecards, notes and any page photos attached to them, posts and post photos, comments and likes, club memberships and club messages, direct messages, stories and who viewed them, book requests you send, bookcases you arrange, who you follow and who follows you (including the authors and publishers you follow), and the extra details you record on a book, such as its format, series, price, how you got it and your recommendation.</li>
   <li><strong>Books you add by hand:</strong> Title, author, page count and the cover photo you take.</li>
-  <li><strong>Moderation data:</strong> Users you block and reports you send.</li>
+  <li><strong>Moderation data:</strong> Users you block and reports you send; and, if a report is made about your account or a moderation action (warning, content removal, suspension) is taken against it, the record of that.</li>
+  <li><strong>Export file:</strong> If you export your library, reviews and notes (a Premium feature), the resulting file is kept in private storage tied to your account; each export overwrites the same file.</li>
   <li><strong>Subscription:</strong> If you subscribe, your plan, its status and expiry date, and the store's purchase identifier. We never receive your card or payment details.</li>
 </ul>
 <p>We never read your device's location; the country and city on your profile are text you choose to enter yourself. Photos you upload are re-encoded before being sent to the server, which strips their EXIF metadata — <strong>including GPS coordinates</strong>.</p>
+<p><strong>Stories:</strong> A story stops being shown in the app 24 hours after it is posted. The stored record and photo of an expired story are not shown to others; they stay in your account until you delete the story or your account.</p>
 
 <h2>How we use the data</h2>
 <ul>
@@ -52,13 +57,13 @@
 
 <h2>Third-party services</h2>
 <ul>
-  <li><strong>Supabase:</strong> Used for authentication, the database and file (image) storage. Your data is stored on Supabase servers.</li>
+  <li><strong>Supabase:</strong> Used for authentication, the database and file (image) storage. Your data is stored on Supabase's servers in Frankfurt (Germany).</li>
   <li><strong>Google Sign-In:</strong> Used for signing in. Google's own privacy policy applies.</li>
   <li><strong>Sign in with Apple:</strong> Used for signing in on iPhone and iPad. Apple's own privacy policy applies.</li>
   <li><strong>Google Books API and Open Library:</strong> Provide book information and cover images. The titles, authors and search words you look up are sent to these services; your identity is not shared with them.</li>
   <li><strong>TMDB:</strong> Used to find the film or series made from a book, and its cast. Only the book's title is sent. This product uses the TMDB API but is not endorsed or certified by TMDB.</li>
   <li><strong>Wikipedia and Wikidata:</strong> Used for author information such as a short biography, birth details and a photo. Only the author's name is sent.</li>
-  <li><strong>Google Play and the App Store:</strong> If you subscribe, the store takes the payment and tells us whether the subscription is active. We keep your plan, its status and expiry date and the store's purchase identifier.</li>
+  <li><strong>Google Play and the App Store:</strong> If you subscribe, the store takes the payment. To confirm that the subscription is genuine and whether it is active, our server sends the purchase identifier to the store's own interface (Google Play Developer API, App Store Server API). We keep your plan, its status and expiry date and the store's purchase identifier.</li>
   <li><strong>Expo:</strong> Used for app updates.</li>
 </ul>
 <p>As with any internet request, these services can see your device's IP address. The book, film and author lookups above never include your account details.</p>
@@ -66,50 +71,74 @@
 
 <h2>Camera and photos</h2>
 <p>We ask for access to your photo library when you set a profile picture, a cover image, a post image, a note photo, or the cover of a book you add by hand. We ask for camera access to scan book barcodes and to photograph pages. <strong>Only images you pick or take are uploaded; the camera is never used in the background.</strong></p>
-<p>Note and post photos are kept in private storage and served to users allowed to see that content through short-lived links. Profile pictures, cover photos and book covers are visible to anyone who can see the profile.</p>
+<p>Note, post, story and club-chat photos are kept in private storage and served to users allowed to see that content through short-lived links. Profile pictures and cover photos, and the cover photos of books you add by hand, sit in public storage: anyone who knows the link can view them.</p>
 
 <h2>Private account</h2>
-<p>You can hide your profile with <strong>Profile → Edit → Private account</strong>. On a private account your shelves, reading activity and follower list are visible only to followers you have approved. This is enforced server-side with row-level security rules, not merely hidden in the interface.</p>
+<p>You can hide your profile with <strong>Profile → the ⋯ menu at the top left → Edit profile → Private account</strong>. On a private account your shelves, reading activity and follower list are visible only to followers you have approved, and your account does not appear in search. This is enforced server-side with row-level security rules, not merely hidden in the interface.</p>
+<p>A narrower option on the same screen is <strong>Hide activity</strong>: your account stays public and searchable, but your shelves and reading activity are not shown to anyone but you (enforced server-side), and your follower counts are hidden in the app interface.</p>
 
 <h2>Keeping and deleting your data</h2>
 <p><a href="./delete-account.html"><strong>How to delete your account and data →</strong></a></p>
-<p>Your data is kept for as long as your account is active. You can delete your account at any time from inside the app: <strong>Profile → Account → Delete my account</strong>. This <strong>permanently</strong> and irreversibly deletes your account and all of your data, including your profile, library, shelves, reading history, sessions, goals, notes, photos, posts, comments, likes, club memberships and follows.</p>
-<p><strong>Retention:</strong> Deleting your account removes your data from the live system immediately. Copies held in backups cycle out within <strong>30 days</strong> at the latest. If you bought a subscription, payment records are held by Google Play or Apple and are subject to statutory retention periods under tax law; we have no access to them. The record of your plan and its expiry date that we keep is deleted with your account.</p>
-<p>If you cannot access the app, email <a href="mailto:robu.studyo@gmail.com">robu.studyo@gmail.com</a> to request deletion.</p>
+<p>Your data is kept for as long as your account is active. You can delete your account at any time from inside the app: <strong>Profile tab → the ⋯ menu at the top left → Account → Delete my account</strong>. This <strong>permanently</strong> and irreversibly deletes your account and all of your data, including your profile, library, shelves, reading history, sessions, goals, notes, posts, comments, likes, messages, stories, club memberships and follows, as well as every photo you uploaded (profile, note, post, story, club chat, covers of books you added by hand) and your export file.
+</p>
+<p><strong>Retention:</strong> Deleting your account removes your data from the live system immediately. Weekly database backups are kept on the data controller's own computer and the latest 4 copies are retained; deleted data drops out of these backups within <strong>4 weeks</strong> at the latest. Backups are used only to restore data after a loss.
+Reports made about you and warnings given to you are deleted with your account; the administrator action log (which moderation action was taken, and when) stays, without any link to your account.
+If you bought a subscription, payment records are held by Google Play or Apple and are subject to statutory retention periods under tax law; we have no access to them. The record of your plan and its expiry date that we keep is deleted with your account.</p>
+<p>If you cannot access the app, email <a href="mailto:support@robu.studio">support@robu.studio</a> to request deletion.</p>
 
 <h2>Getting a copy of your data</h2>
-<p>You can request a machine-readable copy of the data we hold about you. Email <a href="mailto:robu.studyo@gmail.com">robu.studyo@gmail.com</a> from your account's address and we will respond <strong>within 30 days</strong>. This is currently handled by email rather than from inside the app.</p>
+<p>You can request a machine-readable copy of the data we hold about you. Email <a href="mailto:support@robu.studio">support@robu.studio</a> from your account's address and we will respond <strong>within 30 days</strong>. In addition, Premium members can export their library, reading sessions, reviews, notes and shelves themselves as a JSON or CSV file from <strong>Profile → the ⋯ menu → Account → Export your data</strong>; that file does not include social content such as posts, messages and stories, so for a full copy the email route applies.</p>
 
 <h2>Your rights</h2>
-<p>Depending on where you live, you may have the right to access the personal data we hold about you, to have it corrected or erased, to receive a copy in a portable format, to object to or restrict certain processing, and to lodge a complaint with your local data protection authority. Turkish users additionally hold the rights set out in Article 11 of Law No. 6698 (KVKK). To exercise any of these, email us from your account's address; account deletion is also available at any time from <strong>Profile → Account → Delete my account</strong>.</p>
-<p><strong>Data controller:</strong> Belemir Leşkeri — Kocaeli, Türkiye — Contact: <a href="mailto:robu.studyo@gmail.com">robu.studyo@gmail.com</a></p>
+<p>Depending on where you live, you may have the right to access the personal data we hold about you, to have it corrected or erased, to receive a copy in a portable format, to object to or restrict certain processing, and to lodge a complaint with your local data protection authority. Turkish users additionally hold the rights set out in Article 11 of Law No. 6698 (KVKK). To exercise any of these, email us from your account's address; account deletion is also available at any time from <strong>Profile → the ⋯ menu → Account → Delete my account</strong>.</p>
+<p><strong>Data controller:</strong> Belemir Leşkeri — Kocaeli, Türkiye — Contact: <a href="mailto:support@robu.studio">support@robu.studio</a></p>
 <p><strong>Legal bases:</strong> We process your data to perform our contract with you (providing the app you signed up for), to meet legal obligations (moderation and abuse records), and on the basis of legitimate interests (preventing abuse, improving the service).</p>
 
 <h2>Security</h2>
 <p>Data is encrypted in transit (HTTPS) and protected by row-level security (RLS) policies; each user can reach only their own data and content made visible to them.</p>
 
+<h2 id="kvkk">KVKK Disclosure Notice (Turkey)</h2>
+<p>This section is prepared under Article 10 of Law No. 6698 on the Protection of Personal Data (KVKK). It is the English counterpart of the "KVKK Aydınlatma Metni" section of the <a href="./#kvkk">Turkish page</a>.</p>
+
+<p><strong>Data controller:</strong> Belemir Leşkeri — Kocaeli, Türkiye — Contact: <a href="mailto:support@robu.studio">support@robu.studio</a></p>
+
+<p><strong>Data processed and how it is collected:</strong> The data listed above under "Data we collect" is collected electronically while you use the app, either entered by you directly or received automatically when you sign in with your Google or Apple account; if you set a password under Account → Password, the password is entered by you as well.</p>
+
+<p><strong>Purposes of processing:</strong> Creating your account and verifying your identity; providing core services such as reading tracking, shelves, notes, goals and statistics; running social features such as follows, posts, comments and clubs; determining your membership status if you bought a subscription; preventing abuse and improving the service.</p>
+
+<p><strong>Legal bases (KVKK Art. 5):</strong> Your data is processed on the grounds that it is <em>directly related to the conclusion or performance of a contract</em> (the data necessary to provide the app to you), that it is <em>necessary for the controller to comply with a legal obligation</em> (report and moderation records) and that it is <em>necessary for the legitimate interests of the controller, provided your fundamental rights and freedoms are not harmed</em> (preventing abuse, improving the service).</p>
+
+<p><strong>Transfers:</strong> Your data is transferred to the infrastructure providers used to deliver the service: <strong>Supabase</strong> (database, authentication and file storage), <strong>Google</strong> (sign-in, book information and Google Play subscription verification), <strong>Apple</strong> (sign-in and App Store subscription verification), <strong>Open Library / Internet Archive</strong> (book information), <strong>TMDB</strong> (film and series information), <strong>Wikimedia</strong> (author information) and <strong>Expo</strong> (app updates). Your data is mainly stored on Supabase's servers in Frankfurt (Germany); the other providers receive only the data the feature in question needs (search words, a book or author name, subscription verification, the IP address and device details in an update request). These providers are located abroad; the transfer abroad is subject to the conditions of KVKK Art. 9. Your data is not sold or marketed to third parties for advertising.
+</p>
+
+<p><strong>Retention:</strong> Your data is kept for as long as your account is active; when you delete your account it is removed from the live system immediately (details in "Keeping and deleting your data" above and on the <a href="./delete-account.html">account deletion page</a>). Records that a legal obligation requires (for example payment records held by the stores) remain with those providers for the period set by the relevant legislation.</p>
+
+<p><strong>Your rights (KVKK Art. 11):</strong> You have the right to learn whether your personal data is processed; to request information about it if it has been processed; to learn the purpose of processing and whether it is used accordingly; to know the third parties to whom it is transferred in Türkiye or abroad; to request correction if it is incomplete or inaccurate; to request its erasure or destruction; to request that corrections, erasures and destructions be notified to the third parties to whom the data was transferred; to object to an outcome against you produced solely by automated analysis; and to claim compensation if you suffer damage through unlawful processing.</p>
+
+<p><strong>How to apply:</strong> To exercise these rights, write to <a href="mailto:support@robu.studio">support@robu.studio</a> <strong>from the email address registered to your account</strong> (your identity is verified through that address). Applications are concluded free of charge and at the latest within <strong>30 days</strong>. Deleting your account from <strong>Profile → the ⋯ menu → Account → Delete my account</strong> in the app is always available too.</p>
+
 <h2>Children's privacy</h2>
-<p>Pagely is not directed at children under 13 and does not knowingly collect data from them.</p>
+<p>Pagely is not an app aimed at children and does not verify age. If we notice that a child's data is held in an account, or a parent tells us, we delete the account and its data.</p>
 
 <h2>Changes</h2>
 <p>We may update this policy from time to time. Significant changes will be published on this page.</p>
 
 <h2>Contact</h2>
-<p>Questions: <a href="mailto:robu.studyo@gmail.com">robu.studyo@gmail.com</a></p>
+<p>Questions: <a href="mailto:support@robu.studio">support@robu.studio</a></p>
 
 <hr />
 
 <h1 id="terms">Pagely — Terms of Use</h1>
-<p class="muted">Last updated: 13 October 2026</p>
+<p class="muted">Last updated: 24 November 2026</p>
 
 <p>By using Pagely you accept the terms below. If you do not accept them, do not use the app.</p>
 
 <h2>Your account</h2>
 <ul>
-  <li>You must be over 13 to create an account.</li>
-  <li>You sign in with your Google or Apple account; keeping that account secure is your responsibility.</li>
+  <li>The account is created with your Google or Apple account; the age and conditions for opening those accounts are set by the provider.</li>
+  <li>You sign in with your Google or Apple account, or with an email address and password; keeping your account and password secure is your responsibility. Do not share your password.</li>
   <li>Your username is yours alone and can be changed <strong>once every 3 months</strong>.</li>
-  <li>You can permanently delete your account at any time from inside the app (Profile → Account → Delete my account).</li>
+  <li>You can permanently delete your account at any time from inside the app (Profile → the ⋯ menu → Account → Delete my account).</li>
 </ul>
 
 <h2>User content and zero tolerance</h2>
@@ -125,10 +154,10 @@
 <p>Page photos in the notes feature are for your own reading notes; photographing a book chapter by chapter and sharing it is copyright infringement.</p>
 
 <h2>Moderation</h2>
-<p>From inside the app you can <strong>block</strong> any user and <strong>report</strong> any user, comment or post. We review reports as quickly as we can, <strong>normally within 24 hours</strong>; where a rule has been broken we remove the content and suspend or close the account if necessary. That window may be longer during a backlog or a technical outage. These decisions are ours to make and require no prior notice.</p>
+<p>From inside the app you can <strong>block</strong> any user and <strong>report</strong> any user, comment or post. We review reports <strong>as quickly as we can</strong>; where a rule has been broken we remove the content and suspend or close the account if necessary. These decisions are ours to make and require no prior notice.</p>
 
 <h2>Subscription and payments</h2>
-<p>Pagely's core features are free. A <strong>Pagely Premium</strong> subscription covers detailed statistics, the monthly and yearly recap posts, unlimited shelves, the ability to create clubs, and unlimited note photos. Joining a club is always free.</p>
+<p>Pagely's core features are free. A <strong>Pagely Premium</strong> subscription covers detailed statistics, the monthly and yearly recap posts and the year in review, exporting your library, unlimited shelves (3 on the free plan), unlimited note photos (20 on the free plan), the ability to create clubs, profile personalisation (name colour, accent colour, background) and showing your country and city on your profile. Joining a club is always free.</p>
 <ul>
   <li><strong>Plans:</strong> Monthly and yearly. Current prices are shown in the app and in the store (Google Play or the App Store) at the moment of purchase.</li>
   <li><strong>Free trial:</strong> Your first subscription includes a <strong>7-day</strong> free trial. Cancel before it ends and you are not charged.</li>
@@ -146,7 +175,9 @@
 <p>The app is provided "as is". We do not guarantee that the service will be uninterrupted or error-free. We are not liable for damages arising from third-party content (book, film and author data from third parties, user content, external links).</p>
 
 <h2>Changes and contact</h2>
-<p>We may update these terms; significant changes will be published on this page. Questions: <a href="mailto:robu.studyo@gmail.com">robu.studyo@gmail.com</a></p>
+<p>We may update these terms; significant changes will be published on this page. Questions: <a href="mailto:support@robu.studio">support@robu.studio</a></p>
 
+<h2>Governing law</h2>
+<p>These terms are governed by the laws of the Republic of Türkiye. The statutory rights of users who are consumers remain unaffected.</p>
 </body>
 </html>
