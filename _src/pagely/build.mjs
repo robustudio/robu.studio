@@ -17,12 +17,14 @@ const IC = {
   ig: open + '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor"/></svg>',
   mail: open + '<rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4.5 8l7.5 5.5L19.5 8"/></svg>',
   yt: open + '<rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5l5 2.5-5 2.5z" fill="currentColor"/></svg>',
+  fb: open + '<rect x="3" y="3" width="18" height="18" rx="4"/><path d="M16 7.5h-1.6A2.4 2.4 0 0 0 12 9.9V21M9 13h6.5"/></svg>',
   x: open + '<path d="M4 4h4.2L20 20h-4.2z"/><path d="M19.5 4l-6.6 7.3M4.5 20l6.6-7.3"/></svg>',
   li: open + '<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V16M8 7.8v.01M11.5 16v-5.5M11.5 13c0-1.6 1-2.6 2.4-2.6s2.1 1 2.1 2.5V16"/></svg>',
 };
 const social = [
   `      <a href="https://www.instagram.com/studio.robu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @studio.robu" title="@studio.robu">${IC.ig}</a>`,
   `      <a href="https://www.youtube.com/@StudioRobu" target="_blank" rel="noopener noreferrer" aria-label="YouTube @StudioRobu" title="YouTube">${IC.yt}</a>`,
+  `      <a href="https://www.facebook.com/profile.php?id=61593484752604" target="_blank" rel="noopener noreferrer" aria-label="Facebook Robu Studio - Mobile Apps" title="Facebook">${IC.fb}</a>`,
   `      <span role="img" aria-label="X" title="X">${IC.x}</span>`,
   `      <span role="img" aria-label="LinkedIn" title="LinkedIn">${IC.li}</span>`,
   `      <a href="mailto:hello@robu.studio" aria-label="hello@robu.studio" title="hello@robu.studio">${IC.mail}</a>`,

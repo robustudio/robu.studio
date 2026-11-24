@@ -254,6 +254,11 @@
     "es": "T&eacute;rminos de uso",
     "tr": "Kullanım koşulları"
   },
+  "footer.follow": {
+    "en": "Follow Taksi Hesap:",
+    "es": "Sigue a Taksi Hesap:",
+    "tr": "Taksi Hesap'ı takip et:"
+  },
   "v.play": {
     "en": "Play the video",
     "es": "Reproducir el v&iacute;deo",
